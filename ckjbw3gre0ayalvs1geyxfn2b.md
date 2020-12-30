@@ -1,8 +1,5 @@
 ## dependency injection - phần 1 - giải thích căn cơ
 
-
-![finn-ijspeert-ONjUYQ8CMnY-unsplash.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1609360138355/Q7XaPjUlU.jpeg)
-
 Photo by [finnysz](https://unsplash.com/@finnysz) on [unsplash](https://unsplash.com/photos/ONjUYQ8CMnY)
 
 Bài viết tham khảo từ bài viết [này](https://www.smashingmagazine.com/2020/12/practical-introduction-dependency-injection/) của [jamie-corkhill](https://www.smashingmagazine.com/author/jamie-corkhill/) - developer chỉ mới 18 tuổi.
