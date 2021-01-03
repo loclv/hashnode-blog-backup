@@ -1,8 +1,5 @@
 ## Lên đời con hàng Angular 11 🚀
 
-
-![iconfinder_angular-symbol_308433.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1606680731089/k1a8V4RaU.png)
-
 Bài viết tham khảo tại trang chủ của `Angular`: <https://angular.io/guide/updating-to-version-11>.
 
 Như thông tin từ `Angular` 🚀 thì phiên bản 11.0.0 đã được vào ngày Big Sale vừa rồi - 11/11. 😄
