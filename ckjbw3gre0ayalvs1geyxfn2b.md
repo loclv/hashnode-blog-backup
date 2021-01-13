@@ -73,7 +73,7 @@ Thời điểm `injection` thích hợp nhất tất nhiên là lúc còn đang 
 Đôi với typescript thì cũng có thể viết tắt phần `constructor` thành:
 
 ```typescript
-constructor (engine: Engine) {}
+constructor (private engine: Engine) {}
 ```
 
 ## Mục đích
