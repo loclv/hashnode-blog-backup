@@ -95,8 +95,7 @@ Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry ab
 
 Lại là 1 extension cho những ai lười gõ command khởi tạo `component`, `service`... hoặc không nhớ command.
 
-### [Material Icon Theme
-](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 Giúp bạn dễ phân biệt các loại file trong Angular như Component, Service, ...
 
