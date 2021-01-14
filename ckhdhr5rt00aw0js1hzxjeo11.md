@@ -94,3 +94,11 @@ Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry ab
 ### [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files)
 
 Lại là 1 extension cho những ai lười gõ command khởi tạo `component`, `service`... hoặc không nhớ command.
+
+### [Material Icon Theme
+](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+Giúp bạn dễ phân biệt các loại file trong Angular như Component, Service, ...
+
+
+![Screenshot from 2021-01-14 18-07-38.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610622609256/FAx5S85Dp.png)
