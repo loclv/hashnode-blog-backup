@@ -38,6 +38,10 @@ Cũng là để tránh `dependency error` mà `default Software Center` có th�
 
 Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-software-center/)
 
+## 🌈 exa
+
+[exa](https://the.exa.website/) A modern replacement for `ls`.
+
 ## 🏢 Office
 
 <https://www.wps.com/>
