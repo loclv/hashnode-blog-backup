@@ -4,6 +4,9 @@
 
 [daily.dev](https://daily.dev/) là trang `new tab` tổng hợp thông tin trending từ các nguồn trang web xịn xò dành cho dev.
 
+
+![daily-dev-done.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1620125026976/mFZ76gh-k.png)
+
 ## [Bookmark Sidebar](https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh?hl=en)
 
 Giúp dễ dàng navigate giữa các trang bookmark.
