@@ -1,4 +1,4 @@
-## chrome extentions hữu tích cho developer
+## chrome extentions hữu tích cho developer 🧱
 
 ## daily.dev
 
