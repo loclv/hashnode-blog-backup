@@ -9,7 +9,16 @@
 
 ## [Bookmark Sidebar](https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh?hl=en)
 
-Giúp dễ dàng navigate giữa các trang bookmark.
+- Giúp dễ dàng navigate giữa các trang bookmark thông qua trang quản lý bookmark riêng.
+- Dễ dàng quản lý thông qua drag drop, lưu lại trạng thái cây bookmark trước đó đang mở và scroll.
+
+![Screenshot from 2021-05-13 18-06-18.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1620904442264/hvtR7BPF6.png)
+
+![Screenshot from 2021-05-13 18-06-48.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1620904458367/2x3DQ3hQi.png)
+
+![Screenshot from 2021-05-13 18-07-16.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1620904470987/QAr_aQJh7.png)
+
+![Screenshot from 2021-05-13 18-07-34.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1620904480021/KVIb9nqpU.png)
 
 ## [Dark Reader](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=en)
 
