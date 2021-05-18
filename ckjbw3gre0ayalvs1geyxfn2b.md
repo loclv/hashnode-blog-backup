@@ -1,10 +1,8 @@
-## dependency injection - phần 1 - giải thích căn cơ
-
-Photo by [finnysz](https://unsplash.com/@finnysz) on [unsplash](https://unsplash.com/photos/ONjUYQ8CMnY)
+## dependency injection - phần 1 - giải thích căn cơ 🤖
 
 Bài viết tham khảo từ bài viết [này](https://www.smashingmagazine.com/2020/12/practical-introduction-dependency-injection/) của [jamie-corkhill](https://www.smashingmagazine.com/author/jamie-corkhill/) - developer chỉ mới 18 tuổi.
 
-## Giải thích căn cơ
+## Giải thích căn cơ 🤖
 
 `Dependency injection` hay gọi tắt ở nhiều nơi là `DI`, là 1 khái niệm về cách viết / thiết kế source code.
 
@@ -87,3 +85,7 @@ constructor (private engine: Engine) {}
 Ở ngoài đời thì `DI` có vai trò tạo ra chuỗi cung ứng, còn trong programming thì sao? Hầu hết các trường hợp là để viết Test. Bản thân mình cho đến bây giờ cũng chỉ dùng nó để test.
 
 Để bài viết sau mình viết rõ về mục đích của nó nhé! Sẽ update link ở đây.
+
+---
+
+Photo by [finnysz](https://unsplash.com/@finnysz) on [unsplash](https://unsplash.com/photos/ONjUYQ8CMnY)
