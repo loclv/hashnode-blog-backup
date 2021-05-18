@@ -34,6 +34,8 @@ class Car {
 }
 ```
 
+`engine` được khởi tạo "cố định" từ `Engine` trong `constructor`.
+
 Còn đây mới là `DI`:
 
 ```typescript
@@ -51,6 +53,8 @@ class Car {
     }
 }
 ```
+
+`engine` được "truyên vào" (inject) với kiểu (type) là `Engine` trong `constructor`.
 
 Bạn có thấy chỗ khác nhau không nhỉ?
 
