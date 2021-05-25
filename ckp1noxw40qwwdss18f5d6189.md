@@ -123,6 +123,18 @@ Test dùng thêm package:
 
 [@ngneat/bind-query-params](https://github.com/ngneat/bind-query-params)
 
+## Icon
+
+[angular-fontawesome](https://github.com/FortAwesome/angular-fontawesome)
+
+## Docs
+
+[compodoc](https://github.com/compodoc/compodoc): Dễ dàng nhìn thấy quan hệ giữa các thành phần trong App.
+
+## OpenAPI
+
+- [ng-openapi-gen](https://github.com/cyclosproject/ng-openapi-gen): chuyển từ thiết kế API được viết dưới dạng OpenAPI 3.0 sang source-code bao gồm model interfaces và web service.
+
 ## linter
 
 [Angular eslint](https://github.com/angular-eslint/angular-eslint)
@@ -139,6 +151,7 @@ Cá nhân mình thì thích viết source template và styles cùng file với s
 
 - Team [@ngneat](https://github.com/ngneat)
 - [Angular resources](https://angular.io/resources?category=development)
+- Tổng hợp mọi thứ (seed repos, starters, boilerplates, examples, tutorials, components, modules, videos...) hữu ích trong Angular ecosystem: [Awesome Angular](https://github.com/PatrickJS/awesome-angular)
 
 ---
 
