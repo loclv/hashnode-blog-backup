@@ -1,6 +1,6 @@
 ## Resource khi bắt đầu project với Angular 🛡️
 
-## UI Library
+## UI Library 🌈
 
 Chọn theo hệ thống design gần nhất với design của designer, ví dụ [10 Best Design Systems and How to Learn (and Steal) From Them](https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/). Khi đó designer phải tuân thủ các luật của UI lib đó.
 
@@ -27,7 +27,7 @@ Chọn `taiga-ui` vì:
 
 Trong trường hợp design không khớp với các UI lib có sẵn thì có thể tạo ra bộ style riêng thay vì đi custom lại. Tuy nhiên, nếu dùng những component phức tạp như date-picker chẳng hạn, bạn thà dùng date-picker của `Material` với custom style thay vì đi viết lại cả cái date-picker đúng không!
 
-## State management
+## State management 🌗
 
 Hiện tại thì mình chưa gặp bài toán nào cần thiết phải dùng lib về `state management`.
 
@@ -126,6 +126,12 @@ Test dùng thêm package:
 ## Icon
 
 [angular-fontawesome](https://github.com/FortAwesome/angular-fontawesome)
+
+## Animation  🪃
+
+[ng-animate](https://github.com/jiayihu/ng-animate): không phải là 1 wrapper của 1 js lib thuần nào đó hay cốt lõi được viết bằng [Angular Animations](https://angular.io/guide/animations).
+
+[ngx-interactive-paycard](https://github.com/milantenk/ngx-interactive-paycard): Mô hình hóa credit card hay paycard như thật với animation.
 
 ## Docs
 
