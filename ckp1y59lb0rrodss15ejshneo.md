@@ -39,11 +39,21 @@ examples: # Multiple examples
     summary: A sample limit value # Optional description
 ```
 
-## 🌧 Dùng [modheader](https://bewisse.com/modheader/)
+## 🌧 Set header để controll response nào được trả về
+
+### Dùng browser extention - [modheader](https://bewisse.com/modheader/)
 
 Ví dụ set `Prefer` header `example=short-list`, với `short-list` là example đã được định nghĩa trong file swagger.
 
 ![modheader](https://cdn.hashnode.com/res/hashnode/image/upload/v1621820179271/DPRcKSL0c.png)
+
+### Dùng API testing client
+
+Ví dụ dùng vscode extention:
+
+![Screenshot from 2021-06-02 11-28-25.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1622608339558/sYTE8ROwp.png)
+
+Dùng Open source API development: [hoppscotch.io](https://hoppscotch.io/).
 
 ---
 
