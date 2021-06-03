@@ -37,19 +37,32 @@ Với các tính năng:
 
 Thì nó là thằng quan trọng thứ 3.
 
-### [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero)
-
-Có tính năng quan trọng nhất là `Sort and organize your imports (sort and remove unused)`.
-
 ### [Angular 10 Snippets](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
 Tạo ra cả 1 component full đồ khi chỉ cần gõ `ng-component` vào file trống chẳng hạn.
+
+### [angular-schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics)
+
+1 extension cho những ai lười gõ command khởi tạo `component`, `service`... hoặc không nhớ command.
+
+- Thay thế cho Angular CLI (command line) bằng UI.
+- Không còn nhưng lỗi typo - gõ sai chính tả ngớ ngẩn.
+- Support nhiều option cho từng loại:
+
+![Screenshot from 2021-06-03 12-56-15.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1622699798979/arKrb9OUp.png)
 
 ### [angular2-inline](https://marketplace.visualstudio.com/items?itemName=natewallace.angular2-inline)
 
 Dành cho tín đồ thích code 1 file chung có hết typescript, style (css, scss..), html - kiểu như react-native.
 
 Và tôi cũng thích kiểu này. :v
+
+### [vscode-angular-html](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-html)
+
+>Syntax highlighting for angular HTML template files.
+
+
+![angular-directives.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1622700058487/6k-Z9E3iE.gif)
 
 ### [code-spell-checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
@@ -89,15 +102,10 @@ Bắt lỗi ngay trên vscode thay vì trên browser.
 
 ### [SimonTest](https://marketplace.visualstudio.com/items?itemName=SimonTest.simontest)
 
-Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry about hitting the real services`. :))
-
-### [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files)
-
-Lại là 1 extension cho những ai lười gõ command khởi tạo `component`, `service`... hoặc không nhớ command.
+Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry about hitting the real services`. 😃
 
 ### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 Giúp bạn dễ phân biệt các loại file trong Angular như Component, Service, ...
-
 
 ![Screenshot from 2021-01-14 18-07-38.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610622609256/FAx5S85Dp.png)
