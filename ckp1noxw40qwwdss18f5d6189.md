@@ -1,6 +1,6 @@
 ## Resource khi bắt đầu project với Angular 🛡️
 
-## UI Library 🌈
+## 🌈 UI Library
 
 Chọn theo hệ thống design gần nhất với design của designer, ví dụ [10 Best Design Systems and How to Learn (and Steal) From Them](https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/). Khi đó designer phải tuân thủ các luật của UI lib đó.
 
@@ -27,7 +27,7 @@ Chọn `taiga-ui` vì:
 
 Trong trường hợp design không khớp với các UI lib có sẵn thì có thể tạo ra bộ style riêng thay vì đi custom lại. Tuy nhiên, nếu dùng những component phức tạp như date-picker chẳng hạn, bạn thà dùng date-picker của `Material` với custom style thay vì đi viết lại cả cái date-picker đúng không!
 
-## State management 🌗
+## 🌗 State management
 
 Hiện tại thì mình chưa gặp bài toán nào cần thiết phải dùng lib về `state management`.
 
@@ -49,13 +49,13 @@ Nếu dùng đa ngôn ngữ: [transloco](https://ngneat.github.io/transloco/)
 
 ## Làm việc với bảng biểu (Grid) tựa Excel
 
-[ignite-ui-angular](https://www.infragistics.com/products/ignite-ui-angular) mất phí, tuy nhiên lại opensource tại [đây](https://github.com/IgniteUI/igniteui-angular).
+[ignite-ui-angular](https://www.infragistics.com/products/ignite-ui-angular) mất phí, tuy nhiên lại opensource tại [đây](https://github.com/IgniteUI/igniteui-angular). [ignite-ui-angular's grid](https://www.infragistics.com/products/ignite-ui-angular/angular/components/grid/grid) cung cấp data grid, tree grid, hierarchical (cấp bậc) grid với excel-style filtering, live-data, sorting, draggable row và các toolbar khác.
 
 ## Bảng biểu với dữ liệu lớn
 
 [ngx-datatable](https://github.com/swimlane/ngx-datatable)
 
-## Unit Test
+## 🧪 Unit Test
 
 Test dùng thêm package:
 
@@ -93,7 +93,7 @@ Test dùng thêm package:
 
 [@ngneat/hotkeys](https://github.com/ngneat/hotkeys)
 
-## Dialog
+## 🪟 Dialog
 
 [@ngneat/dialog](https://github.com/ngneat/dialog)
 
