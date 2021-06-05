@@ -49,7 +49,7 @@ Nếu dùng đa ngôn ngữ: [transloco](https://ngneat.github.io/transloco/)
 
 ## Làm việc với bảng biểu (Grid) tựa Excel
 
-Mất phí: [ignite-ui-angular](https://www.infragistics.com/products/ignite-ui-angular)
+[ignite-ui-angular](https://www.infragistics.com/products/ignite-ui-angular) mất phí, tuy nhiên lại opensource tại [đây](https://github.com/IgniteUI/igniteui-angular).
 
 ## Bảng biểu với dữ liệu lớn
 
