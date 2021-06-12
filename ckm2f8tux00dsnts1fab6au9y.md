@@ -1,4 +1,4 @@
-## Những từ mà từ điển Mazii.net chưa chắc đã đúng
+## Những từ mà từ điển Mazii.net chưa chắc đã đúng 🤔
 
 Các từ này thuộc lĩnh vực IT.
 
@@ -11,7 +11,6 @@ Từ | <div style="width: 184px">nghĩa</div> | giải nghĩa
 ドロワー | drawer menu (menu kiểu ngăn kéo) | cũng có chỗ gọi là [off-canvas menu](https://www.w3schools.com/howto/howto_js_off-canvas.asp), menu chiều dọc mà mỗi thành phần trong menu lại là 1 điều hướng, ví dụ khác ở [đây](https://material.io/components/navigation-drawer). Theo bài viết ở [đây](https://accessible-usable.net/2018/02/entry_180201.html)
 
 Ví dụ về drawer menu:
-
 
 ![drawer.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1615318972298/QSDpbRkvO.png)
 
