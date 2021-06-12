@@ -1,4 +1,4 @@
-## Các extension của vscode giúp dự án Angular đỡ khổ
+## Các extension của vscode giúp dự án Angular đỡ khổ 😍
 
 Editor ở đây chúng ta hướng tới là [vscode](https://code.visualstudio.com/) hoặc `vscode-insiders`.
 
@@ -8,7 +8,7 @@ Editor ở đây chúng ta hướng tới là [vscode](https://code.visualstudio
 
 Giúp tự động sửa code bẩn (không đúng coding rules) thành đẹp.
 
-Đỡ bực mình khi cả 1000 dòng code bẩn khó sửa chẳng hạn.
+Đỡ bực mình khi cả nghìn dòng code bẩn khó sửa chẳng hạn.
 
 ### [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - must be installed!
 
@@ -20,22 +20,22 @@ Tùy theo coding rules mà sửa `.editorconfig` thôi.
 
 Quan trọng gần nhất, check chính tả, định nghĩa thế nào là cách viết code tệ.
 
-Do TSLint đã không còn được support (update) nữa từ năm 2019 nên phải dùng thêm `ESLint`.
+Do `TSLint` đã không còn được support (update) nữa từ năm 2019, ta nên dùng `ESLint`.
 
 ### [TSLint (deprecated)](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 
-Quan trọng gần nhất tại thời điểm hiện tại, do tới `Angular 10` mà `ESLint` vẫn chưa được hỗ trợ sau bao lần lỡ hẹn với cộng đồng (xem thêm tại [đây](https://github.com/angular/angular-cli/issues/13732)).
+Tới `Angular 11`, Angular sẽ warning nên dùng [angular-eslint](https://github.com/angular-eslint/angular-eslint) thay thế cho `TSLint`.
 
 ### [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 
 Với các tính năng:
 
 - Completions lists
-- AOT Diagnostic messages
+- AOT Diagnostic messages: giúp xác định lỗi từ editor thay vì đợi tới lúc compile.
 - Quick info
 - Go to definition
 
-Thì nó là thằng quan trọng thứ 3.
+Thì nó là thằng quan trọng nhất.
 
 ### [Angular 10 Snippets](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 
@@ -43,7 +43,7 @@ Tạo ra cả 1 component full đồ khi chỉ cần gõ `ng-component` vào fil
 
 ### [angular-schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics)
 
-1 extension cho những ai lười gõ command khởi tạo `component`, `service`... hoặc không nhớ command.
+Extension cho những ai lười gõ command khởi tạo `component`, `service`... hoặc không nhớ command.
 
 - Thay thế cho Angular CLI (command line) bằng UI.
 - Không còn nhưng lỗi typo - gõ sai chính tả ngớ ngẩn.
@@ -55,12 +55,11 @@ Tạo ra cả 1 component full đồ khi chỉ cần gõ `ng-component` vào fil
 
 Dành cho tín đồ thích code 1 file chung có hết typescript, style (css, scss..), html - kiểu như react-native.
 
-Và tôi cũng thích kiểu này. :v
+Và tôi cũng thích kiểu này. 😄
 
 ### [vscode-angular-html](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-html)
 
 >Syntax highlighting for angular HTML template files.
-
 
 ![angular-directives.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1622700058487/6k-Z9E3iE.gif)
 
@@ -88,6 +87,10 @@ Khi mà bạn bị bắt không được code kiểu inline (kiểu chung `html`
 
 Check chính tả cho `CSS/SCSS/Less`, kiểu như `eslint` nhưng cho style.
 
+Ngoài ra, mình cũng có [bài viết Must-have style-lint basic rules 🎨](https://loclv.hashnode.dev/must-have-style-lint-basic-rules)
+
+### [arrr](https://marketplace.visualstudio.com/items?itemName=obenjiro.arrr)
+
 ### [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 
 Chuyển file `JSON` sang `Typescript` và các ngôn ngữ khác.
@@ -109,3 +112,32 @@ Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry ab
 Giúp bạn dễ phân biệt các loại file trong Angular như Component, Service, ...
 
 ![Screenshot from 2021-01-14 18-07-38.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610622609256/FAx5S85Dp.png)
+
+### [turbo-console-log](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
+
+Tạo `console.log` siêu nhanh bằng cách bôi đen biến cần log và ấn `ctrl + alt + L`.
+
+### [swagger-viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
+
+Rất hữu dụng khi design + test + mock API theo chuẩn `openapi` hay `swagger`.
+
+### [svg-preview](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview)
+
+Xem ảnh SVG từ mớ bùng nhùng `svg-tag`.
+
+### [deepdark-material theme](https://marketplace.visualstudio.com/items?itemName=Nimda.deepdark-material)
+
+Cùng với settings (ctrl + shift + P + `Open Settings JSON`):
+
+```json
+{
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "expand"
+}
+```
+
+Thì đây là theme ưu thích của mình.
+
+---
+
+Ngoài ra còn các extentions cơ bản khác mà dùng chung cho nhiều ngôn ngữ hay Framework là mình chưa cho vào đây. Mình sẽ update về các extentions đó vào bài viết khác.
