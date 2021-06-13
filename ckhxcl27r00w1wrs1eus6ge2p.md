@@ -1,6 +1,6 @@
-## Angular - Lazy loading modules - lợi và hại
+## Angular - Lazy loading modules 😴 - lợi và hại
 
-## Lazy loading modules là gì?
+## 😴 Lazy loading modules là gì?
 
 Giới thiệu về `Lazy loading modules` của trang chủ Angular tại [đây](https://angular.io/guide/lazy-loading-ngmodules).
 
@@ -8,7 +8,7 @@ Cũng có thể gọi nó là `Lazy-loaded modules`.
 
 Đúng với cái tên của nó, load các modules 1 cách `lười biếng nhất`.
 
-### `lười nhiều` để làm gì?
+### 😆 `lười nhiều` để làm gì?
 
 `Lười biếng` thì bạn sẽ cần làm ít hơn, đồng nghĩa với load ít modules hơn và loading mà không cần tải lại trang.
 
@@ -17,7 +17,7 @@ Có 2 mục đích:
 - Load ít modules hơn thì trang web sẽ nhanh hơn.
 - Load nội dung mới mà không phải reload lại cả trang web giúp trải nghiệm người dùng tốt hơn, không có cảm giác phải chờ cho loading xong.
 
-### Thế làm thế nào để có thể `lười biếng`?
+### 🤔 Thế làm thế nào để có thể `lười biếng`?
 
 Muốn load ít modules hơn thì ta phải chia để trị.
 
@@ -55,7 +55,7 @@ Khi mà mỗi tính năng có thể chia theo routes và có modules khác biệ
 
 Ví dụ như `customers` dùng thư viện về bảng biểu có tính năng như `Excel`, trong khi `login` thì không cần. Chỉ cần login mà load cả cái thư viện có `bundle size` lên tới 1 hoặc 2MB thì không hợp lý đúng không.
 
-## Khi nào không nên dùng?
+## 🙄 Khi nào không nên dùng?
 
 - Dự án có các tính năng không quá khác biệt và khác biệt không quá lớn, hầu hết các module là dùng chung, dùng thêm chỉ tội mất time đúng không. :v
 
@@ -73,7 +73,7 @@ Ngay bản thân tôi khi làm dự án cũng gặp phải vấn đề có chỗ
 
 Cũng có lib không gặp vấn đề nào ví dụ như [transloco](https://ngneat.github.io/transloco/), xem thêm tại [đây](https://github.com/ngneat/transloco/issues?q=is%3Aissue+is%3Aopen+lazy). Lib này cũng hỗ trợ tốt với tính năng load file theo từng module tách biệt và cũng chỉ được gọi khi người dùng gọi đến nó, cụ thể tại [đây](https://ngneat.github.io/transloco/docs/scope-configuration).
 
-#### `lazy-loaded module` lồng nhau phức tạp
+#### 🌲 `lazy-loaded module` lồng nhau phức tạp
 
 `Lazy loading modules` lồng nhau là kiểu `app module` lazy-load `content module`, rồi `content module` lại lazy-load thằng khác. Trong khi đó bản thân trong thằng `app module` cũng có nhiều nội dung liên quan tới `content module`.
 
