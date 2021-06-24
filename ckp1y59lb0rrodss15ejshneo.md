@@ -2,7 +2,7 @@
 
 Tóm tắt:
 
-1. Thêm nhiều example theo hướng dẫ ở [swagger docs](https://swagger.io/docs/specification/adding-examples/).
+1. Thêm nhiều examples theo hướng dẫn ở [swagger docs](https://swagger.io/docs/specification/adding-examples/).
 2. [response-examples](https://meta.stoplight.io/docs/prism/docs/guides/01-mocking.md#response-examples).
 3. Dùng [modheader](https://bewisse.com/modheader/) để custom header request gửi lên từ trình duyệt. Ví dụ call URL với `Prefer` header `example=dog`.
 4. Nhận về đúng example mà mình đã mô tả trong `modheader`.
@@ -16,13 +16,16 @@ npm install -g @stoplight/prism-cli
 prism mock ./media/api_docs/swagger.yaml
 ```
 
-## swagger editor
+## 📓 swagger editor
 
 Cho [vscode](https://code.visualstudio.com/) thì sử dụng [extention này](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer).
 
-## Thêm examples cho swagger
+## 🎶 Thêm examples cho swagger
 
-Tạo 1 thuộc tính `examples` đồng cấp với `schema` (khác với chỉ 1 `example` là example là con của schema).
+Tạo 1 thuộc tính `examples` đồng cấp với `schema`. Điều khác biệt với chỉ 1 `example` là:
+
+- `example` là 1 thuộc tính của `schema`.
+- `examples` có 1 hoặc nhiều thuộc tính đại diện cho tên của 1 example, mỗi thuộc tính đó (tên example) có thuộc tính là `value`, trong thuộc tính `value` mới mô tả nội dung example.
 
 Bên trong examples sẽ có các example - phân biệt bằng tên riêng của từng example:
 
