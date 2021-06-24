@@ -1,4 +1,4 @@
-## Mock dynamic data API với OpenAPI/Swagger và Prism ✨
+## Mock dynamic data API với OpenAPI/Swagger và @stoplight/prism-cli ✨
 
 ## Mong muốn
 
