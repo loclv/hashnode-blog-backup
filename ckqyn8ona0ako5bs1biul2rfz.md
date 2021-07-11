@@ -111,7 +111,7 @@ export class CatsController {
 
 Là chốt chặn giữa `clients` và `Route Handler`, mục đích là thêm thắt, quản lý response và request.
 
-> An interceptor is a class annotated with the @Injectable() decorator.
+> An interceptor is a class annotated with the `@Injectable()` decorator.
 
 Class `annotated` (hay chú thích) `@Injectable()` là khái niệm khá quen trong `Angular`.
 
