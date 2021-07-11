@@ -47,7 +47,7 @@ Support:
 
 Routing: sử dung `@Controller()` decorator để định nghĩa. Với ví dụ trên là `@Controller('cats')`.
 
-### Providers
+### 🧑‍🔧 Providers
 
 Ý tưởng về phần `provider` là nó sẽ được `injected` dưới dạng 1 dependency áp dụng nguyên lý DI (Dependency injection) đã nói bên trên.
 
