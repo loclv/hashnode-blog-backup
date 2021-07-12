@@ -117,7 +117,9 @@ Class `annotated` (hay chú thích) `@Injectable()` là khái niệm khá quen t
 
 ### 💼 Database
 
-Support SQL hoặc NoSQL database. Thông thường NestJS hỗ trợ kết nối với database đơn giản giống như [Express](https://expressjs.com/en/guide/database-integration.html) hay `Fastify`. Ngoài ra nó còn có các package hỗ trợ làm việc với các ORM ([Object–relational mapping](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)]:
+Support SQL hoặc NoSQL database.
+
+Ngoài ra nó còn có các package hỗ trợ làm việc với các ORM ([Object–relational mapping](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)]:
 
 - [Sequelize](https://sequelize.org/)
 - [Knex.js](https://knexjs.org/)
