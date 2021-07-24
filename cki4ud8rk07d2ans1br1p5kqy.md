@@ -34,11 +34,11 @@ sudo snap install atom
 
 Default terminal của Ubuntu nhanh, đơn giản. Như vậy là đủ.
 
-Nhưng đối với những bạn thích custom hay vọc vạch thì hãy thử dùng các terminal client bên dưới xem nhé 🌂
+Nhưng đối với những bạn thích custom hay vọc vạch thì hãy thử dùng các terminal client bên dưới xem nhé: 🌂
 
-[terminal hyper](https://hyper.is/)
+- [hyper](https://hyper.is/)
 
-[terminus](https://eugeny.github.io/terminus/)
+- [tabby](https://tabby.sh/)
 
 ## 📦 deb installer
 
