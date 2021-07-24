@@ -6,9 +6,29 @@ Bài viết dành cho những người mới với `Ubuntu` (bản dành cho má
 
 ## 📓 Editor for coding
 
-`vscode` || `vscode-insiders`
+[vscode](https://code.visualstudio.com/):
 
-`Atom`
+```sh
+sudo snap install code
+```
+
+or [vscode-insiders](https://code.visualstudio.com/insiders/):
+
+```sh
+sudo snap install code-insiders
+```
+
+or [VSCodium](https://vscodium.com/):
+
+```sh
+sudo snap install codium
+```
+
+[Atom](https://atom.io/):
+
+```sh
+sudo snap install atom
+```
 
 ## 🌏 Terminal
 
