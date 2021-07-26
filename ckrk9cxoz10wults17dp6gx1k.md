@@ -9,6 +9,8 @@ Các rule dành cho TypeScript chia thành các loại:
 - 🤢 Security Hotspot - điểm nóng bảo mật
 - 🤭 Code smell - Code thối hay code tệ
 
+Rule này thuộc loại lỗ hổng có thể bị lợi dụng.
+
 ## Việc updates DOM không nên để việc redirect đến websites không an toàn
 
 >DOM updates should not lead to open redirect vulnerabilities
