@@ -62,7 +62,7 @@ Tuy nhiên ta không thể khẳng định điều này ở các browser khác.
 
 ### Ví dụ đoạn code vi phạm
 
-```js
+```ts
 document.location = document.location.hash.slice(1);
 ```
 
@@ -73,7 +73,7 @@ Khi set `document.location`, trang web bị redirect sang `${currUrl}${document.
 Valid URL trước khi redirect.
 
 
-```js
+```ts
 function isValidUrl(url) {
   if(url.startsWith("https://www.example.com/")) {
     return true;
