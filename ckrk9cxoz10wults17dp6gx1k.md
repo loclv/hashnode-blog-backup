@@ -15,7 +15,7 @@ Rule này thuộc loại lỗ hổng có thể bị lợi dụng.
 
 >DOM updates should not lead to open redirect vulnerabilities
 
-Những data mà user có thể can thiệp / controll được ví dụ như `document.location.hash` không nên được dùng để chuyển tới 1 trang web khác.
+Những data mà user có thể can thiệp / controll được ví dụ như `document.location.hash` không thể tin tưởng được và nên được valid (kiểm tra) trước khi được sử dụng.
 
 ## Giải thích về `location.hash`
 
