@@ -94,6 +94,14 @@ Extension cho những ai lười gõ command khởi tạo `component`, `service`
 
 ![Screenshot from 2021-06-03 12-56-15.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1622699798979/arKrb9OUp.png)
 
+### 🧘 [Angular Zen Mode](https://marketplace.visualstudio.com/items?itemName=dolliecollective.angular-zen-mode&ref=producthunt)
+
+Tự động chia màn hình thành 3 phần của Component:
+
+- Code (.ts) chiếm 2/4 màn hình
+- Template (.html) chiếm 1/4 màn hình
+- Style (.css/.scss/.sass/.less) chiếm 1/4 màn hình
+
 ### [auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
 Thằng này thì cái tên đã nói lên tất cả rồi. :v
