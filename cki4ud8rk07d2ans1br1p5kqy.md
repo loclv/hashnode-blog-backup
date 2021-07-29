@@ -80,7 +80,9 @@ Nên tải trực tiếp ở [đây](https://linux.wps.com/) và cài file đã 
 
 <https://ulauncher.io/>
 
-Với tổ hợp phím `ctrl` + `space` mở mọi thứ mọi nơi.
+Vấn đề là công cụ search app trên Ubuntu hơi kém, search không đúng kết qủa mong muốn.
+
+Với tổ hợp phím default `ctrl` + `space` mở mọi thứ mọi nơi. Tuy nhiên nó lại trùng với tổ hợp phím `ctrl` + `space` trên vscode nên với tôi thì set nó thành `alt` + `X`.
 
 ## 🐚 SSH client
 
