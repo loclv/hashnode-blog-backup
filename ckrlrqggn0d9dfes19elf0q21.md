@@ -88,7 +88,11 @@ Thay vì viết lặp đi lặp lại phần `ErrorHandling` thì phần shareab
 
 Và công cụ để hợp lại đó là `Intersection types`.
 
-## 🤤 Types without members, 'any' and 'never' should not be used in type intersections
+---
+
+OK, ta đã biết được các khái niệm cần thiết, sau đây là nội dung chính của rule.
+
+## 🤤 Type mà không có thành phần con như `any` hay `never` không nên dùng trong phép hợp của nhiều type
 
 >Types without members, 'any' and 'never' should not be used in type intersections
 
@@ -104,13 +108,16 @@ function bar(p: MyType & any) { // Noncompliant 😨
 }
 ```
 
-Ví dụ trên đang sử dụng `Intersection types`.
+Ví dụ trên đang sử dụng `Intersection types` - phép hợp giữa nhiều type.
 
 ### 😨 Vấn đề
 
 Kiểu `p: MyType & null` tương đương với `never`, chẳng khác nào việc phế đi võ công gián tiếp.
 
-Kiểu `p: MyType & any` tương đương với `any`, chẳng khác nào việc phế đi võ công gián tiếp.
+Kiểu `p: MyType & any` tương đương với `any`, cũng chẳng khác nào việc phế đi võ công gián tiếp.
+
+Tóm lại, việc này dẫn đến phá hủy cấu trúc kiêu đang rất ngon lành.
+Đối với các developer biết về điều này thì cũng có khả năng gặp phải vì lỗi đánh máy chẳng hạn.
 
 ### 😌 Giải pháp tuân thủ rule
 
