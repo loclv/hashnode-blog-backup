@@ -4,6 +4,10 @@ Bài viết dành cho những người mới với `Ubuntu` (bản dành cho má
 
 Điều đầu tiên cần làm là update lên version mới nhất của Ubuntu. Thời điểm viết bài mình đã thử `ubuntu 20.04` và không gặp vấn đề gì cả.
 
+Screenshot:
+
+![Screenshot from 2021-08-05 18-52-23.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628164537816/JczTdfmds.png)
+
 ## 📓 Editor for coding
 
 [vscode](https://code.visualstudio.com/):
@@ -130,6 +134,14 @@ Vào `Other software tab`, enables các Repo trừ phần `Source Code` trừ kh
 
 - <https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/>
 - <https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103>
+- [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
+
+Để desktop `sạch sẽ` hơn, ẩn `home` và `trash` icon bằng terminal:
+
+```sh
+gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
+gsettings set org.gnome.shell.extensions.desktop-icons show-home false
+```
 
 ---
 
