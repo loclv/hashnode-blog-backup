@@ -108,6 +108,26 @@ Tại thời điểm viết bài, thì theo trai nghiệm cảu mình thì bộ 
 
 Hãy cần thận tắt bộ gõ tiếng Việt trước khi gõ password trên `terminal` nhé :D Do nó sẽ hiện phần gạch chân (tạm) trên màn hình đó.
 
+## ✍️ Font
+
+### Font để coding
+
+Fira Code được opensource tại [đây](https://github.com/tonsky/FiraCode).
+
+![Screenshot from 2021-08-10 18-35-18.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595347994/HPGfgH-S2.png)
+
+Font setting: `'Fira Code'`
+
+### Font dành riêng cho tiếng Việt
+
+`Be Vietnam Pro` download tại [đây](https://github.com/bettergui/BeVietnamPro/blob/main/fonts/ttf/BeVietnamPro-Regular.ttf).
+
+![be-vietnam-pro-font.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595376936/HJxVNLc9N.png)
+
+Ngoài ra danh sách các kiểu chữ font này đều có tại [github repo](https://github.com/bettergui/BeVietnamPro).
+
+Font setting: `'Be Vietnam Pro'`
+
 ## 👆 Update
 
 Thường xuyên chạy update, nhiều khi thấy cũng chẳng khác gì nhưng mà nghiện mất rồi :v
