@@ -1,5 +1,7 @@
 ## Một số thứ nên tìm hiểu khi đã biết hết 🅰️ Angular cơ bản
 
+Cùng nâng cao kiến thức xoay quanh Angular.
+
 ## 🎆 Angular bản mới
 
 Angular bản mới có gì mới, project mình đang làm có thể upgrade lên không?
