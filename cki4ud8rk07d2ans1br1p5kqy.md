@@ -2,7 +2,7 @@
 
 Bài viết dành cho những người mới với `Ubuntu` (bản dành cho máy tính cá nhân), thời điểm mới cài Ubuntu xong.
 
-Điều đầu tiên cần làm là update lên version mới nhất của Ubuntu. Thời điểm viết bài mình đã thử `ubuntu 20.04` và không gặp vấn đề gì cả.
+Thời điểm viết bài mình đã thử `ubuntu 20.04` và không gặp vấn đề gì cả.
 
 Screenshot:
 
@@ -65,6 +65,13 @@ Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-s
 ## 🌈 exa
 
 [exa](https://the.exa.website/) A modern replacement for `ls`.
+
+![exa.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595995985/GKmnpBAY-.png)
+
+```sh
+sudo apt install exa
+exa --long --header --git
+```
 
 ## 🏢 Office
 
