@@ -133,7 +133,7 @@ Copy đoạn code dưới đây vào `index.html`:
 
 Mở trực tiếp file `html` này bằng browser như `Chrome`, ta thấy biểu đồ đã được vẽ:
 
-![]()
+![Screenshot from 2021-08-10 15-38-16.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628586816720/Zi--jX-MK.png)
 
 ## 🕵️‍♀️ Giải thích source-code
 
