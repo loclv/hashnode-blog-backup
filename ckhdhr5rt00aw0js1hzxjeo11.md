@@ -222,6 +222,25 @@ Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry ab
 
 Nếu các bạn lười install hay quản lý đống extentions riêng cho Angular, bạn có thể dùng cái này. Hay tìm hiểu thêm extentions khác hữu ích mà mình chưa biết.
 
+## Other `settings.json`
+
+Để mở `settings.json` thì ta ấn: `Ctrl` + `Shift` + `P` -> gõ `settings` -> tìm lựa chọn `settings bằng JSON`.
+
+Edit `settings.json` để default UI/UX xịn hơn:
+
+```json
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "expand"
+```
+
+Nếu máy bạn đang cài `Fira Code` font thì setting:
+
+```json
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "300",
+```
+
 ---
 
 Ngoài ra còn các extentions cơ bản khác mà dùng chung cho nhiều ngôn ngữ hay Framework là mình chưa cho vào đây. Mình sẽ update về các extentions đó vào bài viết khác.
