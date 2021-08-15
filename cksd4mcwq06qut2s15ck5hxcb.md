@@ -1,4 +1,4 @@
-## Trong Micro Frontends, thực thi Custom Elements + Server Side Includes = ❤️ - phần 2
+## Trong Micro Frontends, thực thi Custom Elements + Server Side Includes = 💚 - phần 2
 
 ## SSI giải cứu `Custom Elements` trong môi trường SSR
 
