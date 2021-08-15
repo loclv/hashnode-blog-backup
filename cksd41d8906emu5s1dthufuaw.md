@@ -1,4 +1,4 @@
-## Trong Micro Frontends, tại sao Custom Elements + Server Side Includes = ❤️ ? - phần 1
+## Trong Micro Frontends, tại sao Custom Elements + Server Side Includes = 💚 ? - phần 1
 
 Chẳng là gần đây dự án rảnh, free task nên mọi người trong team có thời gian tìm hiểu công nghệ.
 
@@ -153,7 +153,7 @@ Vậy thì ứng dụng của công nghệ này ở đâu? Câu trả lời chí
 Cũng vì vậy, hướng tìm cách làm `Micro Frontends` cho 1 SSR web bằng 1 SSR JS Framework (như Nuxt.js chẳng hạn) là không khả thi.
 Ta phải dựa vào web server, middleware. Trong đó mình khá là thích các web server, middleware đến từ Node.js, Go.
 
-Ở phần 2 của bài viết ta sẽ tìm hiểu về cách thức thực hiện cụ thể hơn.
+Ở [phần 2](https://loclv.hashnode.dev/trong-micro-frontends-thuc-thi-custom-elements-server-side-includes-phan-2) của bài viết ta sẽ tìm hiểu về cách thức thực hiện cụ thể hơn.
 
 ## Tham khảo
 
