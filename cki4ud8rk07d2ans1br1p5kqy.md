@@ -38,6 +38,8 @@ sudo snap install atom
 
 ## 🌏 Terminal
 
+### Command-line interface
+
 Default terminal của Ubuntu nhanh, đơn giản. Như vậy là đủ.
 
 Nhưng đối với những bạn thích custom hay vọc vạch thì hãy thử dùng các terminal client bên dưới xem nhé: 🌂
@@ -56,6 +58,25 @@ Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì 
 Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào.
 
 - [tabby](https://tabby.sh/)
+
+### Command-line shell
+
+[fish shell](https://fishshell.com/) + [Oh my fish](https://github.com/oh-my-fish/oh-my-fish) - quản lý packages dành cho `fish shell`.
+
+Đây là các alias được config thông qua `fish shell`:
+
+```config
+alias cf 'code ~/.config/fish/config.fish'
+alias g git
+alias ga 'git add .'
+alias gc 'git commit -m'
+alias gm 'git commit -m "m"'
+alias gs 'git status'
+alias install 'sudo apt-get install'
+alias l 'exa --long --header --git'
+alias remove 'sudo apt-get remove --purge'
+alias update 'sudo apt-get update'
+```
 
 ## 📦 deb installer
 
