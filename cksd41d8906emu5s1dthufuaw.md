@@ -62,7 +62,7 @@ Mô hình này cũng có thể kết hợp với `Micro-services` giống như t
 
 ### [The DOM is the API](https://micro-frontends.org/#the-dom-is-the-api)
 
-Đầu tiên, ta phải hiểu tính năng [Custom Elements](https://developers.google.com/web/fundamentals/web-components/customelements) là 1 phần cốt lõi của hệ thống `web component` - 1 tính năng của trình duyệt.
+Đầu tiên, ta phải hiểu tính năng [Custom Elements](https://developers.google.com/web/fundamentals/web-components/customelements) là 1 phần cốt lõi của hệ thống [web component](https://www.webcomponents.org/) - 1 tính năng của trình duyệt.
 `Custom Elements` cho phép định nghĩa 1 HTML tags mới, thay vì các thẻ truyền thống như `<div>`, `input`.
 Danh sách cụ thể các trình duyệt hỗ trợ tại [can i use?](https://caniuse.com/?search=Custom%20Elements). Hiện tại tất cả các trình duyệt hiện đại đã hỗ trợ tính năng này.
 
