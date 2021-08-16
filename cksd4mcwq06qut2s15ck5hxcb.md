@@ -49,7 +49,7 @@ Kiến trúc trong `tailor` tổng quan:
 </html>
 ```
 
-[Đây](https://github.com/shershen08/tailor-vue-demo/blob/master/templates/index.html) là ví dụ của 1 project dùng `Tailor` + `Vue` + [lerna](https://github.com/lerna/lerna):
+[Đây](https://github.com/shershen08/tailor-vue-demo/blob/master/templates/index.html) là ví dụ của 1 project dùng `Tailor` + `Vue` + [lerna](https://github.com/lerna/lerna) - không hỗ trợ SSR:
 
 ```html
 <!doctype html>
