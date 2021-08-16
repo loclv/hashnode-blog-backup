@@ -73,6 +73,13 @@ sudo apt install exa
 exa --long --header --git
 ```
 
+Tạo alias cho `exa` thông qua `fish sheel` (ở đây mình để alias là duy nhất chữ e-lờ -`l`):
+
+```sh
+alias l "exa --long --header --git"
+l
+```
+
 ## 🏢 Office
 
 <https://www.wps.com/>
