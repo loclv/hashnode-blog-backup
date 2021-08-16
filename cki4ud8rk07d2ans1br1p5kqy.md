@@ -215,4 +215,6 @@ gsettings set org.gnome.shell.extensions.desktop-icons show-home false
 
 Còn nhiều thứ có thể nghịch với Ubuntu nữa, cơ mà sức mình có hạn :v
 
+Wallpaper: [wallpaperaccess - skyrim](https://wallpaperaccess.com/skyrim-4k)
+
 Photo at [pngegg](https://www.pngegg.com/en/png-zfazu)
