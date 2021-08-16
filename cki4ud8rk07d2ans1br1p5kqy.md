@@ -97,7 +97,7 @@ l
 
 <https://www.wps.com/>
 
-`wps office`, đẹp, siêu nhẹ, siêu nhanh, đa nền tảng
+[wps office](https://www.wps.com/), đẹp, siêu nhẹ, siêu nhanh, đa nền tảng
 
 Nếu mở những file có dung lượng lớn (>20MB) nhất là định dạng `xlsx` thì nó nhanh hơn [libreOffice](https://www.libreoffice.org/) hơn hàng trăm lần (cảm nhận của mình).
 
