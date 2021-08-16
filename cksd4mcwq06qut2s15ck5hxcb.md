@@ -49,6 +49,43 @@ Kiến trúc trong `tailor` tổng quan:
 </html>
 ```
 
+[Đây](https://github.com/shershen08/tailor-vue-demo/blob/master/templates/index.html) là ví dụ của 1 project dùng `Tailor` + `Vue` + [lerna](https://github.com/lerna/lerna):
+
+```html
+<!doctype html>
+<html>
+<head>
+  <title>Tailor + VueJS Example Application</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="./commons/style.css" />
+</head>
+<body>
+  <!-- header -->
+  <div id="header">
+    <span class="fragment-error">Header failed to load</span>
+  </div>
+  <fragment src="http://localhost:8091"></fragment>
+
+
+  <!-- dashboard -->
+  <div id="dashboard">
+      <span class="fragment-error">Dashboard failed to load</span>
+    </div>
+  <fragment src="http://localhost:8090" primary></fragment>
+
+
+  <!-- twitter feed -->
+  <div id="dashboard">
+      <span class="fragment-error">Twitter feed failed to load</span>
+    </div>
+  <fragment src="http://localhost:8092" timeout=1000></fragment>
+
+</body>
+</html>
+```
+
+- [momos](https://github.com/hemerajs/momos#why-you-dont-use-nginx) và [momos#why-you-dont-use-nginx](https://github.com/hemerajs/momos#why-you-dont-use-nginx) - Được viết bằng Go.
+
 TechLead nên cân nhắc thật kỹ các giải pháp thay thế được SSI, để phù hợp nhất với dự án của mình.
 
 ### Cụ thể thực hiện SSI bằng nginx
