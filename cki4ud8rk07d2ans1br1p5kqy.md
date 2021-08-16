@@ -16,17 +16,19 @@ Screenshot:
 sudo snap install code
 ```
 
-or [vscode-insiders](https://code.visualstudio.com/insiders/):
+or [vscode-insiders](https://code.visualstudio.com/insiders/) - phiên bản dùng thử trước của `vscode`:
 
 ```sh
 sudo snap install code-insiders
 ```
 
-or [VSCodium](https://vscodium.com/):
+or [VSCodium](https://vscodium.com/) - phiên bản nguồn mở không dính dáng gì đến Microsoft:
 
 ```sh
 sudo snap install codium
 ```
+
+Mình dùng mỗi phiên bản đó của `vscode` để code mỗi 1 Framework. Ví dụ `vscode-insiders` để code Vue, `vscode` dùng để code Angular. Đỡ phải switch profile tương ứng từng extention dành cho từng framework.
 
 [Atom](https://atom.io/):
 
