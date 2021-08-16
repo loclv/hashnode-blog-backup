@@ -42,7 +42,18 @@ Default terminal của Ubuntu nhanh, đơn giản. Như vậy là đủ.
 
 Nhưng đối với những bạn thích custom hay vọc vạch thì hãy thử dùng các terminal client bên dưới xem nhé: 🌂
 
-- [hyper](https://hyper.is/)
+- [hyper](https://hyper.is/): [đây](https://gist.github.com/loclv/67477636e417e974a07f930d72495eaa) là settings dành cho `hype` của mình.
+
+```json
+plugins: [
+    'hyper-font-ligatures',
+    'hypercwd',
+    'hyper-active-tab'
+  ],
+```
+
+Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì thư mục `HOME`.
+Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào.
 
 - [tabby](https://tabby.sh/)
 
