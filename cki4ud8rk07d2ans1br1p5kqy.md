@@ -96,6 +96,16 @@ Cũng là để tránh `dependency error` mà `default Software Center` có th�
 
 Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-software-center/)
 
+## 🎒 Dùng [snap store](https://snapcraft.io/store) thay thế cho `Ubuntu Software` - Ubuntu store
+
+Đi chợ Apps bằng cách lên [snap store](https://snapcraft.io/store) - Linux app store. Search tên app. Ấn nút `install`, thấy hiển thị ra command. Copy command đó và chạy trên terminal.
+
+```bash
+sudo snap install <app-name>
+# list all apps
+snap list
+```
+
 ## 🌈 exa
 
 [exa](https://the.exa.website/) A modern replacement for `ls`.
