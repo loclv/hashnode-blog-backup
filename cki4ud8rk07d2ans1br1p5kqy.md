@@ -136,7 +136,7 @@ Sở hữu tính năng tìm kiếm tên sheet trong trường hợp 1 `workbook`
 
 `wps` cũng có bản web như `Microsoft Office` nhưng hạn chế dùng do thường có yêu cầu bảo mật không thể upload tài liệu lung tung lên cloud được.
 
-Nên tải trực tiếp ở [đây](https://linux.wps.com/) và cài file đã được tải về bằng `gdebi` bên trên nhé, thay vì dùng dùng [snap store](https://snapcraft.io/store). Vì mình đã dùng thử bản ở `snap` không được udpate và nhiều bug.
+Nên tải trực tiếp ở [đây](https://linux.wps.com/) và cài file đã được tải về bằng `gdebi` bên trên nhé, thay vì dùng dùng [snap store](https://snapcraft.io/store). Vì mình đã dùng thử bản ở `snap` không được update và nhiều bug.
 
 ## 📂 launcher
 
