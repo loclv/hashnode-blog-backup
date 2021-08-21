@@ -21,6 +21,10 @@ Sau khi download lượng lớn dữ liệu, cài đặt và restart, việc c�
 sudo apt --purge autoremove
 ```
 
+Cũng từ phiên bản này, nếu máy ta dùng là Laptop thì có thêm lựa chọn mức độ nguồn điện - power dành cho hiệu năng hoặc tiết kiệm điện. Mình chọn tối ưu cho hiệu năng:
+
+![ubuntu-power.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629532529207/2ywbxXvVVC.png)
+
 ## 📦 deb installer
 
 `gdebi-gtk`
