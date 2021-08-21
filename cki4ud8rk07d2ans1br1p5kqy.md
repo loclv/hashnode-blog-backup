@@ -21,6 +21,19 @@ Sau khi download lượng lớn dữ liệu, cài đặt và restart, việc c�
 sudo apt --purge autoremove
 ```
 
+Trong quá trình upgrade Ubuntu thì để an toàn Ubuntu tự động disable các repo của bên thứ 3.
+Các repo này vốn là nơi chứa bản update của những phần mềm bên thứ 3 (không phải phần mềm của Ubuntu).
+Enable lại các repo này, giúp việc update thông qua command `sudo apt update` trở lại như cũ.
+
+Để enable lại thì ta:
+
+1. vào danh sách các App
+2. search `update`
+3. chọn `Software & Updates`
+4. vào tab `Other Software`
+5. Enable lại các repo có ghi chú `disabled on upgrade to ${ubuntu-version-name}`
+
+
 Cũng từ phiên bản này, nếu máy ta dùng là Laptop thì có thêm lựa chọn mức độ nguồn điện - power dành cho hiệu năng hoặc tiết kiệm điện. Mình chọn tối ưu cho hiệu năng:
 
 ![ubuntu-power.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629532529207/2ywbxXvVVC.png)
@@ -235,6 +248,7 @@ Vào `Other software tab`, enables các Repo trừ phần `Source Code` trừ kh
 - <https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/>
 - <https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103>
 - [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
+- [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
 
 Để desktop `sạch sẽ` hơn, ẩn `home` và `trash` icon bằng terminal:
 
