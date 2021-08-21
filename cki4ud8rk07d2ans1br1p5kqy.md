@@ -5,7 +5,7 @@ Bài viết dành cho những người mới với `Ubuntu` (bản dành cho má
 Thời điểm viết bài mình đã thử `ubuntu 21.04` và không gặp vấn đề gì cả.
 `ubuntu 21.04` có thư viện đồ họa được nâng cấp và tối ưu khiến tốc độ nhanh hơn, điển hình là khi scroll trong danh sách các App.
 
-Screenshot:
+Desktop Screenshot:
 
 ![Screenshot from 2021-08-05 18-52-23.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628164537816/JczTdfmds.png)
 
@@ -244,19 +244,28 @@ Vì `Canonical Partners repository` hay các repo khác chứa source đóng ch�
 
 Vào `Other software tab`, enables các Repo trừ phần `Source Code` trừ khi bạn có ý định kéo cả code của package về :D
 
+## Custom UI
+
+Mặc định Ubuntu sẽ hiển thị 2 icon trên desktop.
+Để desktop `sạch sẽ` hơn, ta ẩn `home` và `trash` icon đi.
+Với version Ubuntu 20.XX bằng terminal:
+
+```sh
+gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
+gsettings set org.gnome.shell.extensions.desktop-icons show-home false
+```
+
+Tuy nhiên ở Ubuntu 21.04, sẽ có lỗi: `No such schema "org.gnome.shell.extensions.desktop-icons"`. Ta phải dùng `Extensions` app (Search trong danh sách App), disable phần `Desktop Icons NG (DING)`:
+
+![Desktop Icons NG (DING).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629536115623/GzGFiartu.png)
+
 ## Tham khảo
 
 - <https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/>
 - <https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103>
 - [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
 - [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
-
-Để desktop `sạch sẽ` hơn, ẩn `home` và `trash` icon bằng terminal:
-
-```sh
-gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
-gsettings set org.gnome.shell.extensions.desktop-icons show-home false
-```
+- [askubuntu ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop](https://askubuntu.com/questions/1335398/ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop)
 
 ---
 
