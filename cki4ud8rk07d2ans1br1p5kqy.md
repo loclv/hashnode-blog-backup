@@ -3,6 +3,7 @@
 Bài viết dành cho những người mới với `Ubuntu` (bản dành cho máy tính cá nhân), thời điểm mới cài Ubuntu xong.
 
 Thời điểm viết bài mình đã thử `ubuntu 21.04` và không gặp vấn đề gì cả.
+`ubuntu 21.04` có thư viện đồ họa được nâng cấp và tối ưu khiến tốc độ nhanh hơn, điển hình là khi scroll trong danh sách các App.
 
 Screenshot:
 
@@ -18,6 +19,34 @@ Sau khi download lượng lớn dữ liệu, cài đặt và restart, việc c�
 
 ```sh
 sudo apt --purge autoremove
+```
+
+## 📦 deb installer
+
+`gdebi-gtk`
+
+Mô tả `gdebi-gtk` nguyên văn dưới đây.
+
+```txt
+"gdebi  lets  you install local deb packages resolving and installing its dependencies.
+apt does the same,
+but only for remote (http, ftp) located packages.
+```
+
+Đại khái `gdebi` dùng để cài `deb packages` - tương ứng với `.exe` bên `window` hay `.dmg` bên `MacOS`. Nó cũng giống với công cụ `apt` được tích hợp sẵn trong `Ubuntu` chỉ trừ là có giao diện UI và cài `deb packages` đã được tải về máy. Không thì bạn sẽ phải dùng `dpkg` 1 cách manual và phức tạp. Thông tin này tham khảo tại [đây](https://itsfoss.com/install-deb-files-ubuntu/).
+
+Cũng là để tránh `dependency error` mà `default Software Center` có thể gây ra.
+
+Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-software-center/)
+
+## 🎒 Dùng [snap store](https://snapcraft.io/store) thay thế cho `Ubuntu Software` - Ubuntu store
+
+Đi chợ Apps bằng cách lên [snap store](https://snapcraft.io/store) - Linux app store. Search tên app. Ấn nút `install`, thấy hiển thị ra command. Copy command đó và chạy trên terminal.
+
+```bash
+sudo snap install <app-name>
+# list all apps
+snap list
 ```
 
 ## 📓 Editor for coding
@@ -78,44 +107,21 @@ Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào
 Đây là các alias được config thông qua `fish shell`:
 
 ```config
+alias g='git'
+alias gs='git status'
+alias ga='git add .'
+alias gd='git diff'
+alias gp='git push'
+
 alias cf 'code ~/.config/fish/config.fish'
-alias g git
-alias ga 'git add .'
-alias gc 'git commit -m'
-alias gm 'git commit -m "m"'
-alias gs 'git status'
+
+alias update 'sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade'
 alias install 'sudo apt-get install'
-alias l 'exa --long --header --git'
 alias remove 'sudo apt-get remove --purge'
-alias update 'sudo apt-get update'
-```
 
-## 📦 deb installer
+alias l 'exa --long --header --git'
 
-`gdebi-gtk`
-
-Mô tả `gdebi-gtk` nguyên văn dưới đây.
-
-```txt
-"gdebi  lets  you install local deb packages resolving and installing its dependencies.
-apt does the same,
-but only for remote (http, ftp) located packages.
-```
-
-Đại khái `gdebi` dùng để cài `deb packages` - tương ứng với `.exe` bên `window` hay `.dmg` bên `MacOS`. Nó cũng giống với công cụ `apt` được tích hợp sẵn trong `Ubuntu` chỉ trừ là có giao diện UI và cài `deb packages` đã được tải về máy. Không thì bạn sẽ phải dùng `dpkg` 1 cách manual và phức tạp. Thông tin này tham khảo tại [đây](https://itsfoss.com/install-deb-files-ubuntu/).
-
-Cũng là để tránh `dependency error` mà `default Software Center` có thể gây ra.
-
-Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-software-center/)
-
-## 🎒 Dùng [snap store](https://snapcraft.io/store) thay thế cho `Ubuntu Software` - Ubuntu store
-
-Đi chợ Apps bằng cách lên [snap store](https://snapcraft.io/store) - Linux app store. Search tên app. Ấn nút `install`, thấy hiển thị ra command. Copy command đó và chạy trên terminal.
-
-```bash
-sudo snap install <app-name>
-# list all apps
-snap list
+set --universal fish_greeting
 ```
 
 ## 🌈 exa
