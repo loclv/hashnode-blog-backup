@@ -62,7 +62,24 @@ Trong quá trình cài đặt thì `official Google repository` sẽ được ad
 cat /etc/apt/sources.list.d/google-chrome.list
 ```
 
-Output mong đợi sẽ là dòng `deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main` không bị comment lại (không có `#` đằng trước).
+Output mong đợi sẽ là dòng `deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main` không bị comment lại (không có `#` đằng trước). Nếu không, ta xóa ký tự comment - `#` đó đi:
+
+```sh
+sudo nano /etc/apt/sources.list.d/google-chrome.list
+```
+
+`Ctrl` + `X` để save và chạy lại update:
+
+```sh
+sudo apt update
+```
+
+Output của `update` command sẽ thông báo đã lấy data từ repo URL ví dụ:
+
+```txt
+Get:1 http://dl.google.com/linux/chrome/deb stable InRelease [1.811 B]
+Get:2 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1.100 B] 
+```
 
 ## 🎒 Dùng [snap store](https://snapcraft.io/store) thay thế cho `Ubuntu Software` - Ubuntu store
 
