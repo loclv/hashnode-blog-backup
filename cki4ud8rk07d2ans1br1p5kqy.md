@@ -56,6 +56,14 @@ Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-s
 
 Do `snap store` (sẽ giới thiệu dưới đây) không có `chrome` mà chỉ có `chromium`, nên ta lên [trang chủ Chrome](https://www.google.com/intl/en/chrome/) rồi tải file đuôi `.deb` về để cài với `gdebi-gtk`.
 
+Trong quá trình cài đặt thì `official Google repository` sẽ được add vào danh sách repo mỗi khi update Ubuntu. Để xác nhận:
+
+```sh
+cat /etc/apt/sources.list.d/google-chrome.list
+```
+
+Output mong đợi sẽ là dòng `deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main` không bị comment lại (không có `#` đằng trước).
+
 ## 🎒 Dùng [snap store](https://snapcraft.io/store) thay thế cho `Ubuntu Software` - Ubuntu store
 
 Đi chợ Apps bằng cách lên [snap store](https://snapcraft.io/store) - Linux app store. Search tên app. Ấn nút `install`, thấy hiển thị ra command. Copy command đó và chạy trên terminal.
@@ -266,6 +274,7 @@ Tuy nhiên ở Ubuntu 21.04, sẽ có lỗi: `No such schema "org.gnome.shell.ex
 - [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
 - [askubuntu ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop](https://askubuntu.com/questions/1335398/ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop)
 - [linuxconfig.org/how-to-install-tweak-tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
+- [install-chrome-ubuntu](https://itsfoss.com/install-chrome-ubuntu/)
 
 ---
 
