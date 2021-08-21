@@ -39,23 +39,22 @@ Cũng từ phiên bản này, nếu máy ta dùng là Laptop thì có thêm lự
 
 ![ubuntu-power.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629532529207/2ywbxXvVVC.png)
 
-## 📦 deb installer
-
-`gdebi-gtk`
+## 📦 deb installer - `gdebi-gtk`
 
 Mô tả `gdebi-gtk` nguyên văn dưới đây.
 
-```txt
-"gdebi  lets  you install local deb packages resolving and installing its dependencies.
-apt does the same,
-but only for remote (http, ftp) located packages.
-```
+>gdebi  lets  you install local deb packages resolving and installing its dependencies.
+apt does the same, but only for remote (http, ftp) located packages.
 
 Đại khái `gdebi` dùng để cài `deb packages` - tương ứng với `.exe` bên `window` hay `.dmg` bên `MacOS`. Nó cũng giống với công cụ `apt` được tích hợp sẵn trong `Ubuntu` chỉ trừ là có giao diện UI và cài `deb packages` đã được tải về máy. Không thì bạn sẽ phải dùng `dpkg` 1 cách manual và phức tạp. Thông tin này tham khảo tại [đây](https://itsfoss.com/install-deb-files-ubuntu/).
 
 Cũng là để tránh `dependency error` mà `default Software Center` có thể gây ra.
 
 Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-software-center/)
+
+### Cài Chrome thông qua file đuôi `.deb`
+
+Do `snap store` (sẽ giới thiệu dưới đây) không có `chrome` mà chỉ có `chromium`, nên ta lên [trang chủ Chrome](https://www.google.com/intl/en/chrome/) rồi tải file đuôi `.deb` về để cài với `gdebi-gtk`.
 
 ## 🎒 Dùng [snap store](https://snapcraft.io/store) thay thế cho `Ubuntu Software` - Ubuntu store
 
