@@ -33,6 +33,7 @@ Enable lại các repo này, giúp việc update thông qua command `sudo apt up
 4. vào tab `Other Software`
 5. Enable lại các repo có ghi chú `disabled on upgrade to ${ubuntu-version-name}`
 
+![update-repo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629534955375/sBtTL8u2ay.png)
 
 Cũng từ phiên bản này, nếu máy ta dùng là Laptop thì có thêm lựa chọn mức độ nguồn điện - power dành cho hiệu năng hoặc tiết kiệm điện. Mình chọn tối ưu cho hiệu năng:
 
