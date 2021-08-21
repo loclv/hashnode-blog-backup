@@ -266,6 +266,7 @@ Tuy nhiên ở Ubuntu 21.04, sẽ có lỗi: `No such schema "org.gnome.shell.ex
 - [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
 - [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
 - [askubuntu ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop](https://askubuntu.com/questions/1335398/ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop)
+- [linuxconfig.org/how-to-install-tweak-tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
 
 ---
 
