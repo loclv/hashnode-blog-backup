@@ -2,11 +2,23 @@
 
 Bài viết dành cho những người mới với `Ubuntu` (bản dành cho máy tính cá nhân), thời điểm mới cài Ubuntu xong.
 
-Thời điểm viết bài mình đã thử `ubuntu 20.04` và không gặp vấn đề gì cả.
+Thời điểm viết bài mình đã thử `ubuntu 21.04` và không gặp vấn đề gì cả.
 
 Screenshot:
 
 ![Screenshot from 2021-08-05 18-52-23.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628164537816/JczTdfmds.png)
+
+## Upgrade lên Ubuntu bản mới nhất
+
+```sh
+sudo do-release-upgrade
+```
+
+Sau khi download lượng lớn dữ liệu, cài đặt và restart, việc của ta là loại bỏ những thư viện / app phiên bản cũ:
+
+```sh
+sudo apt --purge autoremove
+```
 
 ## 📓 Editor for coding
 
