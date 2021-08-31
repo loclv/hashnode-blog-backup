@@ -5,10 +5,6 @@ Bài viết dành cho những người mới với `Ubuntu` (bản dành cho má
 Thời điểm viết bài mình đã thử `ubuntu 21.04` và không gặp vấn đề gì cả.
 `ubuntu 21.04` có thư viện đồ họa được nâng cấp và tối ưu khiến tốc độ nhanh hơn, điển hình là khi scroll trong danh sách các App.
 
-Desktop Screenshot:
-
-![Screenshot from 2021-08-05 18-52-23.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628164537816/JczTdfmds.png)
-
 ## Upgrade lên Ubuntu bản mới nhất
 
 ```sh
@@ -222,9 +218,11 @@ Lựa chọn nền web thay thế cho `postman`: [hoppscotch](https://hoppscotch
 
 ## ✏ Bộ gõ tiếng Việt
 
-Tại thời điểm viết bài, thì theo trai nghiệm cảu mình thì bộ gõ [teni-ime/ibus-teni](https://github.com/teni-ime/ibus-teni) là có trải nghiệm tốt nhất với các app. Mặc dù nó đã bị đóng băng trên github (không được update thêm nữa).
+Tại thời điểm viết bài, thì bộ gõ [teni-ime/ibus-teni](https://github.com/teni-ime/ibus-teni) đã bị đóng băng trên github (không được update thêm nữa).
 
-Hãy cần thận tắt bộ gõ tiếng Việt trước khi gõ password trên `terminal` nhé :D Do nó sẽ hiện phần gạch chân (tạm) trên màn hình đó.
+Bạn có thể dùng [IBus Bamboo - Bộ gõ tiếng Việt cho Linux](https://github.com/BambooEngine/ibus-bamboo). Bộ gõ được viết bằng `Golang`.
+
+Hãy cần thận tắt bộ gõ tiếng Việt trước khi gõ password trên `terminal` nhé. Do bộ gõ sẽ hiện phần text bị gạch chân (tạm) trên màn hình và có nguy cơ người bên cạnh nhìn thấy. Như vậy, tính năng nhập pass 1 cách âm thầm không hiển thị cả số lượng ký tự sẽ không còn ý nghĩa trong trường hợp này nữa.
 
 ## ✍️ Font
 
@@ -245,6 +243,8 @@ Font setting: `'Fira Code'`
 Ngoài ra danh sách các kiểu chữ font này đều có tại [github repo](https://github.com/bettergui/BeVietnamPro).
 
 Font setting: `'Be Vietnam Pro'`
+
+![hair](https://media.giphy.com/media/8gUuSM6DgGLtYIBsOK/giphy.gif)
 
 ## 👆 Update
 
