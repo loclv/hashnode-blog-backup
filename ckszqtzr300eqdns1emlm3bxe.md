@@ -1,4 +1,4 @@
-## Bạn yêu TypeScript nhưng đại ca khách hàng lại muốn bạn dùng JavaScript? Enum in JS
+## Bạn yêu TypeScript nhưng đại ca khách hàng lại muốn bạn dùng JavaScript? 🤔 Enum in JS
 
 ## Lợi ích của `Enums`
 
