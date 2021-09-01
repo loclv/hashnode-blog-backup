@@ -1,4 +1,4 @@
-## Alpine based Docker image - dùng `/bin/sh` thay vì phải cài `bash`
+## Alpine based Docker 🐋 image - dùng `/bin/sh` thay vì phải cài `bash`
 
 ## Câu chuyện vào debug bên trong Docker image
 
