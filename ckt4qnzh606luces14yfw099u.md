@@ -88,9 +88,9 @@ Phải đợi bao lâu để `pull request` được review đây?!
 Như vậy tốc độ chạy test cũng rất quan trọng.
 Theo như các bài viết trên mạng như [Make your Angular tests 1000% better by switching from Karma to Jest](https://dev.to/dylanwatsonsoftware/make-your-angular-tests-1000-faster-by-switching-from-karma-to-jest-1n33) thì [Jest](https://jestjs.io/) nhanh hơn.
 Nguyên nhân có thể là `Jest` dùng [jsDOM](https://github.com/jsdom/jsdom) có hiệu năng cao hơn `targeted browser`.
-Tuy có rủi ro khi không dùng `targeted browser` và `jsDOM` không trực quan bằng khi debugging, thì đại đa số dự án có thể dùng `Jest` thay thế được.
+Tuy có rủi ro khi không dùng `targeted browser` và `jsDOM` không trực quan bằng khi debugging, nhưng đại đa số dự án có thể dùng `Jest` thay thế được.
 
-Ngoài ra còn 1 lý do nữa nên dùng `Jest` đó là nó được cộng đồng sử dụng nhiều hơn, dùng được với React, Vue luôn. Ta chỉ mất công học tool cho Unit test 1 lần thôi. Hơn nữa [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) cũng ngon nữa. Để phần sau mình sẽ nói về `eslint` cho Angular.
+Ngoài ra còn 1 lý do nữa nên dùng `Jest` đó là nó được cộng đồng sử dụng nhiều hơn, dùng được với React, Vue, Svelte... luôn. Ta chỉ mất công học tool cho Unit test 1 lần thôi. Hơn nữa [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) cũng ngon nữa. Để phần sau mình sẽ nói về `eslint` cho Angular.
 
 Thay [Karma](https://karma-runner.github.io/latest/index.html) bằng [Jest](https://jestjs.io/) thì nên tham khảo bài [Replace Karma With Jest](https://bjanderson.github.io/replace-karma-with-jest/).
 Còn nếu dự án không có kế hoạch viết Unit test thì ta nên xóa `Karma` + `jasmine` cho gọn.
