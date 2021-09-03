@@ -8,6 +8,8 @@ Những ghi chú mà có thể bạn phải rút kinh nghiệm sâu sắc, vì d
 
 [Angular CLI](https://angular.io/cli) kể từ Angular 12 sẽ defalt bật [strict mode](https://angular.io/guide/strict-mode) nên bạn không cần lo lắng gì với v12 trở lên. Còn nếu trong 1 số ít trường hợp, tạo version < v12 thì mới cần chú ý là phải set thêm tham số cho `strict-mode` thôi.
 
+À nói ngắn gon về cái `strict-mode` thì nó giúp hạn chế lỗi lặt vặt về kiểu do type checking quyết liệt hơn, làm chặt hơn ngay cả ở code bên Template.
+
 Do Angular thường xuyên được update nên cứ cài lại - tương đương với upgrade `CLI` cho chắc cú, mà cũng đỡ phải chạy `ng --version` để kiểm tra phiên bản mới nhất hay không:
 
 ```sh
