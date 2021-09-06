@@ -45,7 +45,12 @@ Nếu dùng charts: [ngx-charts](https://github.com/swimlane/ngx-charts) tương
 
 ## Tính năng đa ngôn ngữ
 
-Nếu dùng đa ngôn ngữ: [transloco](https://ngneat.github.io/transloco/)
+- [transloco](https://ngneat.github.io/transloco/): tính năng chuyển ngôn ngữ không reload lại trang dựa trên HTTP request. Sau khi HTTP request được cache lại lần 2 vào web thì hiệu năng không đáng ngại nữa.
+- [Angular Internationalization (i18n) chính chủ](https://angular.io/guide/i18n): có bao nhiêu ngôn ngữ thì gen ra bấy nhiêu web. Nên đặc thì của nó là lúc build prod lâu hơn.
+
+Mà có 1 lưu ý quan trọng khi dùng `transloco`, dùng chính tiếng Anh làm key cho 1 từ, thì thời gian để translate từ text tiếng Anh sang Nhật (ví dụ ngôn ngữ thứ 2 là Nhật) là có nhé. Nó chỉ mất khoảng mấy % giây thôi (vì đc cache lại), nhưng mà thời điểm khởi tạo thì vẫn là tiếng Anh.
+Nên dự án trước gặp 1 vấn đề là cái tên cột của Grid nó render chỉ đúng size với text tiếng Anh thôi, còn sau đó tiếng Nhật đc hiển thị thì size ko còn đúng nữa.
+Nên theo mình là dùng hàng chính chủ Angular vẫn hơn dùng transloco nếu như không yêu cầu tính năng chuyển ngôn ngữ không reload lại trang.
 
 ## Làm việc với bảng biểu (Grid) tựa Excel
 
