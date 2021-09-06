@@ -1,4 +1,4 @@
-## Resource khi bắt đầu project với Angular 🛡️
+## Resource khi bắt đầu project với Angular 🅰️
 
 ## 🌈 UI Library
 
