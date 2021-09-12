@@ -13,10 +13,15 @@ Sau đó ta phải cài `python3` đã, sau đó cài `pip` và [cfn-lint](https
 ```sh
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
+
 # test
 pip --version
+# if ok, delete unused `get-pip.py`
+rm get-pip.py
+
 # for lint
 pip install cfn-lint
+
 # for graph
 pip install pydot
 ```
