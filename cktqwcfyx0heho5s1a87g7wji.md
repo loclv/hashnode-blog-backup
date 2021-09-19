@@ -1,4 +1,4 @@
-## Cài deno trên Ubuntu 21.04 với fish shell
+## Cài deno trên Ubuntu 21.04 với fish shell 🐟
 
 Khi tiến hành cài đặt [deno](https://deno.land/) cho Ubuntu + [fish shell](https://fishshell.com/), dù đã làm theo hướng dẫn, đó là tải `install.sh` về chạy, tuy nhiên thì khi mở 1 cửa sổ terminal mới mình vẫn chưa dùng được `deno`. Có thể nguyên nhân nằm ở `install.sh` chưa hỗ trợ tốt cho Ubuntu + `fish shell` chăng?
 
