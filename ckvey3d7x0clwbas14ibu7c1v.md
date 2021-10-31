@@ -1,4 +1,4 @@
-## TypeScript - tool tự động tạo interface - type từ JSON viết bằng JS
+## TypeScript - tool tự động tạo interface - type 🌱 từ JSON viết bằng JS
 
 ## Khi nào bạn cần tool tự động?
 
