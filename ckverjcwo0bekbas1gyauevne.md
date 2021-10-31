@@ -92,6 +92,8 @@ yarn start
 yarn prod
 ```
 
+Để ý là ở đây ta sử dụng `yarn`, ngoài ra các bạn có thể sử dụng `npm`, [pnpm](https://pnpm.io/)...
+
 ## Tham khảo
 
 - [tutorial.tips max-http-header-size-in-nodejs](https://tutorial.tips/what-is-the-max-http-header-size-in-nodejs-server/)
