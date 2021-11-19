@@ -1,4 +1,4 @@
-## Golang - Dùng Go Version manager — gobrew
+## Golang 🎽 - Dùng Go Version manager — gobrew
 
 ## Tại sao ta nên dùng Version manager?
 
