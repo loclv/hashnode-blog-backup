@@ -30,7 +30,10 @@ Nếu bạn dùng [fishshell](https://fishshell.com/) thì thêm như sau:
 echo $PATH
 # chưa có GOPATH
 
-set PATH $PATH $HOME/.gobrew/current/bin:$HOME/.gobrew/bin
+nano ~/.config/fish/config.fish
+# thêm dòng dưới đây vào
+set -gx PATH $PATH $HOME/.gobrew/current/bin:$HOME/.gobrew/bin
+# save và đóng editor
 
 echo $PATH
 # đã có GOPATH: .gobrew/bin
