@@ -173,7 +173,7 @@ Như vậy, ta đã xác nhận là đã kết nối thành công tới SFTP ser
 - `d` là directory
 - `false` là không tồn tại
 
-Phần 2 mình sẽ thử việc download và upload file.
+[Phần 2](https://loclv.hashnode.dev/nodejs-typescript-ssh2-sftp-client-package-phan-2-fast-download-upload) mình sẽ thử việc download và upload file.
 
 ---
 
