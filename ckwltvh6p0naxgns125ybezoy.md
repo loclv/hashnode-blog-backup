@@ -84,10 +84,13 @@ Nếu bạn chưa có ngay path của file/folder ngay từ đầu, mà cần x�
 
 Nhắc lại phần 1 thì ta đã chuẩn bị 1 file test.json với nội dung như sau:
 
-````json
+```json
 {
   "content": "this is my testing content"
 }
+```
+
+Cách sử dụng cơ bản:
 
 ```ts
 const localFolderPath = './down';
