@@ -16,7 +16,7 @@ const getRandomMember = () => {
 }
 const checkingTimes = 1e7;
 
-let t1 = performance.now();
+const t1 = performance.now();
 console.log('🍀 Start includes');
 
 for (let i = 0; i < checkingTimes; i++) {
@@ -26,7 +26,7 @@ for (let i = 0; i < checkingTimes; i++) {
   const isIn = allElements.includes(randEl);
 }
 
-let t2 = performance.now();
+const t2 = performance.now();
 console.log('🍒 Start indexOf');
 
 for (let i = 0; i < checkingTimes; i++) {
@@ -36,7 +36,7 @@ for (let i = 0; i < checkingTimes; i++) {
   const isIn = (allElements.indexOf(randEl) > -1);
 }
 
-let t3 = performance.now();
+const t3 = performance.now();
 console.log('End');
 
 const includesTime = t2 - t1;
