@@ -91,7 +91,7 @@ snap list
 
 [vscode](https://code.visualstudio.com/):
 
-Update 04/01/2021: theo issue [này](https://github.com/BambooEngine/ibus-bamboo/issues/49) thì các tool gõ tiếng Việt sẽ không hoạt động nếu cài bằng snap như dưới đây. Thế nên, ta down file .deb tại [trang chủ](https://code.visualstudio.com/download) rồi cài bằng deb installer - `gdebi-gtk` thì sẽ gõ được tiếng Việt. Ngược lại nếu bạn không muốn gõ tiếng Việt khi đang bật chế độ gõ tiếng Việt thì lại dùng snap. 😅
+Update 04/01/2021: theo issue [này](https://github.com/BambooEngine/ibus-bamboo/issues/49) thì các tool gõ tiếng Việt sẽ không hoạt động với vscode nếu cài bằng snap như dưới đây. Thế nên, ta down file .deb tại [trang chủ](https://code.visualstudio.com/download) rồi cài bằng deb installer - `gdebi-gtk` thì sẽ gõ được tiếng Việt. Ngược lại nếu bạn không muốn gõ tiếng Việt khi đang bật chế độ gõ tiếng Việt thì lại dùng snap. 😅
 
 ```sh
 sudo snap install code
