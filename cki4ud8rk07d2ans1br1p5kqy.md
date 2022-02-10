@@ -138,7 +138,7 @@ plugins: [
 Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì thư mục `HOME`.
 Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào.
 
-- [tabby](https://tabby.sh/)
+- [tabby](https://tabby.sh/) - Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
 
 ### Command-line shell
 
