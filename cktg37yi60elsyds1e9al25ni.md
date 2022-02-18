@@ -26,6 +26,12 @@ pip install cfn-lint
 pip install pydot
 ```
 
+Đối với môi trường Ubuntu, mình đã thử cài và gặp vấn đề PIP package không tự động được thêm vào PATH nên trên vscode - file yaml vẫn hiển thị cảnh báo không tìm thấy `cfn-lint`. Đối với trường hợp này, có nhiều cách thêm `cfn-lint` vào PATH nhưng cách đơn giản nhất là dùng `sudo`:
+
+```sh
+sudo pip install cfn-lint
+```
+
 Vậy là ta có thể dựa vào `cfn-lint` để đọc và hiển thị các vấn đề về file template.
 
 Còn 1 tính năng rất hay ho đó là render sơ đồ khối cấu trúc AWS mà CloudFormation này đang mô tả, thật sự hữu ích khi debug và rất trực quan. Để sử dụng ta cài `pip install pydot` như trên và:
@@ -80,6 +86,8 @@ Vậy là ta đã có đủ bộ linter - check chính tả, review, gõ tắt c
 ## Tham khảo
 
 - [stackoverflow - AWS SAM YAML template - Unknown Tag !Ref](https://stackoverflow.com/questions/53470329/aws-sam-yaml-template-unknown-tag-ref)
+
+- [stackoverflow - Adding installed PIP package to path automatically](https://stackoverflow.com/questions/36092388/adding-installed-pip-package-to-path-automatically)
 
 ---
 
