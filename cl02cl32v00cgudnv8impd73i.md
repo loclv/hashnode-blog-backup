@@ -54,7 +54,7 @@ Dưới đây là output từ local của mình:
 
 `process.argv` giúp truyền mảng giá trị từ command-line dưới dạng string.
 
-## Cách lấy mảng các giá trị khi người dùng gõ command-line không theo 1 thứ tự nhất định
+## Cách lấy mảng các giá trị khi người dùng gõ command-line argument không theo 1 thứ tự nhất định
 
 Để các value này đúng thứ tự ta có thể áp dụng nguyên tắc đánh dấu value của rất nhiều CLI khi sử dụng options.
 
