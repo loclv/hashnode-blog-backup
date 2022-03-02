@@ -1,7 +1,5 @@
 ## NodeJs - Hiểu rõ hơn về process.argv 🍾 và ứng dụng
 
-# NodeJs - Hiểu rõ hơn về process.argv và ứng dụng
-
 Để hiểu rõ về nó thì tốt nhất là ta nên *chạy ngay đi*!
 
 ## Chạy ngay đi
