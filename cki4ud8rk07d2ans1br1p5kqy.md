@@ -140,6 +140,10 @@ Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào
 
 - [tabby](https://tabby.sh/) - Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
 
+Ảnh UI của tabby:
+
+![Screenshot from 2022-03-15 16-41-32.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1647357703712/OSMZIfgpxx.png)
+
 ### Command-line shell
 
 [fish shell](https://fishshell.com/) + [Oh my fish](https://github.com/oh-my-fish/oh-my-fish) - quản lý packages dành cho `fish shell`.
