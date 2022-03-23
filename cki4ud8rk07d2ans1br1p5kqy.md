@@ -163,7 +163,7 @@ alias update 'sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgra
 alias install 'sudo apt-get install'
 alias remove 'sudo apt-get remove --purge'
 
-alias l 'exa --long --header --git'
+alias l 'exa --long --header'
 
 set --universal fish_greeting
 ```
@@ -176,13 +176,14 @@ set --universal fish_greeting
 
 ```sh
 sudo apt install exa
-exa --long --header --git
+exa --long --header
 ```
 
 Tạo alias cho `exa` thông qua `fish sheel` (ở đây mình để alias là duy nhất chữ e-lờ -`l`):
 
 ```sh
-alias l "exa --long --header --git"
+alias l "exa --long --header"
+# test alias
 l
 ```
 
