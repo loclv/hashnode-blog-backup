@@ -67,3 +67,31 @@ Nó chưa được đăng ký tức là có thể thuộc project cũ.
 Nhờ câu này ta cũng chắc chắn hơn về cách xử lý những token thế này.
 
 ![delete it!](https://media.giphy.com/media/WV4IUUYJmaSLkN26mx/giphy.gif)
+
+## `messaging/internal-error`
+
+Hiếm khi gặp lỗi *nội bộ* như thế này, tuy nhiên nếu có thì ta nên xử lý retry nhiều lần. Nếu vẫn gặp lỗi tương tự đối với token nhât định thì cũng nên xóa vì không dùng được token. Tham khảo thêm tại [đây - firebase-messaging-fails-sporadically-with-internal-error](https://stackoverflow.com/questions/63382257/firebase-messaging-fails-sporadically-with-internal-error).
+
+## Delete it
+
+Ví dụ về cách xử lý `err.code`:
+
+```ts
+const notRegisteredTokenErrCode = 'messaging/registration-token-not-registered';
+const mismatchedCredentialErrCode = 'messaging/mismatched-credential';
+
+try {
+  const res = await firebaseAdmin.messaging().send(message);
+  console.log(`Push notification success, result: ${res}, token: ${token}!`);
+} catch (err: any) {
+  console.log(`Token: ${token}, err.code: ${err.code}, err.message: ${err.message}.`);
+
+  if (err.code === notRegisteredTokenErrCode || err.code === mismatchedCredentialErrCode) {
+    console.log(`Push notification failed, delete token!`);
+
+    await deleteToken(token);
+  } else {
+    console.log(`Push notification failed! Do nothing!`);
+  }
+}
+```
