@@ -44,6 +44,9 @@ fnm use v14.19.1
 # check current version
 node -v
 # v14.19.1
+
+# Set a version as the default version
+fnm default v14.19.1
 ```
 
 ### Môi trường cloud
