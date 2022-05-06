@@ -63,7 +63,7 @@ printWidth: 80
 
 ### import từ 1 object thay vì 1 file json
 
-Như ví dụ ở README.md của [json-to-ts](https://github.com/MariusAlch/json-to-ts), ta có thể dùng 1 object thay vì import từ 1 file json.
+Như ví dụ ở `README.md` của [json-to-ts](https://github.com/MariusAlch/json-to-ts), ta có thể dùng 1 object thay vì import từ 1 file json.
 Thực ra thì khi import từ 1 file json, ta đã phải chuyển nó sang object rồi.
 
 ```js
