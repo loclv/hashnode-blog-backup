@@ -1,6 +1,6 @@
 ## Run TypeScript file globally 🌠 with ts-node
 
-# Run TypeScript file globally with ts-node
+*Run Globally* mean we can run `ts-node` command everywhere without *package.json*.
 
 ## Globally install `ts-node`
 
