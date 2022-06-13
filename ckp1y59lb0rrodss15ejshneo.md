@@ -16,9 +16,9 @@ npm install -g @stoplight/prism-cli
 prism mock ./media/api_docs/swagger.yaml
 ```
 
-## 📓 swagger editor
+### 📓 swagger editor
 
-Cho [vscode](https://code.visualstudio.com/) thì sử dụng [extention này](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer).
+Với [vscode](https://code.visualstudio.com/) thì sử dụng [extention swagger-viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer) giúp mình tiện view swagger hay validte source-code của swagger.
 
 ## 🎶 Thêm examples cho swagger
 
@@ -50,13 +50,13 @@ Ví dụ set `Prefer` header `example=short-list`, với `short-list` là exampl
 
 ![modheader](https://cdn.hashnode.com/res/hashnode/image/upload/v1621820179271/DPRcKSL0c.png)
 
-### Dùng API testing client
+### Dùng API testing client để kiểm thử xem có đúng kết quả trả về theo như example đã định nghĩa hay không
 
-Ví dụ dùng vscode extention:
+Ví dụ dùng vscode extention - [thunder-client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client):
 
 ![Screenshot from 2021-06-02 11-28-25.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1622608339558/sYTE8ROwp.png)
 
-Dùng Open source API development: [hoppscotch.io](https://hoppscotch.io/).
+Hay dùng Open source API development tool - 1 API client - [hoppscotch.io](https://hoppscotch.io/) để xác nhận lại response.
 
 ---
 
