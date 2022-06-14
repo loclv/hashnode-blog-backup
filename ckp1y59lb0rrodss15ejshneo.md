@@ -57,7 +57,3 @@ Ví dụ dùng vscode extention - [thunder-client](https://marketplace.visualstu
 ![Screenshot from 2021-06-02 11-28-25.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1622608339558/sYTE8ROwp.png)
 
 Hay dùng Open source API development tool - 1 API client - [hoppscotch.io](https://hoppscotch.io/) để xác nhận lại response.
-
----
-
-Photo by <a href="https://unsplash.com/@katetrysh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kate Trysh</a> on <a href="https://unsplash.com/s/photos/mock-api?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
