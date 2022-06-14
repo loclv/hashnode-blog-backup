@@ -2,7 +2,7 @@
 
 Tóm tắt:
 
-1. Thêm nhiều examples theo hướng dẫn ở [swagger docs](https://swagger.io/docs/specification/adding-examples/).
+1. Thêm nhiều examples theo hướng dẫn ở [swagger docs](https://swagger.io/docs/specification/adding-examples/) và [@stoplight/prism-cli - response-examples](https://meta.stoplight.io/docs/prism/83dbbd75532cf-http-mocking#response-examples).
 2. [response-examples](https://meta.stoplight.io/docs/prism/docs/guides/01-mocking.md#response-examples).
 3. Dùng [modheader](https://bewisse.com/modheader/) để custom header request gửi lên từ trình duyệt. Ví dụ call URL với `Prefer` header `example=dog`.
 4. Nhận về đúng example mà mình đã mô tả trong `modheader`.
