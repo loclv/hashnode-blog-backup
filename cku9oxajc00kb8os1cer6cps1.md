@@ -257,6 +257,14 @@ Ta sử dụng `@typescript-eslint`:
             "types": ["boolean"],
             "format": ["PascalCase"],
             "prefix": ["is", "should", "has", "can", "did", "will"]
+          },
+          {
+            "selector": "enum",
+            "format": ["PascalCase"]
+          },
+          {
+            "selector": "enumMember",
+            "format": ["PascalCase"]
           }
         ]
 ```
