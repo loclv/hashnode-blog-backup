@@ -2,7 +2,7 @@
 
 ## 🧐 Dùng như thế nào
 
-Trong 1 `class`, `type` hoặc `interface`, nếu 1 thuộc tính không bao giờ thay đổi thì ta có thể sử dụng.
+Trong 1 `class`, `type` hoặc `interface`, nếu 1 thuộc tính không bao giờ thay đổi thì ta có thể sử dụng `readonly`.
 
 Khi 1 thuộc tính được đinh nghĩa là `readonly` và được gán lại bằng 1 giá trị khác thì ngay tại bước coding,
 thì Compiler của TypeScript sẽ báo lỗi `không thể gán giá trị mới cho thuộc tính này`.
