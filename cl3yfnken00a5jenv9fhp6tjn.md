@@ -6,6 +6,9 @@
 
 ```sh
 pnpm install -g typescript ts-node tslib @types/node
+
+# verify
+ts-node -v
 ```
 
 - [tslib](https://github.com/Microsoft/tslib) is a runtime library for TypeScript that contains all of the TypeScript helper functions.
