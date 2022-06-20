@@ -12,9 +12,9 @@ Các rule này thuộc loại code dễ gây bug.
 
 `never` là 1 type không tồn tại trong JavaScript.
 
-`never` hay _kiểu không bao giờ_, được định nghĩa là kiểu trả về khi mà bạn chắc chắn là không thể trả về được 1 giá trị nào đó do vòng lặp vô hạn.
+`never` hay _kiểu không bao giờ_, được định nghĩa là kiểu trả về khi mà bạn chắc chắn là không thể trả về được 1 giá trị nào đó do vòng lặp vô hạn hay chủ động dừng, không thực hiện tiếp.
 
-Ví dụ 1 function không thực hiện được hết, hay function đó luôn trả về 1 exception - ngoại lệ:
+Ví dụ 1 function không thực hiện được hết, hay function đó luôn bị dừng do throw 1 exception - ngoại lệ:
 
 ```ts
 function throwError(errorMsg: string): never {
