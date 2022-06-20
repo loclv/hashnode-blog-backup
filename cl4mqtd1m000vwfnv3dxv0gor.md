@@ -34,3 +34,9 @@ let nothing: never = null; // Error: Type 'null' is not assignable to type 'neve
 ```
 
 Kiểu `void` thì gán được nếu giá trị đó là `null`, còn `never` thì không. Bởi vì trả về `null` thì bản chất là vẫn trả về được 1 giá trị đó là `null`.
+
+---
+
+Tham khảo:
+
+- [tutorialsteacher typescript-never](https://www.tutorialsteacher.com/typescript/typescript-never)
