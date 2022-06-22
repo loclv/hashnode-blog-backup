@@ -1,4 +1,4 @@
-## TypeScript - Data Type - Never
+## TypeScript - Data Type - Never 🚫
 
 ## Data Type - `Never` trong TypeScript
 
