@@ -46,6 +46,8 @@ yarn lint
 npm run lint
 ```
 
+Ngoài ra còn có thể dùng thêm [eslint-plugin-rxjs](https://github.com/cartant/eslint-plugin-rxjs).
+
 ### Linting HTML files và inline-templates với VSCode extension
 
 Trước hết `inline-templates` là kiểu viết template bên trong `.ts` code.
