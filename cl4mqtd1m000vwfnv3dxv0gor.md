@@ -24,9 +24,7 @@ const keepProcessing = (): never => {
 
 `throwError` và `while (true)` sẽ ngăn function thực hiện xong, thế nên nó tất nhiên không bao giờ có thể return void. Và kiểu function này, ta có thể đặt kiểu trả về là `never`.
 
-Nếu bạn code nhiều TypeScript thì sẽ quen mặt thằng `never` này ở thông báo lỗi khi build project.
-
-Dưới đây là 1 thuộc tính đặc thù của `never`:
+Dưới đây là 1 ví dụ khác của `never`:
 
 ```ts
 let something: void = null;
@@ -35,8 +33,38 @@ let nothing: never = null; // Error: Type 'null' is not assignable to type 'neve
 
 Kiểu `void` thì gán được nếu giá trị đó là `null`, còn `never` thì không. Bởi vì trả về `null` thì bản chất là vẫn trả về được 1 giá trị đó là `null`.
 
+## Ứng dụng
+
+### Hữu dụng khi báo lỗi
+
+Nếu bạn code nhiều TypeScript thì sẽ quen mặt thằng `never` này ở thông báo lỗi khi build project. Bởi lẽ `never` thường đi kèm với việc có gì đó đang không thể return được.
+
+### Sử dụng với Generic types
+
+Khi muốn tạo ra 1 [generic types](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-types) với input type bất kỳ _ngoại trừ_ 1 số types nào đó thì ta có thể viết như sau:
+
+```ts
+type TNonNullable<T> = T extends null | undefined ? never : T;
+
+// 🚫 error: Type 'undefined' is not assignable to type 'never'.
+const value: TNonNullable<undefined> = undefined;
+console.log('🚀 ~ value', value);
+
+// ---
+// another example:
+type TNotANumber<T> = T extends number ? never : T;
+
+// 🚫 error: Type 'number' is not assignable to type 'never'.
+const notANumberValue: TNotANumber<number> = 1;
+console.log('🚀 ~ notANumberValue', notANumberValue);
+```
+
+`TNonNullable` sẽ không chấp nhận `null | undefined` và `TNotANumber` cũng không chấp nhận 1 number type.
+
 ---
 
 Tham khảo:
 
 - [tutorialsteacher typescript-never](https://www.tutorialsteacher.com/typescript/typescript-never)
+
+- [stackoverflow - understanding-the-never-type-in-typescript](https://stackoverflow.com/questions/40225384/understanding-the-never-type-in-typescript-2)
