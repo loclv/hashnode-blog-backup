@@ -59,7 +59,8 @@ const notANumberValue: TNotANumber<number> = 1;
 console.log('🚀 ~ notANumberValue', notANumberValue);
 ```
 
-`TNonNullable` sẽ không chấp nhận `null | undefined` và `TNotANumber` cũng không chấp nhận 1 number type.
+- `TNonNullable` sẽ không chấp nhận `null | undefined`.
+- `TNotANumber` cũng không chấp nhận 1 number type.
 
 ---
 
