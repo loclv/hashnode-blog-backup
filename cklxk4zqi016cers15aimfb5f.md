@@ -1,4 +1,4 @@
-## Tại sao chip M1 của Apple lại nhanh đến vậy? Giải thích ngắn gọn
+## Tại sao chip M1 của Apple 🍏 lại nhanh đến vậy? Giải thích ngắn gọn
 
 Với review của hàng nghìn Youtuber về hiệu năng của Apple M1, chắc bạn cũng phải tự hỏi Tại sao chip M1 của Apple lại nhanh đến vậy?
 
