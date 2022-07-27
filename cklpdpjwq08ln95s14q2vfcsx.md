@@ -44,7 +44,10 @@ My `.stylelintrc.json`:
     "no-eol-whitespace": true,
     "property-no-unknown": true,
     "block-no-empty": true,
-    "selector-pseudo-class-no-unknown": true
+    "selector-pseudo-class-no-unknown": true,
+    "no-duplicate-selectors": true,
+    "keyframe-block-no-duplicate-selectors": true,
+    "declaration-block-no-duplicate-custom-properties": true
   }
 }
 ```
@@ -76,7 +79,10 @@ Shorter is easier to coding, but i don't like to see `short` color in same colum
     "property-no-unknown": true,
     "block-no-empty": true,
     "selector-pseudo-class-no-unknown": true,
-    "value-keyword-case": "lower"
+    "value-keyword-case": "lower",
+    "no-duplicate-selectors": true,
+    "keyframe-block-no-duplicate-selectors": true,
+    "declaration-block-no-duplicate-custom-properties": true
   }
 ```
 
