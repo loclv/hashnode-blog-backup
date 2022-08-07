@@ -88,10 +88,23 @@ Các interface cần chuyên biệt hóa và được chia nhỏ ra để dễ q
 
 mind-map 🍁:
 
-Root: Sự trừu tượng sử dụng Abstract classes và interfaces
+Root: Phụ thuộc vào sự trừu tượng - abstraction
+
+-> Sự trừu tượng sử dụng Abstract classes và interfaces
 
 -> cần sử dụng đúng và đủ 1 interface khi mô tả 1 sự phụ thuộc của Dependency inversion principle.
 
 -> cần chia nhỏ interface
 
 -> phân tách interface - Interface segregation principle.
+
+## Full mind-map
+
+Created by [miro](miro.com):
+
+![solid-1.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1659874887880/H4PvgwoHe.png align="left")
+
+
+![solid-2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1659874908191/FYKgnzMNS.png align="left")
+
+![solid-3.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1659874923413/eLFfWxkX4.png align="left")
