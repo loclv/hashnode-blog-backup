@@ -68,7 +68,9 @@ High-level classes không nên phụ thuộc - dependency vào các thành phầ
 
 mind-map 🍁:
 
-Root: Khi sự kế thừa không hiệu quả bằng sự vay mượn từ các class khác
+Root: Sự "mở rộng" - extension hay kế thừa
+
+-> Khi sự kế thừa không hiệu quả bằng sự vay mượn từ các class khác
 
 -> class này dùng đến tính năng của các class khác
 
