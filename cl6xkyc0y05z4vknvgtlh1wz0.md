@@ -2,7 +2,7 @@
 
 ## What is 3-way merge editor look like?
 
-When you click on **Source control** button on side menu and _merge changes_ file, you should see 3-way merge editor.
+When you meet a conflict, click on **Source control** button on side menu and _merge changes_ file, you should see 3-way merge editor.
 
 ![Screenshot from 2022-08-17 18-50-19.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1660737081044/HXC3unEct.png align="left")
 
