@@ -11,7 +11,7 @@ For example, in `ExampleService`:
 @Injectable({ providedIn: 'root' })
 export default class ExampleService {
   /**
-   * Gets last component is used.
+   * Gets last component.
    */
   get lastComponent(): Type<any> | undefined {
     // TODO: do something
@@ -44,7 +44,7 @@ Use [generic class](https://www.typescriptlang.org/docs/handbook/2/generics.html
 @Injectable({ providedIn: 'root' })
 export default class ExampleService<TLastComponent> {
   /**
-   * Gets last component is used.
+   * Gets last component.
    */
   get lastComponent(): TLastComponent | undefined {
     // TODO: do something
