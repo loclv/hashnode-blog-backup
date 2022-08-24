@@ -8,6 +8,8 @@ Basiclly, we want to reuse a logic inside `Service` with type-checking at outsid
 For example, in `ExampleService`:
 
 ```ts
+import { Type } from '@angular/core';
+
 @Injectable({ providedIn: 'root' })
 export default class ExampleService {
   /**
@@ -27,7 +29,7 @@ export class TheNextComponent {
     if (!this.exampleService.lastComponent) return;
 
     // when you hover on `this.exampleService.lastComponent` by mouse,
-    // `TheBlueComponent` is showed up.
+    // `Type<any>` is showed up.
     console.log(this.exampleService.lastComponent);
   }
 }
@@ -53,7 +55,7 @@ export default class ExampleService<TLastComponent> {
 }
 ```
 
-And when inject it into component:
+And when inject it into component, we surely know what component is `lastComponent`:
 
 ```ts
 export class TheNextComponent {
