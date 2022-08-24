@@ -59,7 +59,9 @@ And when inject it into component, we surely know what component is `lastCompone
 
 ```ts
 export class TheNextComponent {
-  constructor(private exampleService: ExampleService<TheBlueComponent>) {}
+  constructor(
+    private exampleService: ExampleService<TheBlueComponent>
+  ) {}
 
   doSomethings() {
     if (!this.exampleService.lastComponent) return;
