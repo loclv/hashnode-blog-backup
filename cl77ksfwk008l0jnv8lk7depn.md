@@ -75,3 +75,11 @@ export class TheNextComponent {
   }
 }
 ```
+
+### Question?
+
+If another component is also injected by `ExampleService` (same instance above) but not `TheBlueComponent`,
+does that affect [dependency injection
+](https://angular.io/guide/dependency-injection)?
+
+No, that is only affect type-checking by TypeScript only.
