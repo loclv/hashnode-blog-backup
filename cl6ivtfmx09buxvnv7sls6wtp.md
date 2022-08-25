@@ -82,7 +82,7 @@ Root: Sự "mở rộng" - extension hay kế thừa
 
 -> Dependency inversion principle.
 
-### Interface segregation principle - nguyên tắc phân tách interface
+### 5 - Interface segregation principle - nguyên tắc phân tách interface
 
 Các interface cần chuyên biệt hóa và được chia nhỏ ra để dễ quản lý. Hay các nhóm class cần được chia nhỏ. Các nhóm class này ta có thể hiểu là 1 interface - sự trừu tượng - abstraction. Việc phân nhóm tương đương với việc implements 1 interface.
 
@@ -98,12 +98,11 @@ Root: Phụ thuộc vào sự trừu tượng - abstraction
 
 -> phân tách interface - Interface segregation principle.
 
-## Full mind-map
+## Full mind-map 🍁
 
 Created by [miro](miro.com):
 
 ![solid-1.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1659874887880/H4PvgwoHe.png align="left")
-
 
 ![solid-2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1659874908191/FYKgnzMNS.png align="left")
 
