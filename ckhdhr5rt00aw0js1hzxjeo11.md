@@ -2,6 +2,8 @@
 
 Editor ở đây chúng ta hướng tới là [vscode](https://code.visualstudio.com/) hoặc `vscode-insiders` hoặc [vscodium](https://vscodium.com/).
 
+![Screenshot from 2022-08-25 09-13-15.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1661393629780/e6dAngXZu.png align="left")
+
 ## 🤖 Code Linter - refactor - formatter
 
 ### 🌈 [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -222,7 +224,9 @@ Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry ab
 
 Nếu các bạn lười install hay quản lý đống extentions riêng cho Angular, bạn có thể dùng cái này. Hay tìm hiểu thêm extentions khác hữu ích mà mình chưa biết.
 
-## Other `settings.json`
+## Other `settings.json` and extentions
+
+### Settings
 
 Để mở `settings.json` thì ta ấn: `Ctrl` + `Shift` + `P` -> gõ `settings` -> tìm lựa chọn `settings bằng JSON`.
 
@@ -241,6 +245,9 @@ Nếu máy bạn đang cài `Fira Code` font thì setting:
     "editor.fontWeight": "300",
 ```
 
----
+### Other extentions
 
-Ngoài ra còn các extentions cơ bản khác mà dùng chung cho nhiều ngôn ngữ hay Framework là mình chưa cho vào đây. Mình sẽ update về các extentions đó vào bài viết khác.
+- [Browserslist syntax highlight](https://marketplace.visualstudio.com/items?itemName=webben.browserslist)
+- [ErrorLens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens): hiển thị ngay error và warning với highlighting không cần hover bằng chuột.
+- [Mintlify Doc Writer for Python, JavaScript, TypeScript, C++, PHP, Java, C#, Ruby & more](https://marketplace.visualstudio.com/items?itemName=mintlify.document): tự gen ra jsdoc  dựa trên source-code.
+- [export-typescript](https://marketplace.visualstudio.com/items?itemName=mscolnick.export-typescript)
