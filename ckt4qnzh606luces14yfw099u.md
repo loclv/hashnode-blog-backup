@@ -78,6 +78,23 @@ Trong nhiều trường hợp `ng update` không thực sự update các depende
 pnpm up
 ```
 
+## Dùng cache khi build
+
+Set option này khi build để Angular CLI tự động tạo ra thư mục `.cache` nằm trong thư mục `node_modules`. Đây là cách set dựa vào _package.json_:
+
+```json
+{
+  "scripts": {
+    "start": "NG_PERSISTENT_BUILD_CACHE=1 ng serve",
+    "build": "NG_PERSISTENT_BUILD_CACHE=1 ng build",
+  }
+}
+```
+
+Tham khảo:
+
+- [Make Your Build Faster in Angular v12](https://netbasal.com/make-your-build-faster-in-angular-v12-ca041b37946e)
+
 ## Unit Test
 
 Mặc định, [Karma](https://karma-runner.github.io/latest/index.html) + `jasmine` sẽ được cài đặt vào phần `devDependencies` của `package.json`.
