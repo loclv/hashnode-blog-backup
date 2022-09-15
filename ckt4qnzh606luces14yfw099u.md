@@ -91,6 +91,16 @@ Set option này khi build để Angular CLI tự động tạo ra thư mục `.c
 }
 ```
 
+Đối với Windows thì:
+
+```json
+{
+  "scripts": {
+    "start-w": "set NG_PERSISTENT_BUILD_CACHE=1 && ng build",
+  }
+}
+```
+
 Tham khảo:
 
 - [Make Your Build Faster in Angular v12](https://netbasal.com/make-your-build-faster-in-angular-v12-ca041b37946e)
