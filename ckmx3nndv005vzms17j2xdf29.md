@@ -37,18 +37,34 @@ const folderTree = [
   {
     folderId: 1,
     folderParentId: 0,
-    name: "root",
+    name: 'root',
+
     children: [
-      { folderId: 2, folderParentId: 1, name: "A", children: [] },
+      {
+        folderId: 2,
+        folderParentId: 1,
+        name: 'A',
+
+        children: [],
+      },
       {
         folderId: 3,
         folderParentId: 1,
-        name: "B",
-        children: [{ folderId: 4, folderParentId: 3, name: "C", children: [] }]
-      }
-    ]
-  }
+        name: 'B',
+
+        children: [
+          {
+            folderId: 4,
+            folderParentId: 3,
+            name: 'C',
+            children: [],
+          },
+        ],
+      },
+    ],
+  },
 ];
+
 ```
 
 ## Tree model for type checking
@@ -72,7 +88,10 @@ import { TTree } from '@model';
  *
  * @param list - a flat list
  * @param params - `{ id, parentId }`: id name and parentId name
- * @example `arrayToTree<IFolder>(folderArr, { id: 'folderId', parentId: 'folderParentId' });`
+ *
+ * @example `arrayToTree<IFolder>(
+ *   folderArr, { id: 'folderId', parentId: 'folderParentId' });`
+ *
  * @returns `TTree`
  */
 export const arrayToTree = <T>(
