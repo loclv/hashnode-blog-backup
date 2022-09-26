@@ -156,12 +156,15 @@ alias gs='git status'
 alias ga='git add .'
 alias gd='git diff'
 alias gp='git push'
+alias gpick='git cherry-pick'
 
 alias cf 'code ~/.config/fish/config.fish'
 
 alias update 'sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade'
 alias install 'sudo apt-get install'
 alias remove 'sudo apt-get remove --purge'
+alias clean 'sudo apt autoremove && sudo apt autoclean -y'
+alias c 'clear'
 
 alias l 'exa --long --header'
 
