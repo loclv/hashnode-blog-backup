@@ -206,7 +206,9 @@ Nên tải trực tiếp ở [đây](https://linux.wps.com/) và cài file đã 
 
 ## 📂 launcher
 
-<https://ulauncher.io/>
+[ulauncher.io](https://ulauncher.io)
+
+![demo.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1664266594882/1aCBM00QN.gif align="left")
 
 Vấn đề là công cụ search app trên Ubuntu hơi kém, search không đúng kết qủa mong muốn.
 
