@@ -162,7 +162,7 @@ alias gpick='git cherry-pick'
 
 alias cf 'code ~/.config/fish/config.fish'
 
-alias update 'sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade'
+alias update 'sudo snap refresh && sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade'
 alias install 'sudo apt-get install'
 alias remove 'sudo apt-get remove --purge'
 alias clean 'sudo apt autoremove && sudo apt autoclean -y'
@@ -262,10 +262,16 @@ Font setting: `'Be Vietnam Pro'`
 
 ## 👆 Update
 
-Thường xuyên chạy update, nhiều khi thấy cũng chẳng khác gì nhưng mà nghiện mất rồi :v
+Thường xuyên chạy update các package mới nhất để tăng tính bảo mật:
 
 ```sh
 sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade
+```
+
+Đối với `snap` thì đôi khi cũng không tự động update được do ứng dụng cần update lúc nào cũng được mở. Để manual update ta dùng:
+
+```sh
+sudo snap refresh
 ```
 
 ## Thêm Repositories cho software & update
