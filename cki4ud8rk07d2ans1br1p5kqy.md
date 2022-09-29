@@ -31,6 +31,8 @@ Enable lại các repo này, giúp việc update thông qua command `sudo apt up
 
 ![update-repo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629534955375/sBtTL8u2ay.png)
 
+## Power mode
+
 Cũng từ phiên bản này, nếu máy ta dùng là Laptop thì có thêm lựa chọn mức độ nguồn điện - power dành cho hiệu năng hoặc tiết kiệm điện. Mình chọn tối ưu cho hiệu năng:
 
 ![ubuntu-power.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629532529207/2ywbxXvVVC.png)
