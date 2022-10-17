@@ -1,4 +1,4 @@
-## 🐧 Tools cho Ubuntu sau khi mới cài
+# 🐧 Tools cho Ubuntu sau khi mới cài
 
 Bài viết dành cho những người mới với `Ubuntu` (bản dành cho máy tính cá nhân), thời điểm mới cài Ubuntu xong.
 
@@ -259,6 +259,17 @@ Ngoài ra danh sách các kiểu chữ font này đều có tại [github repo](
 Font setting: `'Be Vietnam Pro'`
 
 ![hair](https://media.giphy.com/media/8gUuSM6DgGLtYIBsOK/giphy.gif)
+
+## Nếu không thấy emoji hiển thị đúng
+
+Nếu không thấy emoji hiển thị đúng - các ký tự hình chữ nhật thì có lẽ bạn đang gặp cùng vấn đề với bài viết [Emojis Missing from Chrome in Ubuntu](https://medium.com/@harshmaur/emojis-missing-from-chrome-in-ubuntu-9c25fe10867c).
+
+Tóm tắt là xóa đi cài lại `fonts-noto-color-emoji`.
+
+```bash
+sudo apt-get remove fonts-noto-color-emoji
+sudo apt-get install fonts-noto-color-emoji
+```
 
 ## 👆 Update
 
