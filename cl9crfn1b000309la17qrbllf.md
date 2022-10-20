@@ -4,7 +4,16 @@
 
 [dbdiagram.io](https://dbdiagram.io/home) is a free, simple tool to draw ER diagrams by just writing code in a file.
 
+![dbdiagram-demo.0791273.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1666256321965/xi2-h9-2N.gif align="left")
+
 And `.dbml` is the format of that file.
+
+### Why i use `dbml`?
+
+- Good-looking DB tables design.
+- Visual relationship.
+- Code to draw instead of drag and drop.
+- Can export to SQL.
 
 ## Prepare
 
