@@ -1,5 +1,11 @@
 # Convert between SQL file and DBML formats file
 
+## Introduce
+
+[dbdiagram.io](https://dbdiagram.io/home) is a free, simple tool to draw ER diagrams by just writing code in a file.
+
+And `.dbml` is the format of that file.
+
 ## Prepare
 
 ```bash
