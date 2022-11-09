@@ -1,6 +1,6 @@
-## TypeScript - Viết doc comments cơ bản và eslint cho doc 📖
+# TypeScript - Viết doc comments cơ bản và eslint cho doc 📖
 
-## Giới thiệu - lý do doc comments hữu dụng
+## 💁 Giới thiệu - lý do `doc` comments hữu dụng
 
 Với JS thì ta có [JSDoc](https://jsdoc.app/), còn với TS thì ta có [TSDoc](https://tsdoc.org/) là bộ quy chuẩn để viết doc comments rõ ràng hơn, dễ đọc, dễ hiểu hơn.
 
@@ -28,7 +28,7 @@ Từ TSDoc ta có thể tự động tạo ra các trang document dành cho các
 
 Bạn thấy đấy, nhìn vào doc thì rất dễ hiểu, đặc biệt là với các method/class phức tạp. Còn về các cú pháp và cách viết thì TSDoc rất "na ná" JSDoc.
 
-## Đối tượng sử dụng được doc
+## 🧑‍🤝‍🧑 Đối tượng sử dụng được doc
 
 Bao gồm:
 
@@ -48,7 +48,7 @@ Khi hover chuột qua biến đó trên vscode, sẽ thấy được doc của v
 
 ![Screenshot from 2022-10-03 19-05-26.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1664798772881/Ue-dR2hSR.png align="left")
 
-## Cách đọc doc
+## 📖 Cách đọc doc
 
 Tương tự với 1 biến bên trên, các đối tượng như method, function, class đều có thể xem tương tự. Ví dụ khi hover chuột vào 1 function:
 
@@ -56,7 +56,7 @@ Tương tự với 1 biến bên trên, các đối tượng như method, functi
 
 Chú ý là nếu dùng kiểu comment `// ` thay vì khối `/**` thì sẽ không đọc được như trên, vì cách comment `// ` không đúng chuẩn của doc.
 
-## Các từ khóa - tag cơ bản
+## 🔑 Các từ khóa - tag cơ bản
 
 1 tag được định nghĩa trong TSDoc hay JSDoc theo dạng: `@tagName` như `@param`, `@returns`.
 
@@ -88,7 +88,7 @@ Ví dụ:
 @returns The average of `x` and `y`
 ```
 
-## Cấu trúc của 1 doc
+## 🚧 Cấu trúc của 1 doc
 
 ### Phần đầu tiên là nội dung mô tả method / class / function / value này
 
@@ -109,7 +109,7 @@ Xem thêm tại [tsdoc](https://tsdoc.org/).
 Tất nhiên nếu function không có param hay return value thì không cần.
 Để tránh việc không cần mà cũng thêm tag thừa vào ta có thể dùng [eslint - valid-jsdoc](https://eslint.org/docs/latest/rules/valid-jsdoc).
 
-## Các tag hữu ích khác
+## 🚩 Các tag hữu ích khác
 
 Có rất nhiều từ khóa để đặc tả doc, tuy nhiên theo kinh nghiệm của mình thì những tag sau là sử dụng nhiều nhất:
 
