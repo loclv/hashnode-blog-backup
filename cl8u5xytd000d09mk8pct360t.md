@@ -118,9 +118,9 @@ Có rất nhiều từ khóa để đặc tả doc, tuy nhiên theo kinh nghiệ
 - `@example`
 - `@inheritDoc`
 
-Ở bài viết này, ta sẽ làm quen với cách sử dụng `@example` đã.
+Ở bài viết này, ta sẽ làm quen với cách sử dụng `@example` và `@link` đã.
 
-### Sử dụng example tag
+### Sử dụng `example` tag
 
 ![example.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1664871716609/MJnzbXCLd.png align="left")
 
@@ -136,6 +136,24 @@ Ta chỉ cần viết code nằm giữa vùng `@example` tag và tag khác là �
 Và đây là ví dụ viết code chưa đúng vùng nằm giữa, code sẽ không được tự động highlight lên:
 
 ![Screenshot from 2022-10-04 19-02-48.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1664885372123/uCcSAtTdL.png align="left")
+
+### Sử dụng `link` tag cơ bản
+
+Với input là doc comment dưới đây:
+
+```ts
+/**
+ * Explain URL: {@link https://levelup.gitconnected.com/cross-browser-crazy-44e90d61b204}
+ */
+```
+
+Thì output khi hover chuột sẽ là:
+
+```txt
+Explain URL: https://levelup.gitconnected.com/cross-browser-crazy-44e90d61b204
+```
+
+Như vậy, phần `@link` sẽ biến mất ở output.
 
 ---
 
