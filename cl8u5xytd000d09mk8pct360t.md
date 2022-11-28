@@ -62,7 +62,9 @@ Chú ý là nếu dùng kiểu comment `// ` thay vì khối `/**` thì sẽ kh�
 
 - Cú pháp mô tả 1 param:
 
-`@param` - `space` - `mô tả`. 
+`@param` -> `space` -> `mô tả`. 
+
+![Cú pháp](https://cdn.hashnode.com/res/hashnode/image/upload/v1669637433163/cBwdzWKIu.png align="left")
 
 Ví dụ:
 
@@ -80,7 +82,7 @@ Khác với JSDoc, việc mô tả type tại param là không cần thiết. Tu
 
 - Cú pháp mô tả giá trị trả về:
 
-`@returns` - `space` - `mô tả`.
+`@returns` -> `space` -> `mô tả`.
 
 Ví dụ:
 
