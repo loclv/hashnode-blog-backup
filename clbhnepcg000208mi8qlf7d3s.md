@@ -16,14 +16,14 @@ Other features:
     
 *   watch & restart the app on any file change
     
-*   **\[Startup Script Generator\](**[https://pm2.keymetrics.io/docs/usage/startup/](https://pm2.keymetrics.io/docs/usage/startup/)**) and that script** automatically restart the service list at boot.
+*   [Startup Script Generator](https://pm2.keymetrics.io/docs/usage/startup/) and that script automatically restart the service list at boot.
     
 
-It is really helpful when you deploy an app to a server like AWS EC2. For example, you can use pm2 when \[deploy Next.js App with AWS EC2\]([https://gist.github.com/ArcRanges/3d1d95421984c40fffaf3fabc9ea7396](https://gist.github.com/ArcRanges/3d1d95421984c40fffaf3fabc9ea7396)).
+It is really helpful when you deploy an app to a server like AWS EC2. For example, you can use pm2 when [deploy Next.js App with AWS EC2](https://gist.github.com/ArcRanges/3d1d95421984c40fffaf3fabc9ea7396).
 
 [pm2](https://pm2.keymetrics.io/) is written in *Node.js*. However, It can run any <mark>shell script</mark> or run <mark>sh</mark>, <mark>js</mark> file directly.
 
-To install Node.js and NPM you can use \[fnm\]([https://github.com/Schniz/fnm](https://github.com/Schniz/fnm)), then install pm2:
+To install Node.js and NPM you can use [fnm](https://github.com/Schniz/fnm), then install pm2:
 
 ```bash
 npm install pm2@latest -g
