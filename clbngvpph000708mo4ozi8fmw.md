@@ -39,8 +39,6 @@ Tuy nhiên có 1 cách truyền thống đó là sử dụng 1 EC2 instance, nê
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670924945554/lbAZdJbk3.png align="center")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670926668453/qlhOepvRt.png align="center")
-
 Những sever instance này chứa API logic xử lý data hoặc cả static resource, xử lý 24/7 ngay cả khi không có request. Giống như "người phục vụ" 24/7 dưới đây:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670928375258/RYHFifo5R.png align="center")
@@ -61,7 +59,11 @@ Còn mức độ xử dụng dịch vụ - số lượng requests mà tương đ
 
 #### Serverless
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670927796766/pXrLdOP0y.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671012586370/vDoAHBbDc.png align="center")
+
+Hoặc vẽ theo Sequence Diagram:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671012657921/F8UBDd2Yf.png align="center")
 
 Trong trường hợp trên nếu không có request "đủ nhiều" thì không cần gọi tới "C Function" - "người phục vụ" dậy để phục vụ. Còn "A Function" và "B Function" đang phục vụ request gửi tới.
 
@@ -284,6 +286,29 @@ Gateway -- return --> BClient
 Gateway --> BFunction
 
 CFunction(C Function) -- sleep --> CFunction
+```
+
+```mermaid
+sequenceDiagram
+    participant Client as Client
+    participant Gateway as Cloud Gateway
+    participant Lambda as Lambda
+    participant ALambda as A Lambda Function
+    participant BLambda as B Lambda Function
+    participant CLambda as C Lambda Function
+
+    Client->>Gateway: request
+    Gateway->>Lambda: request
+    Lambda->>ALambda: invoke
+    ALambda->>ALambda: start & excute
+
+    Client->>Gateway: request
+    Gateway->>Lambda: request
+    Lambda->>BLambda: invoke
+    BLambda->>BLambda: start & excute
+
+    CLambda->>CLambda: sleep
+```
 ````
 
 Vẽ hình bằng:
