@@ -317,6 +317,8 @@ Vẽ hình bằng:
     
 *   Create smart AWS diagrams with [cloudcraft.co](https://www.cloudcraft.co/)
     
+*   [Mermaid lets you create diagrams and visualizations using text and code.](https://mermaid-js.github.io/mermaid/#/)
+    
 
 ### Tham khảo
 
