@@ -201,6 +201,17 @@ Tuy nhiên với NextJS thì đã được [AWS Amplify](https://aws.amazon.com/
 
 Việc tái cấu trúc lại source code này cũng không cần lo lắng khi sử dụng [serverless-next.js](https://github.com/serverless-nextjs/serverless-next.js).
 
+Đối với NextJS phiên bản mới, thời điểm hiện tại là NextJS 13 thì:
+
+*   AWS Amplify đã hỗ trợ, xem thêm blog: [Deploy a Next.js 13 app to AWS with Amplify Hosting](https://aws.amazon.com/blogs/mobile/amplify-next-js-13/).
+    
+*   [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **có vẻ đã ngừng maintain qua** [thông báo này](https://github.com/serverless-nextjs/serverless-next.js/discussions/2439), nên tốt nhất là không nên dùng [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **nữa**! NextJS 13 đã có bundler mới, [không còn dùng webpack nữa](https://nextjs.org/blog/next-13), nên xảy ra nhiều issue ví dụ [serverless-next.js/issues/2497](https://github.com/serverless-nextjs/serverless-next.js/issues/2497)
+    
+*   [erverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS, hiện tại mình cũng chưa thử dùng tool này, nên chưa thể đánh giá được!
+    
+*   [milliHQ/terraform-aws-next-js](https://github.com/milliHQ/terraform-aws-next-js) cũng không còn support phiên bản mới nữa. Xem thêm tại [issue này](https://github.com/milliHQ/terraform-aws-next-js/issues/372).
+    
+
 Còn với EC2 thì tất nhiên cấu trúc source code là flexible nhất có thể rồi.
 
 ### 🚀 Giá cả
