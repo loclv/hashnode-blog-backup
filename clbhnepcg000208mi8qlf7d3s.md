@@ -115,3 +115,43 @@ pm2 delete all
 # confirm
 pm2 ls
 ```
+
+### For AWS CloudWatch Logs service
+
+You have to [install and configure the CloudWatch Logs agent on a running EC2 Linux instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html) for example. Then, you choose which files it should monitor for changes by customs the log agent configuration file:
+
+```bash
+sudo vim /opt/aws/amazon-cloudwatch-agent/bin/config.json
+```
+
+```bash
+{
+     "agent": {
+         "run_as_user": "root"
+     },
+     "logs": {
+         "logs_collected": {
+             "files": {
+                 "collect_list": [
+                     {
+                         "file_path": "/path/to/pm2-log/error.log",
+                         "log_group_name": "pm2-error-log",
+                         "log_stream_name": "{ec2_instance_id}"
+                     },
+                     {
+                         "file_path": "/path/to/pm2-log/info.log",
+                         "log_group_name": "pm2-info-log",
+                         "log_stream_name": "{ec2_instance_id}"
+                     }
+                 ]
+             }
+         }
+     }
+ }
+```
+
+### Reference
+
+*   [https://stackoverflow.com/questions/62534276/send-pm2-logs-from-ec2-instance-to-cloudwatch](https://stackoverflow.com/questions/62534276/send-pm2-logs-from-ec2-instance-to-cloudwatch)
+    
+*   [https://www.rapidspike.com/blog/how-to-send-log-files-to-aws-cloudwatch-ubuntu/](https://www.rapidspike.com/blog/how-to-send-log-files-to-aws-cloudwatch-ubuntu/)
