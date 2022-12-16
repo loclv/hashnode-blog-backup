@@ -135,7 +135,7 @@ Như vậy quá 1 ngưỡng nhất định thì DB sẽ hạn chế request tớ
 
 [NextJS API routes](https://nextjs.org/docs/api-routes/introduction) cho phép build **API** with NextJS.
 
-Tuy nhiên, nếu API không dùng tiện ích mà API routes mang lại, đó là đơn giản, nhanh, tiện thì việc viết tách riêng API ra khỏi NextJS, cũng có ưu điểm. Đó là việc [warming up of serverless được cải thiện](https://stackoverflow.com/questions/67358959/should-i-develop-a-separate-express-server-or-handle-all-api-calls-in-my-next-j), ta còn có thể sử dụng [AWS SAM - Serverless Application Model framework](https://dev.to/aws-builders/building-serverless-with-sam-396o).
+Tuy nhiên, nếu API không dùng tiện ích mà API routes mang lại, đó là đơn giản, nhanh, tiện thì việc viết tách riêng API ra khỏi NextJS, cũng có ưu điểm. Đó là việc [warming up of serverless được cải thiện](https://stackoverflow.com/questions/67358959/should-i-develop-a-separate-express-server-or-handle-all-api-calls-in-my-next-j), ta còn có thể sử dụng [AWS SAM - Serverless Application Model framework](https://dev.to/aws-builders/building-serverless-with-sam-396o) tối ưu với lambda. Hay trải nghiệm coding với Backend Framework với độ chuyên môn hóa cao hơn, khó mà NextJS API routes thay thế được. NextJS API routes chỉ phù hợp với số lượng nhỏ API, đơn giản.
 
 ### ⚠️ Chú ý với logic code gọi tới dịch vụ khác
 
@@ -206,13 +206,13 @@ Amazon CloudFront sử dụng "Points of Presence" - "điểm hiện tại" bao 
 *   **severless:**
     
 
-Với severless, có thể source code của chúng ta phải tổ chức lại, ví dụ sử dụng AWS SAM.
+Với API, có thể source code của chúng ta phải tổ chức lại, ví dụ sử dụng [AWS SAM - Serverless Application Model framework](https://dev.to/aws-builders/building-serverless-with-sam-396o).
 
 > The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build [serverless applications](https://aws.amazon.com/serverless/) on AWS.
 
 Xem thêm về [Tutorial: Deploying a Hello World application using AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html).
 
-Tuy nhiên với NextJS thì đã được [AWS Amplify](https://aws.amazon.com/amplify/) hỗ trợ rồi, nên ta không phải lo lắng với NextJS.
+Còn với phần Frontend thì đã được [AWS Amplify](https://aws.amazon.com/amplify/) hỗ trợ rồi, nên ta không phải lo lắng với NextJS.
 
 > With the latest release, the Amplify JavaScript libraries add [additional features](https://docs.amplify.aws/lib/ssr/q/platform/js) that further enable developers to build SSR apps using modern web frameworks like Next.js and Nuxt.js with major enhancements to the REST API, GraphQL API, Auth, and DataStore categories.
 
