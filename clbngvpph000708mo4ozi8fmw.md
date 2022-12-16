@@ -35,7 +35,7 @@ Tuy nhiên có 1 cách truyền thống đó là sử dụng 1 EC2 instance, nê
 
 ### 🌙 Về kiến trúc - architecture cơ bản
 
-#### Server truyền thống
+#### **Server truyền thống**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670924945554/lbAZdJbk3.png align="center")
 
@@ -49,9 +49,9 @@ Tuy nhiên, sự lãng phí này chỉ thực sự xảy ra khi "mức độ x�
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671009569297/z_F6VThVw.png align="center")
 
-Trục X: dòng thời gian.
+**Trục X**: dòng thời gian.
 
-Trục Y: "mức độ xử dụng dịch vụ".
+**Trục Y**: "mức độ xử dụng dịch vụ".
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671009642619/99o2UeMYm.png align="center")
 
@@ -131,7 +131,13 @@ Như vậy quá 1 ngưỡng nhất định thì DB sẽ hạn chế request tớ
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671010685309/AflrcNldF.png align="center")
 
-### Chú ý với logic code gọi tới dịch vụ khác
+### 🐪 Với NextJS API routes
+
+[NextJS API routes](https://nextjs.org/docs/api-routes/introduction) cho phép build **API** with NextJS.
+
+Tuy nhiên, nếu API không dùng tiện ích mà API routes mang lại, đó là đơn giản, nhanh, tiện thì việc viết tách riêng API ra khỏi NextJS, cũng có ưu điểm. Đó là việc [warming up of serverless được cải thiện](https://stackoverflow.com/questions/67358959/should-i-develop-a-separate-express-server-or-handle-all-api-calls-in-my-next-j), ta còn có thể sử dụng [AWS SAM - Serverless Application Model framework](https://dev.to/aws-builders/building-serverless-with-sam-396o).
+
+### ⚠️ Chú ý với logic code gọi tới dịch vụ khác
 
 Tương tự với việc kết nối tới DB, việc sử dụng dịch vụ khác bên thứ 3 hoặc ngay trong AWS như AWS Batch, cần chú ý hạn chế số lượng, thứ tự khi gọi.
 
@@ -139,19 +145,27 @@ Tương tự với việc kết nối tới DB, việc sử dụng dịch vụ k
 
 #### 📖 Với việc ghi log
 
-Server truyền thống:
+*   **Server truyền thống:**
+    
 
 Cách dùng server truyền thống với EC2 thì có thể không dùng CloudWatch Log để lưu và quản lý log. Nếu vậy thì sẽ phải định kỳ vào EC2 xóa log, hoặc dùng `CrontJob` để xóa.
 
-Serverless:
+*   **Serverless:**
+    
 
 Bởi vì khi API chạy trên Lambda Function thì không thể ghi log ra Function đang chạy được. Do mỗi Function - môi trường chạy là "động" nên cứ ghi ra thì có thể mất và khó kiểm soát. Như vậy, việc sử dụng [AWS CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) là gần như bắt buộc. Tham khảo thêm tại [serverless CloudWatch Log docs - Simple event definition](https://www.serverless.com/framework/docs/providers/aws/events/cloudwatch-log).
 
 #### 🎄 Process manager
 
-Server truyền thống: ta có thể sử dụng [pm2 với custom log](https://loclv.hashnode.dev/deploy-to-the-server-with-pm2-and-custom-log) và [cluster mode](https://pm2.keymetrics.io/docs/usage/cluster-mode/) để tối ưu hiệu quả hoạt động bằng việc tận dụng số nhân CPU và giảm downtime.
+*   **Server truyền thống:**
+    
 
-Serverless: không cần, do AWS lambda quản lý, xem thêm [Lambda execution environment lifecycle](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environment.html).
+Ta có thể sử dụng [pm2 với custom log](https://loclv.hashnode.dev/deploy-to-the-server-with-pm2-and-custom-log) và [cluster mode](https://pm2.keymetrics.io/docs/usage/cluster-mode/) để tối ưu hiệu quả hoạt động bằng việc tận dụng số nhân CPU và giảm downtime.
+
+*   **Serverless:**
+    
+
+Không cần Process manager, do AWS lambda quản lý, xem thêm [Lambda execution environment lifecycle](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environment.html).
 
 #### 🧊 Lưu trữ static resource - file tĩnh với S3
 
@@ -189,6 +203,9 @@ Amazon CloudFront sử dụng "Points of Presence" - "điểm hiện tại" bao 
 
 ### 🏘️ Source code structure
 
+*   **severless:**
+    
+
 Với severless, có thể source code của chúng ta phải tổ chức lại, ví dụ sử dụng AWS SAM.
 
 > The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build [serverless applications](https://aws.amazon.com/serverless/) on AWS.
@@ -210,6 +227,11 @@ Việc tái cấu trúc lại source code này cũng không cần lo lắng khi 
 *   [erverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS, hiện tại mình cũng chưa thử dùng tool này, nên chưa thể đánh giá được!
     
 *   [milliHQ/terraform-aws-next-js](https://github.com/milliHQ/terraform-aws-next-js) cũng không còn support phiên bản mới nữa. Xem thêm tại [issue này](https://github.com/milliHQ/terraform-aws-next-js/issues/372).
+    
+
+* * *
+
+*   **server truyền thống:**
     
 
 Còn với EC2 thì tất nhiên cấu trúc source code là flexible nhất có thể rồi.
