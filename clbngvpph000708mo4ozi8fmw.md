@@ -139,6 +139,16 @@ Như vậy quá 1 ngưỡng nhất định thì DB sẽ hạn chế request tớ
 
 Tuy nhiên, nếu API không dùng tiện ích mà API routes mang lại, đó là đơn giản, nhanh, tiện thì việc viết tách riêng API ra khỏi NextJS, cũng có ưu điểm. Đó là việc [warming up of serverless được cải thiện](https://stackoverflow.com/questions/67358959/should-i-develop-a-separate-express-server-or-handle-all-api-calls-in-my-next-j), ta còn có thể sử dụng [AWS SAM - Serverless Application Model framework](https://dev.to/aws-builders/building-serverless-with-sam-396o) tối ưu với lambda. Hay trải nghiệm coding với Backend Framework với độ chuyên môn hóa cao hơn, khó mà NextJS API routes thay thế được. NextJS API routes chỉ phù hợp với số lượng nhỏ API, đơn giản.
 
+### Giới hạn số lượng request được sử dụng xử lý đồng thời
+
+Để hiểu thêm về cơ chế xử lý các request đồng thời ta xem thêm tại [lambda concurrency - throttling behavior](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html#throttling-behavior).
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671188679311/aJCm9D9y4.gif align="center")
+
+Chính vì thế mà đối với service nào cần nâng mức chịu tải lên quá lớn thì không làm được. Ví dụ như có 1 dự án được thực hiện test performance 20k request tới cùng 1 lúc thì không chịu nổi - có nhiều request sẽ bị lỗi hoặc quá timeout. Bỏ serverless đi, dùng EC2 thì nâng độ chịu tải lên được 50k request. Tuy con số là tương đối, nhưng mình cũng lấy đó tham khảo. Ở những dự án không yêu cầu giới hạn số lượng truy cập cao thì không cần phải support số lượng request lớn như vậy.
+
+Vì vậy, cần thiết phải estimate - ước chừng số lượng request đồng thời tương ứng với business logic, trước khi quyết định dùng serverless hay không. Tránh trường hợp phải "đập đi xây lại" dự án, vì cấu trúc source-code cũng bị ảnh hưởng bởi kiến trúc serverless.
+
 ### ⚠️ Chú ý với logic code gọi tới dịch vụ khác
 
 Tương tự với việc kết nối tới DB, việc sử dụng dịch vụ khác bên thứ 3 hoặc ngay trong AWS như AWS Batch, cần chú ý hạn chế số lượng, thứ tự khi gọi.
@@ -213,6 +223,8 @@ Với API, có thể source code của chúng ta phải tổ chức lại, ví d
 > The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build [serverless applications](https://aws.amazon.com/serverless/) on AWS.
 
 Xem thêm về [Tutorial: Deploying a Hello World application using AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html).
+
+Chính vì kiến trúc ảnh hưởng tới source code bên API, nên ta nên quyết định theo kiến trúc nào ngay từ đầu, dựa trên yêu cầu ban đầu.
 
 Còn với phần Frontend thì đã được [AWS Amplify](https://aws.amazon.com/amplify/) hỗ trợ rồi, nên ta không phải lo lắng với NextJS.
 
