@@ -65,6 +65,8 @@ Hoặc vẽ theo Sequence Diagram:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671012657921/F8UBDd2Yf.png align="center")
 
+Trong biểu đồ trên, "invoke" có thể dịch là "gọi tới".
+
 Trong trường hợp trên nếu không có request "đủ nhiều" thì không cần gọi tới "C Function" - "người phục vụ" dậy để phục vụ. Còn "A Function" và "B Function" đang phục vụ request gửi tới.
 
 Các lambda Function - người phục vụ này được cloud quản lý và có thể shared giữa các dự án nên tối ưu hóa được nguồn lực.
