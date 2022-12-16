@@ -118,7 +118,7 @@ pm2 ls
 
 ### For AWS CloudWatch Logs service
 
-You have to [install and configure the CloudWatch Logs agent on a running EC2 Linux instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html) for example. Then, you choose which files it should monitor for changes by customs the log agent configuration file:
+You have to [install and configure the CloudWatch Logs agent on a running EC2 Linux instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html) for example. Then, you choose which files it should monitor for changes by [customs the log agent configuration file](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html#CloudWatch-Agent-Configuration-File-Logssection):
 
 ```bash
 sudo vim /opt/aws/amazon-cloudwatch-agent/bin/config.json
