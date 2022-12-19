@@ -145,7 +145,11 @@ Tuy nhiên, nếu API không dùng tiện ích mà API routes mang lại, đó l
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671188679311/aJCm9D9y4.gif align="center")
 
-Chính vì thế mà đối với service nào cần nâng mức chịu tải lên quá lớn thì không làm được. Ví dụ như có 1 dự án được thực hiện test performance 20k request tới cùng 1 lúc thì không chịu nổi - có nhiều request sẽ bị lỗi hoặc quá timeout. Bỏ serverless đi, dùng EC2 thì nâng độ chịu tải lên được 50k request. Tuy con số là tương đối, nhưng mình cũng lấy đó tham khảo. Ở những dự án không yêu cầu giới hạn số lượng truy cập cao thì không cần phải support số lượng request lớn như vậy.
+Số lượng Lambda function trong 1 region là giới hạn. Hiện tại default là 1000, có thể config để up to 10k là tối đa (con số có thể được thay đổi về sau này), Tham khảo con số này tại [đây](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html) Ví dụ với ảnh bên trên, số lượng function tối đa là 6 (có 6 function được init) thì số lượng request được xử lý tối đa cũng là 6, còn trong suốt quá trình chạy thì có thể xử lý tất cả là 10 request. Với mỗi request là 1 lần "invoke".
+
+Chính vì thế mà đối với service nào cần nâng mức chịu tải lên quá lớn thì không làm được. Ví dụ như có 1 dự án được thực hiện test performance 20k request tới cùng 1 lúc thì không chịu nổi - có nhiều request sẽ bị lỗi hoặc quá timeout. Bỏ serverless đi, dùng EC2 thì nâng độ chịu tải lên được 50k request. Tuy con số là tương đối phụ thuộc vào mức độ phức tạp của logic và sự phụ thuộc service bên thứ 3, sự phụ thuộc càng lớn thì số request tối đa càng nhỏ dần, nhưng mình cũng lấy đó tham khảo.
+
+Tất nhiên, ở những dự án không yêu cầu giới hạn số lượng truy cập cao thì không cần phải support số lượng request lớn như vậy.
 
 Vì vậy, cần thiết phải estimate - ước chừng số lượng request đồng thời tương ứng với business logic, trước khi quyết định dùng serverless hay không. Tránh trường hợp phải "đập đi xây lại" dự án, vì cấu trúc source-code cũng bị ảnh hưởng bởi kiến trúc serverless.
 
