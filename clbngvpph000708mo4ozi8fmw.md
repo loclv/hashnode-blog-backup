@@ -2,7 +2,7 @@
 
 ### 🍌 Phân tích vấn đề
 
-#### NextJS
+#### 😎 NextJS
 
 [NextJS](https://nextjs.org/) là 1 framework khá phổ biến, đặc thù của nó là có thể [deploy 1 web ở nhiều chế độ](https://theodorusclarence.com/blog/nextjs-fetch-method):
 
