@@ -29,7 +29,13 @@ Do NextJS được tạm chia thành 3 phần:
 *   Phần động có xử lý dữ liệu liên quan tới API routes, nằm trong thư mục `api/*`
     
 
-Như vậy, phần tĩnh thì ta có thể để trên AWS S3, phần động thì chạy trên AWS lambda. Lambda thường là 1 bộ phận quan trọng với kiến trúc serverless, kiến trúc này sẽ được giới thiệu sau đây.
+Như vậy, phần tĩnh thì ta có thể để trên AWS S3, phần động thì chạy trên AWS lambda. Sau đây là cơ chế cơ bản của lambda - event-driven:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671514630370/8JMEvxfAF.png align="center")
+
+Gọi lambda là event-driven service vì nó có cơ chế có sự kiện gọi tới - invoke thì mới chạy.
+
+Lambda thường là 1 bộ phận quan trọng với kiến trúc serverless, kiến trúc này sẽ được giới thiệu sau đây.
 
 Tuy nhiên có 1 cách truyền thống đó là sử dụng 1 EC2 instance, nên ta sẽ so sánh 2 cách này với nhau.
 
@@ -325,6 +331,29 @@ Rủi ro về giá của **Lambda** là việc dịch vụ có khi còn đắt h
 
 Việc setup Provisioned Concurrency với số lượng lớn function được chạy đồng thời và thời enabled lớn, thì còn tốn resource hơn cả việc bạn bật số lượng nhỏ EC2 liên tục.
 
+### 🤢Tổng hợp nhược điểm của serverless
+
+Ưu điểm thì ta thấy rõ là ở 1 chừng mực nào đó, giá cả AWS lambda là rẻ hơn, việc scale-up service cũng sẽ tự động 1 phần nào đó. Tuy nhiên đánh đổi lại, ta sẽ nhìn lại các nhược điểm như sau:
+
+*   Source-code thường cần phải có cấu trúc khác biệt so với truyền thống, nên thiết kế hệ thống ngay từ đầu đã phải lên kế hoạch cho serverless, tránh việc code xong rồi mới quyết định thì sẽ phải sửa code. Nếu phụ thuộc vào các serverless framework thì cũng có rủi ro không được support đầy đủ, ví dụ như NextJS phiên bản mới.
+    
+*   Deploy tốn thời gian hơn vì có nhiều thành phần và ta phải quan tâm tới việc giới hạn ngưỡng của lambda.
+    
+*   Tốn thời gian tìm hiểu và maintain hơn vì phải quản lý số lượng Lambda function đồng thời được invoke.
+    
+*   Có thể vẫn phải sử dụng kết hợp EC2 vì các yêu cầu về lượng truy cập (request) tới cùng 1 thời điểm quá lớn.
+    
+*   Việc Cold starting sẽ ảnh hưởng tới thời gian trả về response, mà muốn giải quyết bài toán này lại cần config và tìm hiểu về cơ chế warm up function.
+    
+*   Việc [config CPU và memory cho lambda](https://stackoverflow.com/questions/66522916/aws-lambda-memory-vs-cpu-configuration), thì khó khăn hơn EC2. Hiện tại, chưa thấy có hỗ trợ số vCPU &gt; 10. Vì vậy tác vụ quá nặng yêu cầu cấu hình cao hay GPU thì không nên sử dụng.
+    
+*   Đối mặt với các rủi ro về giới hạn số lượng connection tới DB hay các service bên thứ 3.
+    
+*   Xử lý queue, callback với nhiều lambda funtion bấy đồng bộ thì khó khăn hơn là viết queue nằm trong 1 cục source code bên trong EC2.
+    
+*   Muốn build ứng dụng chat realtime sử dụng web-socket thì ta cần [sử dụng với AWS API Gateway](https://tsh.io/blog/implementing-websocket-with-aws-lambda-and-api-gateway/).
+    
+
 ### Phụ lục
 
 `mermaid` Diagram code:
@@ -403,3 +432,5 @@ Vẽ hình bằng:
 *   [stackoverflow - cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws](https://stackoverflow.com/questions/61433306/cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws)
     
 *   [https://blog.bitsrc.io/why-aws-love-next-js-1f7b6491857](https://blog.bitsrc.io/why-aws-love-next-js-1f7b6491857)
+    
+*   [https://www.sentiatechblog.com/aws-re-invent-2020-day-3-optimizing-lambda-cost-with-multi-threading?utm\_source=reddit&utm\_medium=social&utm\_campaign=day3\_lambda](https://www.sentiatechblog.com/aws-re-invent-2020-day-3-optimizing-lambda-cost-with-multi-threading?utm_source=reddit&utm_medium=social&utm_campaign=day3_lambda)
