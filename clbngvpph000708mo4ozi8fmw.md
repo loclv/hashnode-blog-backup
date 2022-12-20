@@ -153,7 +153,7 @@ Như vậy quá 1 ngưỡng nhất định thì DB sẽ hạn chế request tớ
 
 Tuy nhiên, nếu API không dùng tiện ích mà API routes mang lại, đó là đơn giản, nhanh, tiện thì việc viết tách riêng API ra khỏi NextJS, cũng có ưu điểm. Đó là việc [warming up of serverless được cải thiện](https://stackoverflow.com/questions/67358959/should-i-develop-a-separate-express-server-or-handle-all-api-calls-in-my-next-j), ta còn có thể sử dụng [AWS SAM - Serverless Application Model framework](https://dev.to/aws-builders/building-serverless-with-sam-396o) tối ưu với lambda. Hay trải nghiệm coding với Backend Framework với độ chuyên môn hóa cao hơn, khó mà NextJS API routes thay thế được. NextJS API routes chỉ phù hợp với số lượng nhỏ API, đơn giản.
 
-### Giới hạn số lượng request được sử dụng xử lý đồng thời
+### 🏃‍♀️ Giới hạn số lượng request được sử dụng xử lý đồng thời
 
 Để hiểu thêm về cơ chế xử lý các request đồng thời ta xem thêm tại [lambda concurrency - throttling behavior](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html#throttling-behavior).
 
@@ -435,7 +435,7 @@ Vẽ hình bằng:
 *   [Mermaid lets you create diagrams and visualizations using text and code.](https://mermaid-js.github.io/mermaid/#/)
     
 
-### Tham khảo
+### ✈️ Tham khảo
 
 *   [stackoverflow - cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws](https://stackoverflow.com/questions/61433306/cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws)
     
