@@ -110,7 +110,7 @@ Dưới đây là "vòng đời" - lifecycle của 1 lambda function:
 
 [Operating Lambda: Performance optimization – Part 1](https://aws.amazon.com/blogs/compute/operating-lambda-performance-optimization-part-1/)
 
-Ta có thể thấy kể từ khi nhận được 1 reuqest chạy lambda function thì giai đoạn "cold start" là khoảng thời gian mà function chưa thể thực thi được code.
+Ta có thể thấy kể từ khi nhận được 1 request chạy lambda function thì giai đoạn "cold start" là khoảng thời gian mà function chưa thể thực thi được code. Còn 1 đặc điểm nữa mà Lambda khác biệt so với EC2 đó là trong khi nhận 1 request thì 1 lambda function được coi là đang "bận", nó sẽ không nhận thêm request như với EC2. Nguyên tắc là mỗi 1 event - 1 request chỉ chạy trên 1 lambda function. Điều đó giúp lambda function giữ được tính đơn giản.
 
 Như vậy đối với mức độ sử dụng dịch vụ thường xuyên không mấy biến thiên, ổn định thì rõ ràng EC2 hiệu quả hơn, vì nó không mất thời gian Cold start.
 
