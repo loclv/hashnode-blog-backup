@@ -254,6 +254,33 @@ Việc tái cấu trúc lại source code này cũng không cần lo lắng khi 
 
 Còn với EC2 thì tất nhiên cấu trúc source code là flexible nhất có thể rồi.
 
+### 📈 Về monitoring - giám sát hoạt động
+
+**Những điểm khác biệt:**
+
+[Monitor Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html) từ bên ngoài, có thể là kiểm tra CPU, network. Từ bên trong sâu hơn ta có thể dùng logger module bên trong service, kết hợp [PM2 custom log](https://loclv.hashnode.dev/deploy-to-the-server-with-pm2-and-custom-log) và [sử dụng CloudWatch Logs agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html).
+
+Còn đối với AWS lambda, ta sử dụng [Lambda function metrics](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics.html) kết hợp CloudWatch để alert khi vượt những ngưỡng giới hạn mà ta đặt ra. Ví dụ như khi Lambda chạy lỗi sẽ log ra các thông tin với các level khác nhau (info, warning, error, fatal...). Vì đặc thù lambda giúp ta không cần quan tâm tới quá sâu tới môi trường chạy, như các chỉ số CPU, network, nên ta chỉ cần quan tâm xem lambda function có chạy lỗi hay không thôi. Nhưng vì số lượng AWS lambda function lớn, số lượng này là giới hạn, nên cần quản lý các metrics - chỉ số về số lượng function được invoke quá mức chẳng hạn.
+
+**Những điểm giống nhau:**
+
+Cả 2 loại server truyền thống và serverless đều sử dụng chung cấu trúc [logging level](https://sematext.com/blog/logging-levels/):
+
+*   **TRACE**
+    
+*   **DEBUG**
+    
+*   **INFO**
+    
+*   **WARN**
+    
+*   **ERROR**
+    
+*   **FATAL**
+    
+
+Khi muốn tìm kiếm, phân loại log ta đều cần [CloudWatch Logs Insights query syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html).
+
 ### 🚀 Giá cả
 
 Giá ngày 14/12/2022.
