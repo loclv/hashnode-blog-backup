@@ -2,6 +2,8 @@
 
 ### 🍌 Phân tích vấn đề
 
+#### NextJS
+
 [NextJS](https://nextjs.org/) là 1 framework khá phổ biến, đặc thù của nó là có thể [deploy 1 web ở nhiều chế độ](https://theodorusclarence.com/blog/nextjs-fetch-method):
 
 *   CSR - Client-Side Rendering
@@ -29,11 +31,17 @@ Do NextJS được tạm chia thành 3 phần:
 *   Phần động có xử lý dữ liệu liên quan tới API routes, nằm trong thư mục `api/*`
     
 
-Như vậy, phần tĩnh thì ta có thể để trên AWS S3, phần động thì chạy trên AWS lambda. Sau đây là cơ chế cơ bản của lambda - event-driven:
+Như vậy, phần tĩnh thì ta có thể để trên AWS S3, phần động thì chạy trên AWS lambda. Sau đây là cơ chế cơ bản của lambda - event-driven - hướng sự kiện:
+
+#### 👷 Giới thiệu AWS lambda
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671514630370/8JMEvxfAF.png align="center")
 
-Gọi lambda là event-driven service vì nó có cơ chế có sự kiện gọi tới - invoke thì mới chạy.
+Gọi lambda là event-driven service vì nó có cơ chế có sự kiện gọi tới - invoke thì mới chạy. Đặc tính thứ 2 là stateless - "Không phụ thuộc vào trạng thái", đơn giản là nó tập trung vào xử lý task cần làm. Dữ liệu hay trạng thái nếu có thì cần request từ dịch vụ khác như DB, API bên thứ 3... Hơn nữa sau 1 khoảng thời gian không hoạt động thì nó sẽ được tự động tắt đi, như hình sau:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671517978494/PTLE-SUNW.png align="center")
+
+Việc bật bên rồi tắt đi này gọi là gọi là "reserved concurrency" (xem trong ảnh trên). Ngược lại, nếu có request thì nó tiếp tục được tái sử dụng để xử lý request, gọi là "provisioned concurrency" (xem trong ảnh trên).
 
 Lambda thường là 1 bộ phận quan trọng với kiến trúc serverless, kiến trúc này sẽ được giới thiệu sau đây.
 
