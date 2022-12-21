@@ -24,6 +24,8 @@ Dự án với Node.js và editor là VS Code thì ta nhập từ khóa:
 *   VisualStudioCode
     
 
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671610745515/9YZSQ0o7N.png align="center")
+
 Ngoài ra thì cũng có thể định nghĩa OS:
 
 *   Linux
