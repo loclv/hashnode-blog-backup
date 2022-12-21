@@ -233,8 +233,7 @@ Amazon CloudFront sử dụng "Points of Presence" - "điểm hiện tại" bao 
 
 ### 🏘️ Source code structure
 
-*   **severless:**
-    
+#### **severless**
 
 Với API, có thể source code của chúng ta phải tổ chức lại, ví dụ sử dụng [AWS SAM - Serverless Application Model framework](https://dev.to/aws-builders/building-serverless-with-sam-396o).
 
@@ -256,15 +255,14 @@ Việc tái cấu trúc lại source code này cũng không cần lo lắng khi 
     
 *   [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **có vẻ đã ngừng maintain qua** [thông báo này](https://github.com/serverless-nextjs/serverless-next.js/discussions/2439), nên tốt nhất là không nên dùng [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **nữa**! NextJS 13 đã có bundler mới, [không còn dùng webpack nữa](https://nextjs.org/blog/next-13), nên xảy ra nhiều issue ví dụ [serverless-next.js/issues/2497](https://github.com/serverless-nextjs/serverless-next.js/issues/2497)
     
-*   [erverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS. Còn riêng cho NextJS là [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), tool này sử dụng `AWS CDK` để tương tác với các dịch vụ AWS. Hiện tại mình cũng chưa thử dùng tool này, nên chưa thể đánh giá được!
+*   [serverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS. [serverless-stack/sst](https://github.com/serverless-stack/sst) khi sử dụng thì có cảm giác khá khó config, không được như [terraform](https://www.terraform.io/). Còn riêng cho NextJS là [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), tool này sử dụng `AWS CDK` để tương tác với các dịch vụ AWS. Hiện tại mình cũng chưa thử dùng [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), nên chưa thể đánh giá được!
     
-*   [milliHQ/terraform-aws-next-js](https://github.com/milliHQ/terraform-aws-next-js) cũng không còn support phiên bản mới nữa. Xem thêm tại [issue này](https://github.com/milliHQ/terraform-aws-next-js/issues/372).
+*   [milliHQ/terraform-aws-next-js](https://github.com/milliHQ/terraform-aws-next-js) cũng không còn support phiên bản mới nữa. Xem thêm tại [issue này](https://github.com/milliHQ/terraform-aws-next-js/issues/372). Thay vào đó ta nên tự sử dụng [terraform](https://www.terraform.io/) để tạo mới dự án từ đầu, tuy vất vả hơn nhưng dễ dàng custom!
     
 
 * * *
 
-*   **server truyền thống:**
-    
+#### **server truyền thống**
 
 Còn với EC2 thì tất nhiên cấu trúc source code là flexible nhất có thể rồi.
 
