@@ -256,7 +256,7 @@ Việc tái cấu trúc lại source code này cũng không cần lo lắng khi 
     
 *   [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **có vẻ đã ngừng maintain qua** [thông báo này](https://github.com/serverless-nextjs/serverless-next.js/discussions/2439), nên tốt nhất là không nên dùng [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **nữa**! NextJS 13 đã có bundler mới, [không còn dùng webpack nữa](https://nextjs.org/blog/next-13), nên xảy ra nhiều issue ví dụ [serverless-next.js/issues/2497](https://github.com/serverless-nextjs/serverless-next.js/issues/2497)
     
-*   [erverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS, hiện tại mình cũng chưa thử dùng tool này, nên chưa thể đánh giá được!
+*   [erverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS. Còn riêng cho NextJS là [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), tool này sử dụng `AWS CDK` để tương tác với các dịch vụ AWS. Hiện tại mình cũng chưa thử dùng tool này, nên chưa thể đánh giá được!
     
 *   [milliHQ/terraform-aws-next-js](https://github.com/milliHQ/terraform-aws-next-js) cũng không còn support phiên bản mới nữa. Xem thêm tại [issue này](https://github.com/milliHQ/terraform-aws-next-js/issues/372).
     
