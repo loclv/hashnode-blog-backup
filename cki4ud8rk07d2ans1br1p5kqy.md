@@ -2,8 +2,7 @@
 
 Bài viết dành cho những người mới với `Ubuntu` (bản dành cho máy tính cá nhân), thời điểm mới cài Ubuntu xong.
 
-Thời điểm viết bài mình đã thử `ubuntu 21.04` và không gặp vấn đề gì cả.
-`ubuntu 21.04` có thư viện đồ họa được nâng cấp và tối ưu khiến tốc độ nhanh hơn, điển hình là khi scroll trong danh sách các App.
+Thời điểm viết bài mình đã thử `ubuntu 21.04` và không gặp vấn đề gì cả. `ubuntu 21.04` có thư viện đồ họa được nâng cấp và tối ưu khiến tốc độ nhanh hơn, điển hình là khi scroll trong danh sách các App.
 
 ## Upgrade lên Ubuntu bản mới nhất
 
@@ -17,38 +16,50 @@ Sau khi download lượng lớn dữ liệu, cài đặt và restart, việc c�
 sudo apt --purge autoremove
 ```
 
-Trong quá trình upgrade Ubuntu thì để an toàn Ubuntu tự động disable các repo của bên thứ 3.
-Các repo này vốn là nơi chứa bản update của những phần mềm bên thứ 3 (không phải phần mềm của Ubuntu).
-Enable lại các repo này, giúp việc update thông qua command `sudo apt update` trở lại như cũ.
+Trong quá trình upgrade Ubuntu thì để an toàn Ubuntu tự động disable các repo của bên thứ 3. Các repo này vốn là nơi chứa bản update của những phần mềm bên thứ 3 (không phải phần mềm của Ubuntu). Enable lại các repo này, giúp việc update thông qua command `sudo apt update` trở lại như cũ.
 
 Để enable lại thì ta:
 
-1. vào danh sách các App
-2. search `update`
-3. chọn `Software & Updates`
-4. vào tab `Other Software`
-5. Enable lại các repo có ghi chú `disabled on upgrade to ${ubuntu-version-name}`
+1.  vào danh sách các App
+    
+2.  search `update`
+    
+3.  chọn `Software & Updates`
+    
+4.  vào tab `Other Software`
+    
+5.  Enable lại các repo có ghi chú `disabled on upgrade to ${ubuntu-version-name}`
+    
 
-![update-repo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629534955375/sBtTL8u2ay.png)
+![update-repo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629534955375/sBtTL8u2ay.png align="left")
 
 ## Power mode
 
 Cũng từ phiên bản này, nếu máy ta dùng là Laptop thì có thêm lựa chọn mức độ nguồn điện - power dành cho hiệu năng hoặc tiết kiệm điện. Mình chọn tối ưu cho hiệu năng:
 
-![ubuntu-power.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629532529207/2ywbxXvVVC.png)
+![ubuntu-power.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629532529207/2ywbxXvVVC.png align="left")
 
 ## 📦 deb installer - `gdebi-gtk`
 
 Mô tả `gdebi-gtk` nguyên văn dưới đây.
 
->gdebi  lets  you install local deb packages resolving and installing its dependencies.
-apt does the same, but only for remote (http, ftp) located packages.
+> gdebi lets you install local deb packages resolving and installing its dependencies. apt does the same, but only for remote (http, ftp) located packages.
 
 Đại khái `gdebi` dùng để cài `deb packages` - tương ứng với `.exe` bên `window` hay `.dmg` bên `MacOS`. Nó cũng giống với công cụ `apt` được tích hợp sẵn trong `Ubuntu` chỉ trừ là có giao diện UI và cài `deb packages` đã được tải về máy. Không thì bạn sẽ phải dùng `dpkg` 1 cách manual và phức tạp. Thông tin này tham khảo tại [đây](https://itsfoss.com/install-deb-files-ubuntu/).
 
 Cũng là để tránh `dependency error` mà `default Software Center` có thể gây ra.
 
-Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-software-center/)
+Cách dùng `gdebi-gtk` tại [đây](https://itsfoss.com/gdebi-default-ubuntu-software-center/).
+
+Cách cài đặt tham khảo từ [https://www.ubuntu18.com/install-gdebi-ubuntu-18/](https://www.ubuntu18.com/install-gdebi-ubuntu-18/):
+
+```bash
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get install gdebi-core
+# install GDebi GUI
+sudo apt-get install gdebi
+```
 
 ### Cài Chrome thông qua file đuôi `.deb`
 
@@ -76,7 +87,7 @@ Output của `update` command sẽ thông báo đã lấy data từ repo URL ví
 
 ```txt
 Get:1 http://dl.google.com/linux/chrome/deb stable InRelease [1.811 B]
-Get:2 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1.100 B] 
+Get:2 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1.100 B]
 ```
 
 ## 🎒 Dùng [snap store](https://snapcraft.io/store) thay thế cho `Ubuntu Software` - Ubuntu store
@@ -127,7 +138,8 @@ Default terminal của Ubuntu nhanh, đơn giản. Như vậy là đủ.
 
 Nhưng đối với những bạn thích custom hay vọc vạch thì hãy thử dùng các terminal client bên dưới xem nhé: 🌂
 
-- [hyper](https://hyper.is/): [đây](https://gist.github.com/loclv/67477636e417e974a07f930d72495eaa) là settings dành cho `hype` của mình.
+*   [hyper](https://hyper.is/): [đây](https://gist.github.com/loclv/67477636e417e974a07f930d72495eaa) là settings dành cho `hype` của mình.
+    
 
 ```json
 plugins: [
@@ -137,14 +149,14 @@ plugins: [
   ],
 ```
 
-Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì thư mục `HOME`.
-Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào.
+Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì thư mục `HOME`. Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào.
 
-- [tabby](https://tabby.sh/) - Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
+*   [tabby](https://tabby.sh/) - Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
+    
 
 Ảnh UI của tabby:
 
-![Screenshot from 2022-03-15 16-41-32.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1647357703712/OSMZIfgpxx.png)
+![Screenshot from 2022-03-15 16-41-32.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1647357703712/OSMZIfgpxx.png align="left")
 
 ### Command-line shell
 
@@ -152,7 +164,7 @@ Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào
 
 Đây là các alias được config thông qua `fish shell`:
 
-```config
+```plaintext
 alias g='git'
 alias gs='git status'
 alias ga='git add .'
@@ -177,7 +189,7 @@ set --universal fish_greeting
 
 [exa](https://the.exa.website/) A modern replacement for `ls`.
 
-![exa.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595995985/GKmnpBAY-.png)
+![exa.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595995985/GKmnpBAY-.png align="left")
 
 ```sh
 sudo apt install exa
@@ -194,11 +206,11 @@ l
 
 ## 🏢 Office
 
-<https://www.wps.com/>
+[https://www.wps.com/](https://www.wps.com/)
 
 [wps office](https://www.wps.com/), đẹp, siêu nhẹ, siêu nhanh, đa nền tảng
 
-Nếu mở những file có dung lượng lớn (>20MB) nhất là định dạng `xlsx` thì nó nhanh hơn [libreOffice](https://www.libreoffice.org/) hơn hàng trăm lần (cảm nhận của mình).
+Nếu mở những file có dung lượng lớn (&gt;20MB) nhất là định dạng `xlsx` thì nó nhanh hơn [libreOffice](https://www.libreoffice.org/) hơn hàng trăm lần (cảm nhận của mình).
 
 Sở hữu tính năng tìm kiếm tên sheet trong trường hợp 1 `workbook` có tới hàng chục `sheet`.
 
@@ -244,7 +256,7 @@ Hãy cần thận tắt bộ gõ tiếng Việt trước khi gõ password trên 
 
 Fira Code được opensource tại [đây](https://github.com/tonsky/FiraCode).
 
-![Screenshot from 2021-08-10 18-35-18.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595347994/HPGfgH-S2.png)
+![Screenshot from 2021-08-10 18-35-18.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595347994/HPGfgH-S2.png align="left")
 
 Font setting: `'Fira Code'`
 
@@ -252,13 +264,13 @@ Font setting: `'Fira Code'`
 
 `Be Vietnam Pro` download tại [đây](https://github.com/bettergui/BeVietnamPro/blob/main/fonts/ttf/BeVietnamPro-Regular.ttf).
 
-![be-vietnam-pro-font.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595376936/HJxVNLc9N.png)
+![be-vietnam-pro-font.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628595376936/HJxVNLc9N.png align="left")
 
 Ngoài ra danh sách các kiểu chữ font này đều có tại [github repo](https://github.com/bettergui/BeVietnamPro).
 
 Font setting: `'Be Vietnam Pro'`
 
-![hair](https://media.giphy.com/media/8gUuSM6DgGLtYIBsOK/giphy.gif)
+![hair](https://media.giphy.com/media/8gUuSM6DgGLtYIBsOK/giphy.gif align="left")
 
 ## Nếu không thấy emoji hiển thị đúng
 
@@ -301,9 +313,7 @@ Vào `Other software tab`, enables các Repo trừ phần `Source Code` trừ kh
 
 ## Custom UI
 
-Mặc định Ubuntu sẽ hiển thị 2 icon trên desktop.
-Để desktop `sạch sẽ` hơn, ta ẩn `home` và `trash` icon đi.
-Với version Ubuntu 20.XX bằng terminal:
+Mặc định Ubuntu sẽ hiển thị 2 icon trên desktop. Để desktop `sạch sẽ` hơn, ta ẩn `home` và `trash` icon đi. Với version Ubuntu 20.XX bằng terminal:
 
 ```sh
 gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
@@ -312,17 +322,24 @@ gsettings set org.gnome.shell.extensions.desktop-icons show-home false
 
 Tuy nhiên ở Ubuntu 21.04, sẽ có lỗi: `No such schema "org.gnome.shell.extensions.desktop-icons"`. Ta phải dùng `Extensions` app (Search trong danh sách App), disable phần `Desktop Icons NG (DING)`:
 
-![Desktop Icons NG (DING).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629536115623/GzGFiartu.png)
+![Desktop Icons NG (DING).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629536115623/GzGFiartu.png align="left")
 
 ## Tham khảo
 
-- <https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/>
-- <https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103>
-- [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
-- [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
-- [askubuntu ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop](https://askubuntu.com/questions/1335398/ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop)
-- [linuxconfig.org/how-to-install-tweak-tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
-- [install-chrome-ubuntu](https://itsfoss.com/install-chrome-ubuntu/)
+*   [https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/](https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/)
+    
+*   [https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103](https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103)
+    
+*   [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
+    
+*   [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
+    
+*   [askubuntu ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop](https://askubuntu.com/questions/1335398/ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop)
+    
+*   [linuxconfig.org/how-to-install-tweak-tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
+    
+*   [install-chrome-ubuntu](https://itsfoss.com/install-chrome-ubuntu/)
+    
 
 ---
 
