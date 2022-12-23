@@ -61,6 +61,12 @@ sudo apt-get install gdebi-core
 sudo apt-get install gdebi
 ```
 
+Để xóa 1 package đã cài với `gdebi` ta xóa như thông thường:
+
+```bash
+sudo apt purge package-name
+```
+
 ### Cài Chrome thông qua file đuôi `.deb`
 
 Do `snap store` (sẽ giới thiệu dưới đây) không có `chrome` mà chỉ có `chromium`, nên ta lên [trang chủ Chrome](https://www.google.com/intl/en/chrome/) rồi tải file đuôi `.deb` về để cài với `gdebi-gtk`.
