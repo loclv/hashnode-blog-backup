@@ -4,7 +4,7 @@ Bài viết dành cho những người mới với `Ubuntu` (bản dành cho má
 
 Thời điểm viết bài mình đã thử `ubuntu 21.04` và không gặp vấn đề gì cả. `ubuntu 21.04` có thư viện đồ họa được nâng cấp và tối ưu khiến tốc độ nhanh hơn, điển hình là khi scroll trong danh sách các App.
 
-## Upgrade lên Ubuntu bản mới nhất
+## 🎈 Upgrade lên Ubuntu bản mới nhất
 
 ```sh
 sudo do-release-upgrade
@@ -33,7 +33,7 @@ Trong quá trình upgrade Ubuntu thì để an toàn Ubuntu tự động disable
 
 ![update-repo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629534955375/sBtTL8u2ay.png align="left")
 
-## Power mode
+## 🪫 Power mode
 
 Cũng từ phiên bản này, nếu máy ta dùng là Laptop thì có thêm lựa chọn mức độ nguồn điện - power dành cho hiệu năng hoặc tiết kiệm điện. Mình chọn tối ưu cho hiệu năng:
 
@@ -158,7 +158,7 @@ Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì 
 
 ![Screenshot from 2022-03-15 16-41-32.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1647357703712/OSMZIfgpxx.png align="left")
 
-### Command-line shell
+### 🐚 Command-line shell
 
 [fish shell](https://fishshell.com/) + [Oh my fish](https://github.com/oh-my-fish/oh-my-fish) - quản lý packages dành cho `fish shell`.
 
@@ -272,7 +272,7 @@ Font setting: `'Be Vietnam Pro'`
 
 ![hair](https://media.giphy.com/media/8gUuSM6DgGLtYIBsOK/giphy.gif align="left")
 
-## Nếu không thấy emoji hiển thị đúng
+## 😅 Nếu không thấy emoji hiển thị đúng
 
 Nếu không thấy emoji hiển thị đúng - các ký tự hình chữ nhật thì có lẽ bạn đang gặp cùng vấn đề với bài viết [Emojis Missing from Chrome in Ubuntu](https://medium.com/@harshmaur/emojis-missing-from-chrome-in-ubuntu-9c25fe10867c).
 
@@ -311,7 +311,7 @@ Vì `Canonical Partners repository` hay các repo khác chứa source đóng ch�
 
 Vào `Other software tab`, enables các Repo trừ phần `Source Code` trừ khi bạn có ý định kéo cả code của package về :D
 
-## Custom UI
+## 👒 Custom UI
 
 Mặc định Ubuntu sẽ hiển thị 2 icon trên desktop. Để desktop `sạch sẽ` hơn, ta ẩn `home` và `trash` icon đi. Với version Ubuntu 20.XX bằng terminal:
 
