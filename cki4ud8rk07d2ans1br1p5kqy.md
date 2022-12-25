@@ -20,15 +20,15 @@ Trong quá trình upgrade Ubuntu thì để an toàn Ubuntu tự động disable
 
 Để enable lại thì ta:
 
-1.  vào danh sách các App
+1. vào danh sách các App
     
-2.  search `update`
+2. search `update`
     
-3.  chọn `Software & Updates`
+3. chọn `Software & Updates`
     
-4.  vào tab `Other Software`
+4. vào tab `Other Software`
     
-5.  Enable lại các repo có ghi chú `disabled on upgrade to ${ubuntu-version-name}`
+5. Enable lại các repo có ghi chú `disabled on upgrade to ${ubuntu-version-name}`
     
 
 ![update-repo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629534955375/sBtTL8u2ay.png align="left")
@@ -67,7 +67,7 @@ sudo apt-get install gdebi
 sudo apt purge package-name
 ```
 
-### Cài Chrome thông qua file đuôi `.deb`
+### 🍄 Cài Chrome thông qua file đuôi `.deb`
 
 Do `snap store` (sẽ giới thiệu dưới đây) không có `chrome` mà chỉ có `chromium`, nên ta lên [trang chủ Chrome](https://www.google.com/intl/en/chrome/) rồi tải file đuôi `.deb` về để cài với `gdebi-gtk`.
 
@@ -144,7 +144,7 @@ Default terminal của Ubuntu nhanh, đơn giản. Như vậy là đủ.
 
 Nhưng đối với những bạn thích custom hay vọc vạch thì hãy thử dùng các terminal client bên dưới xem nhé: 🌂
 
-*   [hyper](https://hyper.is/): [đây](https://gist.github.com/loclv/67477636e417e974a07f930d72495eaa) là settings dành cho `hype` của mình.
+* [hyper](https://hyper.is/): [đây](https://gist.github.com/loclv/67477636e417e974a07f930d72495eaa) là settings dành cho `hype` của mình.
     
 
 ```json
@@ -157,7 +157,7 @@ plugins: [
 
 Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì thư mục `HOME`. Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào.
 
-*   [tabby](https://tabby.sh/) - Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
+* [tabby](https://tabby.sh/) - Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
     
 
 Ảnh UI của tabby:
@@ -168,7 +168,27 @@ Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì 
 
 [fish shell](https://fishshell.com/) + [Oh my fish](https://github.com/oh-my-fish/oh-my-fish) - quản lý packages dành cho `fish shell`.
 
-Đây là các alias được config thông qua `fish shell`:
+Cách cài đặt fish shell bằng command line có tại [đây](https://www.geeksforgeeks.org/how-to-install-and-configure-fish-shell-in-ubuntu/). Tóm tắt:
+
+```bash
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install fish
+# Make fish shell as default shell
+sudo chsh -s /usr/local/bin/fish
+# install Oh my fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+```
+
+Để config fish shell ta sẽ edit file: `~/.config/fish/config.fish`. Ta có thể dùng editor yêu thích để edit:
+
+```bash
+code ~/.config/fish/config.fish
+# or
+vi ~/.config/fish/config.fish
+```
+
+Dưới đây là các alias được config thông qua `fish shell`:
 
 ```plaintext
 alias g='git'
@@ -180,7 +200,7 @@ alias gpick='git cherry-pick'
 
 alias cf 'code ~/.config/fish/config.fish'
 
-alias update 'sudo snap refresh && sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade'
+alias up 'sudo snap refresh && sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade'
 alias install 'sudo apt-get install'
 alias remove 'sudo apt-get remove --purge'
 alias clean 'sudo apt autoremove && sudo apt autoclean -y'
@@ -266,7 +286,7 @@ Fira Code được opensource tại [đây](https://github.com/tonsky/FiraCode).
 
 Font setting: `'Fira Code'`
 
-### Font dành riêng cho tiếng Việt
+### 🦜 Font dành riêng cho tiếng Việt
 
 `Be Vietnam Pro` download tại [đây](https://github.com/bettergui/BeVietnamPro/blob/main/fonts/ttf/BeVietnamPro-Regular.ttf).
 
@@ -295,6 +315,8 @@ Thường xuyên chạy update các package mới nhất để tăng tính bảo
 
 ```sh
 sudo apt-get update && sudo apt-get upgrade && sudo apt dist-upgrade
+# clean
+sudo apt --purge autoremove
 ```
 
 Đối với `snap` thì đôi khi cũng không tự động update được do ứng dụng cần update lúc nào cũng được mở. Để manual update ta dùng:
@@ -332,19 +354,19 @@ Tuy nhiên ở Ubuntu 21.04, sẽ có lỗi: `No such schema "org.gnome.shell.ex
 
 ## Tham khảo
 
-*   [https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/](https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/)
+* [https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/](https://www.ubuntupit.com/best-things-to-do-after-installing-ubuntu/)
     
-*   [https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103](https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103)
+* [https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103](https://www.lifewire.com/updated-software-for-ubuntu-with-ppas-2202103)
     
-*   [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
+* [omgubuntu - Use Terminal to Remove Trash Icon](https://www.omgubuntu.co.uk/2020/03/remove-trash-from-desktop-ubuntu):
     
-*   [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
+* [cyberciti.biz upgrade-ubuntu](https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/)
     
-*   [askubuntu ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop](https://askubuntu.com/questions/1335398/ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop)
+* [askubuntu ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop](https://askubuntu.com/questions/1335398/ubuntu-21-04-remove-trash-user-and-drive-icon-from-desktop)
     
-*   [linuxconfig.org/how-to-install-tweak-tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
+* [linuxconfig.org/how-to-install-tweak-tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
     
-*   [install-chrome-ubuntu](https://itsfoss.com/install-chrome-ubuntu/)
+* [install-chrome-ubuntu](https://itsfoss.com/install-chrome-ubuntu/)
     
 
 ---
