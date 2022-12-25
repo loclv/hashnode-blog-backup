@@ -174,10 +174,16 @@ Cách cài đặt fish shell bằng command line có tại [đây](https://www.g
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install fish
+
+which fish
+# output: `/usr/bin/fish`
+
 # Make fish shell as default shell
-sudo chsh -s /usr/local/bin/fish
+sudo chsh -s /usr/bin/fish
+
 # install Oh my fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+omf -v
 ```
 
 Để config fish shell ta sẽ edit file: `~/.config/fish/config.fish`. Ta có thể dùng editor yêu thích để edit:
