@@ -41,7 +41,7 @@ Gọi lambda là event-driven service vì nó có cơ chế có sự kiện gọ
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671517978494/PTLE-SUNW.png align="center")
 
-Việc bật bên rồi tắt đi này gọi là gọi là "reserved concurrency" (xem trong ảnh trên). Ngược lại, nếu có request thì nó tiếp tục được tái sử dụng để xử lý request, gọi là "provisioned concurrency" (xem trong ảnh trên).
+Việc bật bên rồi tắt đi này gọi là gọi là tính năng "reserved concurrency" (xem trong ảnh trên). Ngược lại, nếu có request thì nó tiếp tục được tái sử dụng để xử lý request, gọi là tính năng "provisioned concurrency" (xem trong ảnh trên).
 
 Lambda thường là 1 bộ phận quan trọng với kiến trúc serverless, kiến trúc này sẽ được giới thiệu sau đây.
 
@@ -110,7 +110,15 @@ Dưới đây là "vòng đời" - lifecycle của 1 lambda function:
 
 [Operating Lambda: Performance optimization – Part 1](https://aws.amazon.com/blogs/compute/operating-lambda-performance-optimization-part-1/)
 
-Ta có thể thấy kể từ khi nhận được 1 request chạy lambda function thì giai đoạn "cold start" là khoảng thời gian mà function chưa thể thực thi được code. Còn 1 đặc điểm nữa mà Lambda khác biệt so với EC2 đó là trong khi nhận 1 request thì 1 lambda function được coi là đang "bận", nó sẽ không nhận thêm request như với EC2. Nguyên tắc là mỗi 1 event - 1 request chỉ chạy trên 1 lambda function. Điều đó giúp lambda function giữ được tính đơn giản.
+Ta có thể thấy kể từ khi nhận được 1 request chạy lambda function thì giai đoạn "cold start" là khoảng thời gian mà function chưa thể thực thi được code. Tính năng "Provisioned concurrency" giúp ta "giữ ấm" - "warmed up" function container luôn trong tình trạng sẵn sàng phục vụ. AWS sẽ giữ cho function container luôn chạy, ngay cả khi function đó không được chạy.
+
+"Provisioned concurrency":
+
+* Ưu điểm: bỏ qua giai đoạn "cold start", tối ưu performance bằng cách giảim thời gian để start up và sẽ bắt đầu được thực thi ngay khi được gọi - invoked.
+
+* Nhược điểm: function container luôn trong tình trạng chạy nên chỉ có thể bị tắt đi - disabled khi mà "provisioned concurrency setting" bị disabled hoặc là bị stopped do lỗi hoặc exceptions. Việc luôn trong tình trạng sẵn sàng phục vụ này giống như ta đang chạy nhiều EC2 cỡ nhỏ cùng lúc. Nên hiển nhiên rằng tính năng này "tốn tiền", không khéo còn đắt hơn là chạy nhiều EC2!
+
+Còn 1 đặc điểm nữa mà Lambda khác biệt so với EC2 đó là trong khi nhận 1 request thì 1 lambda function được coi là đang "bận", nó sẽ không nhận thêm request như với EC2. Nguyên tắc là mỗi 1 event - 1 request chỉ chạy trên 1 lambda function. Điều đó giúp lambda function giữ được tính đơn giản.
 
 Như vậy đối với mức độ sử dụng dịch vụ thường xuyên không mấy biến thiên, ổn định thì rõ ràng EC2 hiệu quả hơn, vì nó không mất thời gian Cold start.
 
