@@ -63,6 +63,8 @@ console.log(addTwo(4));
     
 * More readable code and better performance
     
+* TypeScript also uses ESM syntax by default
+    
 
 If you are using an older version of Node.js or a runtime that does not support ESM, you may not be able to use ESM packages directly. However, many ESM packages provide a CommonJS version of their package that can be used with the `require()` function and the `module.exports` object, which is supported by most JavaScript runtimes.
 
