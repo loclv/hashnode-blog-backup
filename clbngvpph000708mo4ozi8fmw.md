@@ -6,29 +6,29 @@
 
 [NextJS](https://nextjs.org/) là 1 framework khá phổ biến, đặc thù của nó là có thể [deploy 1 web ở nhiều chế độ](https://theodorusclarence.com/blog/nextjs-fetch-method):
 
-*   CSR - Client-Side Rendering
+* CSR - Client-Side Rendering
     
-*   SSR - Server-Side Rendering
+* SSR - Server-Side Rendering
     
-*   SSG - Static Site Generation
+* SSG - Static Site Generation
     
-*   ISR – Incremental Static Regeneration, kết hợp giữa SSG và SSR
+* ISR – Incremental Static Regeneration, kết hợp giữa SSG và SSR
     
 
 Bài toán đặt ra là làm sao cho việc deploy:
 
-*   tốn ít tài nguyên cloud nhất có thể
+* tốn ít tài nguyên cloud nhất có thể
     
-*   tốn ít công setup, config và maintain nhất có thể
+* tốn ít công setup, config và maintain nhất có thể
     
 
 Do NextJS được tạm chia thành 3 phần:
 
-*   Phần tĩnh chỉ cần trả về client mà không cần xử lý data gì thêm - bao gồm thư mục `/static`, `/public`, `/_next`, `/static-pages`
+* Phần tĩnh chỉ cần trả về client mà không cần xử lý data gì thêm - bao gồm thư mục `/static`, `/public`, `/_next`, `/static-pages`
     
-*   Phần động có xử lý dữ liệu liên quan tới SSR, thông thường là sử dụng `getServerSideProps`
+* Phần động có xử lý dữ liệu liên quan tới SSR, thông thường là sử dụng `getServerSideProps`
     
-*   Phần động có xử lý dữ liệu liên quan tới API routes, nằm trong thư mục `api/*`
+* Phần động có xử lý dữ liệu liên quan tới API routes, nằm trong thư mục `api/*`
     
 
 Như vậy, phần tĩnh thì ta có thể để trên AWS S3, phần động thì chạy trên AWS lambda. Sau đây là cơ chế cơ bản của lambda - event-driven - hướng sự kiện:
@@ -95,9 +95,9 @@ Vấn đề là tất cả cùng ngủ thì lấy ai phục vụ??
 
 Tất nhiên là khi có request đến, Lambda Function phải khởi chạy từ đầu. Cái này gọi là "**Cold ❄️ Start Issues**". Tham khảo thêm cách "**Keeping Functions Warm**" tại:
 
-*   [serverless - Keeping Functions Warm - How To Fix AWS Lambda Cold Start Issues](https://www.serverless.com/blog/keep-your-lambdas-warm)
+* [serverless - Keeping Functions Warm - How To Fix AWS Lambda Cold Start Issues](https://www.serverless.com/blog/keep-your-lambdas-warm)
     
-*   [dashbird - What can improve startup latency?](https://www.serverless.com/blog/keep-your-lambdas-warm)
+* [dashbird - What can improve startup latency?](https://www.serverless.com/blog/keep-your-lambdas-warm)
     
 
 Dưới đây là "vòng đời" - lifecycle của 1 lambda function:
@@ -115,8 +115,9 @@ Ta có thể thấy kể từ khi nhận được 1 request chạy lambda functi
 "Provisioned concurrency":
 
 * Ưu điểm: bỏ qua giai đoạn "cold start", tối ưu performance bằng cách giảim thời gian để start up và sẽ bắt đầu được thực thi ngay khi được gọi - invoked.
-
+    
 * Nhược điểm: function container luôn trong tình trạng chạy nên chỉ có thể bị tắt đi - disabled khi mà "provisioned concurrency setting" bị disabled hoặc là bị stopped do lỗi hoặc exceptions. Việc luôn trong tình trạng sẵn sàng phục vụ này giống như ta đang chạy nhiều EC2 cỡ nhỏ cùng lúc. Nên hiển nhiên rằng tính năng này "tốn tiền", không khéo còn đắt hơn là chạy nhiều EC2!
+    
 
 Còn 1 đặc điểm nữa mà Lambda khác biệt so với EC2 đó là trong khi nhận 1 request thì 1 lambda function được coi là đang "bận", nó sẽ không nhận thêm request như với EC2. Nguyên tắc là mỗi 1 event - 1 request chỉ chạy trên 1 lambda function. Điều đó giúp lambda function giữ được tính đơn giản.
 
@@ -126,9 +127,9 @@ Như vậy đối với mức độ sử dụng dịch vụ thường xuyên kh�
 
 Cụ thể kiến trúc serverless ta có thể tham khảo dưới đây:
 
-*   [serverless-nextjs blog](https://www.serverless.com/blog/serverless-nextjs)
+* [serverless-nextjs blog](https://www.serverless.com/blog/serverless-nextjs)
     
-*   [Terraform Next.js module for AWS - github](https://github.com/milliHQ/terraform-aws-next-js)
+* [Terraform Next.js module for AWS - github](https://github.com/milliHQ/terraform-aws-next-js)
     
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670931324213/027IwHCVr.png align="center")
@@ -183,24 +184,24 @@ Tương tự với việc kết nối tới DB, việc sử dụng dịch vụ k
 
 #### 📖 Với việc ghi log
 
-*   **Server truyền thống:**
+* **Server truyền thống:**
     
 
 Cách dùng server truyền thống với EC2 thì có thể không dùng CloudWatch Log để lưu và quản lý log. Nếu vậy thì sẽ phải định kỳ vào EC2 xóa log, hoặc dùng `CrontJob` để xóa.
 
-*   **Serverless:**
+* **Serverless:**
     
 
 Bởi vì khi API chạy trên Lambda Function thì không thể ghi log ra Function đang chạy được. Do mỗi Function - môi trường chạy là "động" nên cứ ghi ra thì có thể mất và khó kiểm soát. Như vậy, việc sử dụng [AWS CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) là gần như bắt buộc. Tham khảo thêm tại [serverless CloudWatch Log docs - Simple event definition](https://www.serverless.com/framework/docs/providers/aws/events/cloudwatch-log).
 
 #### 🎄 Process manager
 
-*   **Server truyền thống:**
+* **Server truyền thống:**
     
 
 Ta có thể sử dụng [pm2 với custom log](https://loclv.hashnode.dev/deploy-to-the-server-with-pm2-and-custom-log) và [cluster mode](https://pm2.keymetrics.io/docs/usage/cluster-mode/) để tối ưu hiệu quả hoạt động bằng việc tận dụng số nhân CPU và giảm downtime.
 
-*   **Serverless:**
+* **Serverless:**
     
 
 Không cần Process manager, do AWS lambda quản lý, xem thêm [Lambda execution environment lifecycle](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environment.html).
@@ -259,16 +260,16 @@ Việc tái cấu trúc lại source code này cũng không cần lo lắng khi 
 
 Đối với NextJS phiên bản mới, thời điểm hiện tại là NextJS 13 thì:
 
-*   AWS Amplify đã hỗ trợ, xem thêm blog: [Deploy a Next.js 13 app to AWS with Amplify Hosting](https://aws.amazon.com/blogs/mobile/amplify-next-js-13/).
+* AWS Amplify đã hỗ trợ, xem thêm blog: [Deploy a Next.js 13 app to AWS with Amplify Hosting](https://aws.amazon.com/blogs/mobile/amplify-next-js-13/).
     
-*   [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **có vẻ đã ngừng maintain qua** [thông báo này](https://github.com/serverless-nextjs/serverless-next.js/discussions/2439), nên tốt nhất là không nên dùng [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **nữa**! NextJS 13 đã có bundler mới, [không còn dùng webpack nữa](https://nextjs.org/blog/next-13), nên xảy ra nhiều issue ví dụ [serverless-next.js/issues/2497](https://github.com/serverless-nextjs/serverless-next.js/issues/2497)
+* [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **có vẻ đã ngừng maintain qua** [thông báo này](https://github.com/serverless-nextjs/serverless-next.js/discussions/2439), nên tốt nhất là không nên dùng [**serverless-next.js**](https://github.com/serverless-nextjs/serverless-next.js) **nữa**! NextJS 13 đã có bundler mới, [không còn dùng webpack nữa](https://nextjs.org/blog/next-13), nên xảy ra nhiều issue ví dụ [serverless-next.js/issues/2497](https://github.com/serverless-nextjs/serverless-next.js/issues/2497)
     
-*   [serverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS. [serverless-stack/sst](https://github.com/serverless-stack/sst) khi sử dụng thì có cảm giác khá khó config, không được như [terraform](https://www.terraform.io/). Còn riêng cho NextJS là [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), tool này sử dụng `AWS CDK` để tương tác với các dịch vụ AWS. Hiện tại mình cũng chưa thử dùng [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), nên chưa thể đánh giá được!
+* [serverless-stack/sst](https://github.com/serverless-stack/sst) - tool build full-stack serverless applications on AWS. [serverless-stack/sst](https://github.com/serverless-stack/sst) khi sử dụng thì có cảm giác khá khó config, không được như [terraform](https://www.terraform.io/). Còn riêng cho NextJS là [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), tool này sử dụng `AWS CDK` để tương tác với các dịch vụ AWS. Hiện tại mình cũng chưa thử dùng [jetbridge/cdk-nextjs](https://github.com/jetbridge/cdk-nextjs), nên chưa thể đánh giá được!
     
-*   [milliHQ/terraform-aws-next-js](https://github.com/milliHQ/terraform-aws-next-js) cũng không còn support phiên bản mới nữa. Xem thêm tại [issue này](https://github.com/milliHQ/terraform-aws-next-js/issues/372). Thay vào đó ta nên tự sử dụng [terraform](https://www.terraform.io/) để tạo mới dự án từ đầu, tuy vất vả hơn nhưng dễ dàng custom!
+* [milliHQ/terraform-aws-next-js](https://github.com/milliHQ/terraform-aws-next-js) cũng không còn support phiên bản mới nữa. Xem thêm tại [issue này](https://github.com/milliHQ/terraform-aws-next-js/issues/372). Thay vào đó ta nên tự sử dụng [terraform](https://www.terraform.io/) để tạo mới dự án từ đầu, tuy vất vả hơn nhưng dễ dàng custom!
     
 
-* * *
+---
 
 #### **server truyền thống**
 
@@ -286,17 +287,17 @@ Còn đối với AWS lambda, ta sử dụng [Lambda function metrics](https://d
 
 Cả 2 loại server truyền thống và serverless đều sử dụng chung cấu trúc [logging level](https://sematext.com/blog/logging-levels/):
 
-*   **TRACE**
+* **TRACE**
     
-*   **DEBUG**
+* **DEBUG**
     
-*   **INFO**
+* **INFO**
     
-*   **WARN**
+* **WARN**
     
-*   **ERROR**
+* **ERROR**
     
-*   **FATAL**
+* **FATAL**
     
 
 Khi muốn tìm kiếm, phân loại log ta đều cần [CloudWatch Logs Insights query syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html).
@@ -345,34 +346,43 @@ Rủi ro về giá của **Lambda** là việc dịch vụ có khi còn đắt h
 
 Việc setup Provisioned Concurrency với số lượng lớn function được chạy đồng thời và thời enabled lớn, thì còn tốn resource hơn cả việc bạn bật số lượng nhỏ EC2 liên tục.
 
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672031074152/24601625-e494-4a86-9dbc-6ee5d4772cc3.png align="center")
+
+Ảnh trên là 1 ví dụ minh họa khi setup Provisioned Concurrency số lượng lớn. Giá thành chủ yếu phụ thuộc vào:
+
+* Số lượng của Concurrency.
+    
+* Số lượng thời gian theo giờ / 1 tháng mà Provisioned Concurrency được enabled.
+    
+
 ### 🤢Tổng hợp nhược điểm của serverless
 
 Ưu điểm thì ta thấy rõ là ở 1 chừng mực nào đó, giá cả AWS lambda là rẻ hơn, việc scale-up service cũng sẽ tự động 1 phần nào đó. Tuy nhiên đánh đổi lại, ta sẽ nhìn lại các nhược điểm như sau:
 
-*   Source-code thường cần phải có cấu trúc khác biệt so với truyền thống, nên thiết kế hệ thống ngay từ đầu đã phải lên kế hoạch cho serverless, tránh việc code xong rồi mới quyết định thì sẽ phải sửa code. Nếu phụ thuộc vào các serverless framework thì cũng có rủi ro không được support đầy đủ, ví dụ như NextJS phiên bản mới.
+* Source-code thường cần phải có cấu trúc khác biệt so với truyền thống, nên thiết kế hệ thống ngay từ đầu đã phải lên kế hoạch cho serverless, tránh việc code xong rồi mới quyết định thì sẽ phải sửa code. Nếu phụ thuộc vào các serverless framework thì cũng có rủi ro không được support đầy đủ, ví dụ như NextJS phiên bản mới.
     
-*   Deploy tốn thời gian hơn vì có nhiều thành phần và ta phải quan tâm tới việc giới hạn ngưỡng của lambda.
+* Deploy tốn thời gian hơn vì có nhiều thành phần và ta phải quan tâm tới việc giới hạn ngưỡng của lambda.
     
-*   Tốn thời gian tìm hiểu và maintain hơn vì phải quản lý số lượng Lambda function đồng thời được invoke.
+* Tốn thời gian tìm hiểu và maintain hơn vì phải quản lý số lượng Lambda function đồng thời được invoke.
     
-*   Có thể vẫn phải sử dụng kết hợp EC2 vì các yêu cầu về lượng truy cập (request) tới cùng 1 thời điểm quá lớn.
+* Có thể vẫn phải sử dụng kết hợp EC2 vì các yêu cầu về lượng truy cập (request) tới cùng 1 thời điểm quá lớn.
     
-*   Việc Cold starting sẽ ảnh hưởng tới thời gian trả về response, mà muốn giải quyết bài toán này lại cần config và tìm hiểu về cơ chế warm up function.
+* Việc Cold starting sẽ ảnh hưởng tới thời gian trả về response, mà muốn giải quyết bài toán này lại cần config và tìm hiểu về cơ chế warm up function.
     
-*   Việc [config CPU và memory cho lambda](https://stackoverflow.com/questions/66522916/aws-lambda-memory-vs-cpu-configuration), thì khó khăn hơn EC2. Hiện tại, chưa thấy có hỗ trợ số vCPU &gt; 10. Vì vậy tác vụ quá nặng yêu cầu cấu hình cao hay GPU thì không nên sử dụng.
+* Việc [config CPU và memory cho lambda](https://stackoverflow.com/questions/66522916/aws-lambda-memory-vs-cpu-configuration), thì khó khăn hơn EC2. Hiện tại, chưa thấy có hỗ trợ số vCPU &gt; 10. Vì vậy tác vụ quá nặng yêu cầu cấu hình cao hay GPU thì không nên sử dụng.
     
-*   Đối mặt với các rủi ro về giới hạn số lượng connection tới DB hay các service bên thứ 3.
+* Đối mặt với các rủi ro về giới hạn số lượng connection tới DB hay các service bên thứ 3.
     
-*   Xử lý queue, callback với nhiều lambda funtion bấy đồng bộ thì khó khăn hơn là viết queue nằm trong 1 cục source code bên trong EC2.
+* Xử lý queue, callback với nhiều lambda funtion bấy đồng bộ thì khó khăn hơn là viết queue nằm trong 1 cục source code bên trong EC2.
     
-*   Muốn build ứng dụng chat realtime sử dụng web-socket thì ta cần [sử dụng với AWS API Gateway](https://tsh.io/blog/implementing-websocket-with-aws-lambda-and-api-gateway/).
+* Muốn build ứng dụng chat realtime sử dụng web-socket thì ta cần [sử dụng với AWS API Gateway](https://tsh.io/blog/implementing-websocket-with-aws-lambda-and-api-gateway/).
     
 
 ### Phụ lục
 
 `mermaid` Diagram code:
 
-*   Server truyền thống
+* Server truyền thống
     
 
 ````markdown
@@ -385,7 +395,7 @@ Client -- request API --> Server
 Server -- send response including API response or static resource --> Client
 ````
 
-*   serverless
+* serverless
     
 
 ````markdown
@@ -434,17 +444,17 @@ sequenceDiagram
 
 Vẽ hình bằng:
 
-*   [sketch.io/sketchpad](https://sketch.io/sketchpad/)
+* [sketch.io/sketchpad](https://sketch.io/sketchpad/)
     
-*   Create smart AWS diagrams with [cloudcraft.co](https://www.cloudcraft.co/)
+* Create smart AWS diagrams with [cloudcraft.co](https://www.cloudcraft.co/)
     
-*   [Mermaid lets you create diagrams and visualizations using text and code.](https://mermaid-js.github.io/mermaid/#/)
+* [Mermaid lets you create diagrams and visualizations using text and code.](https://mermaid-js.github.io/mermaid/#/)
     
 
 ### ✈️ Tham khảo
 
-*   [stackoverflow - cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws](https://stackoverflow.com/questions/61433306/cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws)
+* [stackoverflow - cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws](https://stackoverflow.com/questions/61433306/cheapest-way-to-deploy-a-react-app-using-nextjs-ssr-on-aws)
     
-*   [https://blog.bitsrc.io/why-aws-love-next-js-1f7b6491857](https://blog.bitsrc.io/why-aws-love-next-js-1f7b6491857)
+* [https://blog.bitsrc.io/why-aws-love-next-js-1f7b6491857](https://blog.bitsrc.io/why-aws-love-next-js-1f7b6491857)
     
-*   [https://www.sentiatechblog.com/aws-re-invent-2020-day-3-optimizing-lambda-cost-with-multi-threading?utm\_source=reddit&utm\_medium=social&utm\_campaign=day3\_lambda](https://www.sentiatechblog.com/aws-re-invent-2020-day-3-optimizing-lambda-cost-with-multi-threading?utm_source=reddit&utm_medium=social&utm_campaign=day3_lambda)
+* [https://www.sentiatechblog.com/aws-re-invent-2020-day-3-optimizing-lambda-cost-with-multi-threading?utm\_source=reddit&utm\_medium=social&utm\_campaign=day3\_lambda](https://www.sentiatechblog.com/aws-re-invent-2020-day-3-optimizing-lambda-cost-with-multi-threading?utm_source=reddit&utm_medium=social&utm_campaign=day3_lambda)
