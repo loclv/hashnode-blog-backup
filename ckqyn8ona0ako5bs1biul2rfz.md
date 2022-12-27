@@ -1,6 +1,6 @@
-## 🐱 NestJS - Node.js TypeScript Backend Framework lấy cảm hứng từ Angular 🅰️ - Có chắc đây là yêu 💜 từ cái nhìn đầu tiên về các nét cơ bản
+# 🐱 NestJS - Node.js TypeScript Backend Framework lấy cảm hứng từ Angular 🅰️ - Có chắc đây là yêu 💜 từ cái nhìn đầu tiên về các nét cơ bản
 
-## Vài điều cơ bản về [NestJS](https://nestjs.com/)
+## 👋 Vài điều cơ bản về [NestJS](https://nestjs.com/)
 
 - Source code của `NestJS` được viết toàn bộ bằng `TypeScript`. Các tín đồ của `TypeScript` đã thấy phấn khích chưa ạ?? 😘
 
@@ -126,7 +126,7 @@ Ngoài ra nó còn có các package hỗ trợ làm việc với các ORM ([Obje
 - [TypeORM](https://github.com/typeorm/typeorm)
 - [Prisma](https://github.com/prisma/prisma)
 
-## Tổng kết
+## 🧘‍♀️ Tổng kết
 
 Ngoài ra còn rất nhiều thứ vân vân và mây mây nữa trong [NestJS](https://nestjs.com/).
 
@@ -140,3 +140,4 @@ Ngoài ra còn rất nhiều thứ vân vân và mây mây nữa trong [NestJS](
 ---
 
 Photo by <a href="https://unsplash.com/@browaterboy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Trison Thomas</a> on <a href="https://unsplash.com/@browaterboy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+🧘‍♀️
