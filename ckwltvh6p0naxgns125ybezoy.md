@@ -1,8 +1,8 @@
-## Node.js - TypeScript - ssh2-sftp-client package - phần 2 - fast download upload  📂 🍻
+# Node.js - TypeScript - ssh2-sftp-client package - phần 2 - fast download upload  📂 🍻
 
 Tiếp nối phần 1 - [dùng ssh2-sftp-client với SFTP server tự tạo trên localhost - kết nối](https://loclv.hashnode.dev/nodejs-typescript-dung-ssh2-sftp-client-voi-sftp-server-tu-tao-tren-localhost-phan-1-ket-noi), bài này sẽ nói về cách download và upload file.
 
-## Khởi đầu và kết thúc
+## 🧘‍♀️ Khởi đầu và kết thúc
 
 Ở phần trước mình quên chưa giải thích đoạn `new Client('download-test-json-client')` thay vì `new Client()`. Đoạn string đó input vào thì ta có thể định danh client mà mình đang làm việc cùng là client nào. Nó hữu ích khi bạn chạy nhiều client cùng 1 lúc mà khi muốn debug rằng client nào đang gặp vấn đề. Thế nên ta cần định danh cho nó. Tuy nhiên nếu chỉ có 1 client instance thì không đặt tên cũng không sao.
 
