@@ -1,4 +1,4 @@
-## Tại sao cần dùng Fonts API? Cách dùng 🌲 Nuxt.js với nuxt-webfontloader
+# Tại sao cần dùng Fonts API? Cách dùng 🌲 Nuxt.js với nuxt-webfontloader
 
 ## Tại sao cần dùng Fonts API?
 
