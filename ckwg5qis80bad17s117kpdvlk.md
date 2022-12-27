@@ -1,8 +1,8 @@
-## Node.js - TypeScript - dùng ssh2-sftp-client với SFTP server tự tạo trên localhost - phần 1 - kết nối 📂 🍻
+# Node.js - TypeScript - dùng ssh2-sftp-client với SFTP server tự tạo trên localhost - phần 1 - kết nối 📂 🍻
 
 Source-code được viết theo phong các `async` - `await`.
 
-## Cài đặt `ssh2-sftp-client` vào project Node.js - TypeScript
+## 🗻 Cài đặt `ssh2-sftp-client` vào project Node.js - TypeScript
 
 Mình đã dựng sẵn 1 base project dành cho Node.js - TypeScript tại [đây](https://github.com/loclv/typescript-nodejs-template).
 
@@ -17,7 +17,7 @@ Chú ý là bạn có thể thay pnpm - package manager bằng yarn hoặc npm.
 
 Giờ ta sẽ sử dụng `SFTP Servers` được dựng trên ngay chính localhost để test.
 
-## Tạo SFTP server trên localhost
+## 🌱 Tạo SFTP server trên localhost
 
 Tham khảo bài viết [setup-a-local-sftp-server-for-development](http://www.niladicpodcast.com/blog/2018/1/setup-a-local-sftp-server-for-development/) trên môi trường Ubuntu:
 
@@ -178,3 +178,4 @@ Như vậy, ta đã xác nhận là đã kết nối thành công tới SFTP ser
 ---
 
 Photo by <a href="https://unsplash.com/@drew_beamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Drew Beamer</a> on <a href="https://unsplash.com/s/photos/link?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+🌱
