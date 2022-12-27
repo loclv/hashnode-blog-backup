@@ -1,4 +1,4 @@
-## NodeJs - Hỏi nhanh - Nếu có process.exit trong khối try finally thì finally còn được thực thi hay không?
+# NodeJs - Hỏi nhanh - Nếu có process.exit trong khối try finally thì finally còn được thực thi hay không?
 
 ## Câu hỏi và trả lời
 
@@ -30,7 +30,7 @@ Kết quả là *finally, cleanup* không được log ra, chỉ có *START* là
 
 Như vậy nếu trong khối *try* có `process.exit(1);` chẳng hạn thì khối *finally* không được thực thi.
 
-## Giải thích
+## 💁‍♀️ Giải thích
 
 Theo như [nodejs.dev - how-to-exit-from-a-nodejs-program](https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program), thì:
 
