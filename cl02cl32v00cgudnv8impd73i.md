@@ -1,8 +1,8 @@
-## NodeJs - Hiểu rõ hơn về process.argv 🍾 và ứng dụng
+# NodeJs - Hiểu rõ hơn về process.argv 🍾 và ứng dụng
 
 Để hiểu rõ về nó thì tốt nhất là ta nên *chạy ngay đi*!
 
-## Chạy ngay đi
+## 🏃‍♀️ Chạy ngay đi
 
 Tạo 1 file `process-args.js`:
 
@@ -41,7 +41,7 @@ Dưới đây là output từ local của mình:
 4: four
 ```
 
-## Giải thích
+## 💁‍♀️ Giải thích
 
 `process.argv` trả về 1 mảng gồm các string chứa lần lượt:
 
@@ -106,11 +106,11 @@ Output:
 Về convention của CLI command-language syntax ta có thể tham khảo [Angular CLI command-language syntax](https://angular.io/cli#cli-command-language-syntax).
 Có thể đặt tên option theo *camelCase* or *dash-case*, như --myOptionName và --my-option-name.
 
-## Tham khảo
+## ✈️ Tham khảo
 
 - [nodejs.org - parse command line arguments](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/)
 - Comment ghi trong `node_modules/@types/node/process.d.ts`, phần giải thích cho `argv: string[];`.
 
 ---
 
-Photo by [Krzysztof Niewolny](https://unsplash.com/@epan5?utm_source=Hashnode&utm_medium=referral) on Unsplash.
+Photo by [Krzysztof Niewolny](https://unsplash.com/@epan5?utm_source=Hashnode&utm_medium=referral) on Unsplash.💁‍♀️✈️
