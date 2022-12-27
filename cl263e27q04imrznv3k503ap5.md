@@ -1,6 +1,6 @@
-## NodeJs - Update OpenSSL 💌 để vá lỗ hổng bảo mật
+# NodeJs - Update OpenSSL 💌 để vá lỗ hổng bảo mật
 
-## Mở đầu
+## 👋 Mở đầu
 
 [OpenSSL](https://www.openssl.org/), ngắn gọn là giao thức mã hóa và bảo mật qua mạng, chống rò rỉ thông tin và xác định đối tượng truyền gói tin.
 
@@ -14,7 +14,7 @@ Ví dụ từ OpenSSL 1.1.1m -> OpenSSL 1.1.1n sửa lỗi:
 
 Theo [OpenSSL Security Advisory [15 March 2022]](https://www.openssl.org/news/secadv/20220315.txt) thì đây được đánh giá là 1 lỗ hổng có độ nghiêm trọng cao.
 
-## Các bước kiểm tra bản vá
+## 👷 Các bước kiểm tra bản vá
 
 Ví dụ ta muốn update lên *OpenSSL 1.1.1n* để vá lỗ hổng trên trên NodeJs. Phiên bản này release ngày 15/03/2022. Ta sẽ tiến hành theo các bước sau:
 
