@@ -1,8 +1,8 @@
-## Tổng hợp các VPS giá rẻ có data center ở Nhật 💽💾
+# Tổng hợp các VPS giá rẻ có data center ở Nhật 💽💾
 
 Updated at 10-2020.
 
-## Danh sách các VPS giá rẻ
+## 🪐 Danh sách các VPS giá rẻ
 
 Trang chuyên so sánh VPS (tuy nhiên không có lựa chọn so sánh location là Tokyo/Osaka):
 
