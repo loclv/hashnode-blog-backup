@@ -1,6 +1,6 @@
-## Alpine based Docker 🐋 image - dùng `/bin/sh` thay vì phải cài `bash`
+# Alpine based Docker 🐋 image - dùng `/bin/sh` thay vì phải cài `bash`
 
-## Câu chuyện vào debug bên trong Docker image
+## 🌱 Câu chuyện vào debug bên trong Docker image
 
 Khi mà mới làm quen với `Docker` image, hay đơn giản là vào bên trong nó xem lỗi do đâu,
 chắc hẳn bạn cũng sẽ nghĩ ngay trong đầu là phải bật `bash` lên và truy cập vào bên trong image.
