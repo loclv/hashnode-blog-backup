@@ -1,4 +1,4 @@
-## Introduce vue-advanced-cropper 🖼️ with Vue 3 - ts - Composition API
+# Introduce vue-advanced-cropper 🖼️ with Vue 3 - ts - Composition API
 
 I just rewrite the minimum example in [vue-advanced-cropper homepage](https://norserium.github.io/vue-advanced-cropper/) with Vue 3, TypeScript and [Composition API](https://vuejs.org/guide/extras/composition-api-faq.html).
 
@@ -51,7 +51,6 @@ const change = ({ coordinates, canvas }: { coordinates: Coordinates; canvas: HTM
   height: 600px;
 }
 </style>
-
 ```
 
 ## Output
