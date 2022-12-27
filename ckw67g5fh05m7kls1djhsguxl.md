@@ -1,4 +1,4 @@
-## Golang 🎽 - Dùng Go Version manager — gobrew
+# Golang 🎽 - Dùng Go Version manager — gobrew
 
 ## Tại sao ta nên dùng Version manager?
 
@@ -6,7 +6,7 @@ Cũng như các ngôn ngữ khác như Node.js, việc chuyển đổi version g
 
 Việc của Version manager là giúp ta chỉ cần gõ switch version là xong, nhanh gọn!
 
-## Tại sao lại là gobrew?
+## 🤷‍♀️ Tại sao lại là gobrew?
 
 Theo như bài viết [medium - Go Version manager — gobrew](https://medium.com/web-developer/go-version-manager-gobrew-c8750157dfe6), thì so với 2 version manager khác là [gvm](https://github.com/moovweb/gvm) và [goenv](https://github.com/syndbg/goenv) thì [gobrew](https://github.com/kevincobain2000/gobrew) được viết bằng chính golang. Điều này giúp cho chính những Go-developer sẽ cảm thấy thoải mái khi đóng góp và đọc hiểu `gobrew`. Bản thân `golang` cũng mạnh mẽ hơn `shell script` thứ được sử dụng để viết 2 Version manager kia rôi.
 
