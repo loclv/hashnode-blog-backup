@@ -23,7 +23,7 @@ Cảnh xếp hàng, mỗi hàng như 1 Connection pool:
 
 ## Cách tính
 
-Đây là giới hạn từ ORM hay app instance.
+Đây là giới hạn từ ORM hay app instance (thực thể).
 
 Cách tính như sau:
 
@@ -51,4 +51,4 @@ Ví dụ nếu ORM instance là 2 thì:
 (4 * 2 + 1) / 2 = 9 / 2 = 4.5
 ```
 
-Như vậy con số connection pool hợp lý ở đây là 4.
+Như vậy con số connection pool hợp lý ở đây là 4. Vì mỗi instance sẽ bị giới hạn là 4, tổng của cả 2 là `4 * 2 = 8`, con số này không vượt quá 9 như đã tính toán với 1 instance.
