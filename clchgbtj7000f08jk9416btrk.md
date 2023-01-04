@@ -52,3 +52,5 @@ Ví dụ nếu ORM instance là 2 thì:
 ```
 
 Như vậy con số connection pool hợp lý ở đây là 4. Vì mỗi instance sẽ bị giới hạn là 4, tổng của cả 2 là `4 * 2 = 8`, con số này không vượt quá 9 như đã tính toán với 1 instance.
+
+Tuy nhiên sẽ vẫn có nhiều biến số tùy vào bài toán thực tế, nên tốt nhất là ta phải thực hiện stress-test kết hợp monitoring DB, để xem mức chịu tải ra sao!
