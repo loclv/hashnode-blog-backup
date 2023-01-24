@@ -364,6 +364,22 @@ This will create a `.vscode/extensions.json` file.
 }
 ```
 
+### 🧘‍♀️ Use **Turbopack (alpha)**
+
+[Turbopack](https://turbo.build/pack) is an incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js 13.
+
+On large applications, Turbopack updates 700x faster than Webpack.
+
+To use Turbopack, we edit `package.json` file:
+
+```json
+{
+  "scripts": {
+    "dev": "next dev --turbo"
+  }
+}
+```
+
 ### 🍂 Remove unused things
 
 * Remove unused CSS in the `styles` folder
