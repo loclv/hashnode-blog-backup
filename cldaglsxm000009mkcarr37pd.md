@@ -364,7 +364,7 @@ This will create a `.vscode/extensions.json` file.
 }
 ```
 
-### Remove unused things
+## 🍂 Remove unused things
 
 * Remove unused CSS in the `styles` folder
     
@@ -387,7 +387,7 @@ MD033:
   allowed_elements: ["style"]
 ```
 
-### Reference
+### 🌾 Reference
 
 * [https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js)
     
