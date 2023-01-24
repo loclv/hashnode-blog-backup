@@ -168,13 +168,13 @@ pnpm format
 
 Install `Code Spell Checker` extension for VS Code and create `cspell.json` file with blank content.
 
-## 🍇 Add SASS
+### 🍇 Add SASS
 
 ```bash
 pnpm add -D sass
 ```
 
-## 🌻 Add `stylelint`
+### 🌻 Add `stylelint`
 
 ```bash
 pnpm add -D stylelint stylelint-checkstyle-formatter stylelint-config-recommended-scss stylelint-config-standard stylelint-scss
@@ -228,7 +228,7 @@ pnpm lint:css
 pnpm lint:css:fix
 ```
 
-## ☕ Config the NodeJS version to develop
+### ☕ Config the NodeJS version to develop
 
 Add `.nvmrc` file with the content below or your own configuration:
 
@@ -253,7 +253,7 @@ We can also use the `package.json` to verify the configuration above.
 }
 ```
 
-## 🌒 Add environment variable for development and production
+### 🌒 Add environment variable for development and production
 
 `.env.development` file's content:
 
@@ -268,7 +268,7 @@ Setup the runtime environment variables:
 cp .env.development .env.local
 ```
 
-## ☄️ Add the hook when committing the code
+### ☄️ Add the hook when committing the code
 
 ```bash
 pnpm add -D husky lint-staged
@@ -364,7 +364,7 @@ This will create a `.vscode/extensions.json` file.
 }
 ```
 
-## 🍂 Remove unused things
+### 🍂 Remove unused things
 
 * Remove unused CSS in the `styles` folder
     
