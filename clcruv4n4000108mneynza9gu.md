@@ -25,9 +25,11 @@ The result is more understandable UX:
 sudo nala update
 ```
 
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1674584974933/5156e344-094b-4de5-892d-87897d759982.png align="center")
+
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673448773301/0dea944e-4427-4e50-ba8a-60a803fe8884.png align="center")
 
-We are going to install [exa](https://github.com/ogham/exa) \- A modern replacement for *ls*, written in Rust language:
+We are going to install [exa](https://github.com/ogham/exa) - A modern replacement for *ls*, written in Rust language:
 
 ```bash
 sudo nala install exa
