@@ -116,7 +116,17 @@ pnpm add -D eslint-plugin-next
 }
 ```
 
-### ✨ Add prettier
+`package.json` :
+
+```json
+{
+  "scripts": {
+    "lint:ts:fix": "eslint . --fix --ext .js,.ts,.tsx"
+  }
+}
+```
+
+### `✨` Add prettier
 
 ```bash
 pnpm add -D prettier eslint-config-prettier
@@ -157,6 +167,172 @@ pnpm format
 ### 🌸 Add spell-checking
 
 Install `Code Spell Checker` extension for VS Code and create `cspell.json` file with blank content.
+
+## 🍇 Add SASS
+
+```bash
+pnpm add -D sass
+```
+
+## 🌻 Add `stylelint`
+
+```bash
+pnpm add -D stylelint stylelint-checkstyle-formatter stylelint-config-recommended-scss stylelint-config-standard stylelint-scss
+```
+
+`package.json`:
+
+```json
+{
+  "scripts": {
+    "lint:css": "stylelint --cache **/*.{scss,css}",
+    "lint:css:fix": "stylelint --cache --fix **/*.{scss,css}"
+  }
+}
+```
+
+`.stylelintignore` :
+
+```yaml
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+```
+
+`.stylelintrc` :
+
+```json
+{
+  "extends": "stylelint-config-recommended-scss",
+  "formatter": "stylelint-checkstyle-formatter",
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "string-quotes": "single",
+    "color-hex-length": "long",
+    "color-function-notation": "modern",
+    "import-notation": "string"
+  }
+}
+```
+
+To verify the configuration above, run:
+
+```bash
+pnpm lint:css
+pnpm lint:css:fix
+```
+
+## ☕ Config the NodeJS version to develop
+
+Add `.nvmrc` file with the content below or your own configuration:
+
+```yaml
+v16.18.1
+```
+
+For example, use that configuration by using `fnm`:
+
+```bash
+fnm use
+```
+
+We can also use the `package.json` to verify the configuration above.
+
+```json
+{
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7.26.0"
+  }
+}
+```
+
+## 🌒 Add environment variable for development and production
+
+`.env.development` file's content:
+
+```yaml
+# dev | test | prod
+ENV=dev
+```
+
+Setup the runtime environment variables:
+
+```bash
+cp .env.development .env.local
+```
+
+## ☄️ Add the hook when committing the code
+
+```bash
+pnpm add -D husky lint-staged
+pnpm husky install
+touch .husky/pre-commit
+chmod +x .husky/pre-commit
+
+# lint the commit message
+pnpm add -D @commitlint/cli @commitlint/config-conventional
+pnpm husky add .husky/commit-msg  'pnpm --no -- commitlint --edit ${1}'
+```
+
+`pre-commit` :
+
+```bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm lint-staged
+```
+
+`commit-msg` :
+
+```bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm commitlint --edit ${1}
+```
+
+`.lintstagedrc.js` :
+
+```javascript
+const path = require('path');
+
+const buildEslintCommand = (filenames) =>
+  `next lint --fix --file ${filenames
+    .map((f) => path.relative(process.cwd(), f))
+    .join(' --file ')}`;
+
+const buildStyleLintCommand = (filenames) =>
+  `stylelint --cache ${filenames
+    .map((f) => path.relative(process.cwd(), f))
+    .join(' ')}`;
+
+module.exports = {
+  '*.{js,ts,tsx}': [buildEslintCommand],
+  '*.{css,scss}': [buildStyleLintCommand],
+};
+```
+
+`commitlint.config.js` :
+
+```javascript
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+};
+```
+
+To verify the code above:
+
+```bash
+git commit -m "refactor: add pre-commit hook"
+```
 
 ### 🍵 Create VS Code setting
 
@@ -216,3 +392,5 @@ MD033:
 * [https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js)
     
 * [https://blog.logrocket.com/troubleshooting-next-js-app-eslint/](https://blog.logrocket.com/troubleshooting-next-js-app-eslint/)
+    
+* [https://amanhimself.dev/blog/setup-nextjs-project-with-eslint-prettier-husky-lint-staged/](https://amanhimself.dev/blog/setup-nextjs-project-with-eslint-prettier-husky-lint-staged/)
