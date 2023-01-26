@@ -260,12 +260,29 @@ We can also use the `package.json` to verify the configuration above.
 ```yaml
 # dev | test | prod
 ENV=dev
+NEXT_PUBLIC_ENV=dev
 ```
 
 Setup the runtime environment variables:
 
 ```bash
 cp .env.development .env.local
+```
+
+To define the type of this variable, create `src/types/environment.d.ts`:
+
+```typescript
+/* eslint-disable @typescript-eslint/naming-convention */
+export {};
+
+declare global {
+  namespace NodeJS {
+    interface ProcessEnv {
+      ENV: 'test' | 'dev' | 'prod';
+      NEXT_PUBLIC_ENV: 'test' | 'dev' | 'prod';
+    }
+  }
+}
 ```
 
 ### ☄️ Add the hook when committing the code
@@ -410,3 +427,5 @@ MD033:
 * [https://blog.logrocket.com/troubleshooting-next-js-app-eslint/](https://blog.logrocket.com/troubleshooting-next-js-app-eslint/)
     
 * [https://amanhimself.dev/blog/setup-nextjs-project-with-eslint-prettier-husky-lint-staged/](https://amanhimself.dev/blog/setup-nextjs-project-with-eslint-prettier-husky-lint-staged/)
+    
+* [https://bobbyhadz.com/blog/typescript-process-env-type](https://bobbyhadz.com/blog/typescript-process-env-type)
