@@ -3,9 +3,9 @@
 ### 🚀 Create a project with CLI
 
 ```bash
-pnpm create next-app --use-pnpm --ts --eslint --src-dir --experimental-app
+pnpm create next-app --use-pnpm --ts --eslint --src-dir
 # or
-npm create next-app --ts --eslint --src-dir --experimental-app
+npm create next-app --ts --eslint --src-dir
 ```
 
 * Choose TypeScript and ESLint tools.
