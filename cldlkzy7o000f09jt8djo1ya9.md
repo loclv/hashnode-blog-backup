@@ -4,7 +4,7 @@
 
 I want to check if the zip file is encrypted or protected by a password.
 
-So, when I read that file, the error occurred. The error message should be exported from the library.
+So, when I read that file, the error occurred. The error message should be exported from the library. Something like "File contains encrypted entry 😅".
 
 ## 🦊 Solution
 
