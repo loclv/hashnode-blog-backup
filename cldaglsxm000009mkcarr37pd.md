@@ -339,7 +339,7 @@ pnpm add -D @commitlint/cli @commitlint/config-conventional
 pnpm husky add .husky/commit-msg  'pnpm --no -- commitlint --edit ${1}'
 ```
 
-`pre-commit` :
+`.husky/pre-commit` file's content:
 
 ```bash
 #!/usr/bin/env sh
@@ -348,7 +348,7 @@ pnpm husky add .husky/commit-msg  'pnpm --no -- commitlint --edit ${1}'
 pnpm lint-staged
 ```
 
-`commit-msg` :
+`.husky/commit-msg` file's content:
 
 ```bash
 #!/usr/bin/env sh
@@ -357,7 +357,7 @@ pnpm lint-staged
 pnpm commitlint --edit ${1}
 ```
 
-`.lintstagedrc.js` :
+`.lintstagedrc.js` file's content:
 
 ```javascript
 const path = require('path');
@@ -378,7 +378,7 @@ module.exports = {
 };
 ```
 
-`commitlint.config.js` :
+`commitlint.config.js` file's content:
 
 ```javascript
 module.exports = {
@@ -389,7 +389,7 @@ module.exports = {
 To verify the code above:
 
 ```bash
-git commit -m "refactor: add pre-commit hook"
+git commit -m "refactor: add pre-commit hook 🌱"
 ```
 
 ### 🍵 Create VS Code setting
