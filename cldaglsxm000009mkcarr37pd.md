@@ -58,7 +58,9 @@ pnpm add -D eslint-plugin-next
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": ["tsconfig.json"],
+    "project": [
+      "tsconfig.json"
+    ],
     "createDefaultProgram": true
   },
   "plugins": [
@@ -77,12 +79,21 @@ pnpm add -D eslint-plugin-next
   "rules": {
     "@typescript-eslint/no-unused-vars": 2,
     "@typescript-eslint/no-explicit-any": 2,
-    "id-length": [2, { "exceptions": ["i"] }],
+    "id-length": [
+      2,
+      {
+        "exceptions": [
+          "i"
+        ]
+      }
+    ],
     "@typescript-eslint/naming-convention": [
       2,
       {
         "selector": "interface",
-        "format": ["PascalCase"],
+        "format": [
+          "PascalCase"
+        ],
         "custom": {
           "regex": "^I[A-Z]",
           "match": true
@@ -90,26 +101,56 @@ pnpm add -D eslint-plugin-next
       },
       {
         "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE"]
+        "format": [
+          "camelCase",
+          "UPPER_CASE"
+        ]
       },
       {
         "selector": "typeParameter",
-        "format": ["PascalCase"],
-        "prefix": ["T"]
+        "format": [
+          "PascalCase"
+        ],
+        "prefix": [
+          "T"
+        ]
       },
       {
         "selector": "variable",
-        "format": ["PascalCase"],
-        "types": ["boolean"],
-        "prefix": ["is", "should", "has", "can", "did", "will", "was"]
+        "format": [
+          "PascalCase"
+        ],
+        "types": [
+          "boolean"
+        ],
+        "prefix": [
+          "is",
+          "should",
+          "has",
+          "can",
+          "did",
+          "will",
+          "was"
+        ]
       },
       {
         "selector": "enum",
-        "format": ["PascalCase"]
+        "format": [
+          "PascalCase"
+        ]
       },
       {
         "selector": "enumMember",
-        "format": ["PascalCase", "camelCase"]
+        "format": [
+          "PascalCase",
+          "camelCase"
+        ]
+      }
+    ],
+    "line-comment-position": [
+      2,
+      {
+        "position": "above"
       }
     ]
   }
