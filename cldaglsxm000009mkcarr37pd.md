@@ -389,8 +389,27 @@ module.exports = {
 To verify the code above:
 
 ```bash
+# Enable Git hooks
+pnpm husky install
+
+# Add script in package.json to enable git hooks
+# when install packages without any arguments
+pkg set scripts.prepare="husky install"
+# `"prepare": "husky install"` is added in package.json
+
+# 🔥 failed case
+git commit -m "test"
+# output:
+# ⧗   input: test
+# ✖   subject may not be empty [subject-empty]
+# ✖   type may not be empty [type-empty]
+# ✖   found 2 problems, 0 warnings
+
+# 🍎 success case
 git commit -m "refactor: add pre-commit hook 🌱"
 ```
+
+For more information about `prepare` package hook, you can see in [using-npm/scripts](https://docs.npmjs.com/cli/v9/using-npm/scripts).
 
 ### 🍵 Create VS Code setting
 
