@@ -277,7 +277,7 @@ Add `.nvmrc` file with the content below or your own configuration:
 v16.18.1
 ```
 
-For example, use that configuration by using `fnm`:
+For example, use that configuration by using [fnm](https://github.com/Schniz/fnm):
 
 ```bash
 fnm use
