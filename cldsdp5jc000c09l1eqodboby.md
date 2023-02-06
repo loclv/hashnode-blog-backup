@@ -102,7 +102,7 @@ import { TWorkerMess } from '@/models';
 const onmessage = (event: MessageEvent<TWorkerMess>) => {
   console.log('🐝 Worker: Message received from main script');
   const data = event.data;
-  const result = data[0] * data[1];
+  const result = data[0] + data[1];
 
   const workerResult = 'Result: ' + result;
   console.log('🐝 Worker: Posting message back to main script');
@@ -124,7 +124,7 @@ When run `next dev` or `pnpm dev` output on console log is below:
 > 
 > 🐝 Worker: Posting message back to main script
 > 
-> 🍏 Message received from worker: Result: 2
+> 🍏 Message received from worker: Result: 3
 
 We did it!
 
