@@ -212,7 +212,7 @@ alias remove 'sudo apt-get remove --purge'
 alias clean 'sudo apt autoremove && sudo apt autoclean -y'
 alias c 'clear'
 
-alias l 'exa --long --header'
+alias l 'exa --long --header -a'
 
 set --universal fish_greeting
 ```
