@@ -1,4 +1,4 @@
-# Getting started with rust language from JavaScript  knowledge
+# Getting started with Rust language from JavaScript  knowledge
 
 I have no experience with Rust language at all. So when I try Rust, maybe something I don't understand at the moment I write this. But I want to give it a try!
 
