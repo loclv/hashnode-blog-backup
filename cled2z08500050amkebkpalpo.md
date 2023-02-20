@@ -71,5 +71,13 @@ Khi không phải là Admin, DOM tree nhẹ hơn vì không chứa element. Như
 Còn `hidden` chỉ dùng khi chuyện ẩn / hiện là chuyện xảy ra bình thường trong quá trình dùng. Ví dụ loading overlay hiển thị mỗi khi call API:
 
 ```xml
-<div [hidden]="isLoading" class="loading-overlay"></div>
+<div [hidden]="!isLoading" class="loading-overlay"></div>
 ```
+
+Một ví dụ khác về tần suất sử dụng bật tắt lại phụ thuộc vào thói quen người dùng:
+
+```xml
+<div [hidden]="!isUserLikeThis" class="love-icon">😍</div>
+```
+
+Nếu số lượng người dùng có thói quen "thả tim" - 😍 nhiều thì dùng `hidden`, ngược lại có thể dùng `ngIf`. Quyết định chỗ này tùy thuộc vào chúng ta!
