@@ -2,6 +2,8 @@
 
 Mặc dù nhiều bạn đã biết công dụng của chúng đều giúp ta ẩn hiện 1 element, tuy nhiên ta phải hiểu về bản chất để sử dụng sao cho tối ưu về hiệu năng.
 
+Đối tượng ẩn hiện thường là đơn giản, ví dụ như chỉ là 1 element để hiển thị text thì trải nghiệm user sẽ không có gì khác nhau. Tuy nhiên, 1 số ít trường hợp ẩn hiện với component lớn, phức tạp thì ta mới thấy sự khác biệt phía user.
+
 ## 🌱 Cơ bản về ngIf và hidden
 
 Ôn lại kiến thức cơ bản chút thì ta phải hiểu [https://www.w3schools.com/js/js\_htmldom.asp](https://www.w3schools.com/js/js_htmldom.asp) - The HTML DOM Tree of Objects:
