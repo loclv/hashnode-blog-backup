@@ -1,4 +1,12 @@
-# Cách tính connection pool size tham khảo từ Prisma ORM
+---
+title: "Cách tính connection pool size tham khảo từ Prisma ORM"
+datePublished: Wed Jan 04 2023 09:23:04 GMT+0000 (Coordinated Universal Time)
+cuid: clchgbtj7000f08jk9416btrk
+slug: cach-tinh-connection-pool-size-tham-khao-tu-prisma-orm
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/12f22c422f02e2a2e0e8f7a5a3a756f2.jpeg
+tags: prisma, prisma-vietnamese
+
+---
 
 Bàii viết tham khảo từ công thức:
 
@@ -19,7 +27,7 @@ Cảnh xếp hàng, mỗi hàng như 1 Connection pool:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672823564982/736907ea-7bde-448d-af51-3a59023f2968.jpeg align="center")
 
-\[image source\]([https://www.pexels.com/photo/teacher-in-yellow-cardigan-measuring-temperature-of-a-boy-in-face-mask-in-the-classroom-8363115/](https://www.pexels.com/photo/teacher-in-yellow-cardigan-measuring-temperature-of-a-boy-in-face-mask-in-the-classroom-8363115/))
+image source: [https://www.pexels.com/photo/teacher-in-yellow-cardigan-measuring-temperature-of-a-boy-in-face-mask-in-the-classroom-8363115/](https://www.pexels.com/photo/teacher-in-yellow-cardigan-measuring-temperature-of-a-boy-in-face-mask-in-the-classroom-8363115/)
 
 ## Cách tính
 
@@ -52,7 +60,9 @@ Tại sao lại nhân số lượng nhân vật lý với 2? Có lẽ bởi vì 
 Ví dụ nếu ORM instance là 2 thì:
 
 ```plaintext
-(4 * 2 + 1) / 2 = 9 / 2 = 4.5
+(4 * 2 + 1) / 2 =
+  9 / 2 =
+  4.5
 ```
 
 Như vậy con số connection pool hợp lý ở đây là 4. Vì mỗi instance sẽ bị giới hạn là 4, tổng của cả 2 là `4 * 2 = 8`, con số này không vượt quá 9 như đã tính toán với 1 instance.
