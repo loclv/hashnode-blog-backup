@@ -55,7 +55,16 @@ Kết quả là 9 connection pool.
 
 Tại sao lại nhân số lượng nhân vật lý với 2? Có lẽ bởi vì [two threads per core by default](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-optimize-cpu.html) - mặc định là mỗi 1 core sẽ có 2 threads chạy song song.
 
-Để ý là [mỗi vCPU của AWS sẽ tương đương với 1 thread, vậy 2 vCPUs mới là 1 physical CPU](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-optimize-cpu.html).
+Để ý là [mỗi vCPU của AWS sẽ tương đương với 1 thread, vậy 2 vCPUs mới là 1 physical CPU](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-optimize-cpu.html). Ví dụ với [r4.4xlarge instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-specify-cpu-options.html) thì:
+
+* Default CPU cores: 8
+    
+* Default threads per core: 2
+    
+* Default vCPUs: 16 (8 \* 2)
+    
+
+Cụ thể từng loại [CPU options mô tả cụ thể tại đây](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cpu-options-supported-instances-values.html).
 
 Ví dụ nếu ORM instance là 2 thì:
 
