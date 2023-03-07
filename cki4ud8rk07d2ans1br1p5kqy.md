@@ -1,4 +1,15 @@
-# 🐧 Tools cho Ubuntu sau khi mới cài
+---
+title: "🐧 Tools cho Ubuntu sau khi mới cài"
+seoTitle: "🐧 Tools cho Ubuntu sau khi mới cài"
+seoDescription: "🐧 Tools cho Ubuntu sau khi mới cài
+editor, terminal, deb installer, office, launcher, ssh, api tools, bộ gõ, update upgrade ubuntu"
+datePublished: Mon Nov 30 2020 17:43:54 GMT+0000 (Coordinated Universal Time)
+cuid: cki4ud8rk07d2ans1br1p5kqy
+slug: tools-cho-ubuntu-sau-khi-moi-cai
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1630402501140/piNkD_5KE.png
+tags: ubuntu, linux
+
+---
 
 Bài viết dành cho những người mới với `Ubuntu` (bản dành cho máy tính cá nhân), thời điểm mới cài Ubuntu xong.
 
@@ -216,6 +227,14 @@ alias l 'exa --long --header -a'
 
 set --universal fish_greeting
 ```
+
+Ngoài ra còn có 1 tool khá màu mè dành cho shell, đó là [https://github.com/starship/starship](https://github.com/starship/starship).
+
+> [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+Ảnh demo khi sử dụng:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678184687626/356798ef-125c-4074-b420-33c1fdc4ae54.png align="center")
 
 ## 🌈 exa
 
