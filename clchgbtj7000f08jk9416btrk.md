@@ -1,8 +1,8 @@
 ---
-title: "Cách tính connection pool size tham khảo từ Prisma ORM"
+title: "Cách tính DB connection pool size tham khảo từ Prisma ORM"
 datePublished: Wed Jan 04 2023 09:23:04 GMT+0000 (Coordinated Universal Time)
 cuid: clchgbtj7000f08jk9416btrk
-slug: cach-tinh-connection-pool-size-tham-khao-tu-prisma-orm
+slug: cach-tinh-db-connection-pool-size-tham-khao-tu-prisma-orm
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/12f22c422f02e2a2e0e8f7a5a3a756f2.jpeg
 tags: prisma, prisma-vietnamese
 
