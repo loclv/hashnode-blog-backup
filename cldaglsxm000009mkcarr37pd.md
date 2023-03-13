@@ -1,4 +1,12 @@
-# Prepare a new NextJS project 🍵
+---
+title: "Prepare a new NextJS project 🍵"
+datePublished: Tue Jan 24 2023 16:36:09 GMT+0000 (Coordinated Universal Time)
+cuid: cldaglsxm000009mkcarr37pd
+slug: prepare-a-new-nextjs-project
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/ilBSVoU1mGs/upload/62fc23038143780a1474249d94d475c9.jpeg
+tags: typescript, eslint, nextjs
+
+---
 
 ### 🚀 Create a project with CLI
 
@@ -456,6 +464,21 @@ To use Turbopack, we edit `package.json` file:
   }
 }
 ```
+
+### 🪐 Client-side data fetching
+
+[From NextJS document](https://nextjs.org/docs/basic-features/data-fetching/client-side#client-side-data-fetching-with-swr):
+
+> The team behind Next.js has created a React hook library for data fetching called [**SWR**](https://swr.vercel.app/). It is **highly recommended** if you are fetching data on the client-side. It handles caching, revalidation, focus tracking, refetching on intervals, and more.
+
+And for another reason below:
+
+* [https://slides.com/davidkhourshid/goodbye-useeffect/fullscreen](https://slides.com/davidkhourshid/goodbye-useeffect/fullscreen)
+    
+* [youtube - Goodbye, useEffect - David Khourshid](https://youtu.be/bGzanfKVFeU)
+    
+
+[swr](https://swr.vercel.app/) is a React Hooks for Data Fetching.
 
 ### 🍂 Remove unused things
 
