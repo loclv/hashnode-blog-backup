@@ -228,13 +228,19 @@ alias l 'exa --long --header -a'
 set --universal fish_greeting
 ```
 
-Ngoài ra còn có 1 tool khá màu mè dành cho shell, đó là [https://github.com/starship/starship](https://github.com/starship/starship).
+Ngoài ra còn có 1 tool khá màu mè dành cho shell, đó là:
+
+* [https://github.com/starship/starship](https://github.com/starship/starship)
+    
 
 > [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 Ảnh demo khi sử dụng:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1678184687626/356798ef-125c-4074-b420-33c1fdc4ae54.png align="center")
+
+* [https://github.com/nushell/nushell](https://github.com/nushell/nushell) - A new type of shell.
+    
 
 ## 🌈 exa
 
