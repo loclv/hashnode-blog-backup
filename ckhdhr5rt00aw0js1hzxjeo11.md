@@ -1,4 +1,15 @@
-## Các extension của vscode giúp dự án Angular đỡ khổ 😍
+---
+title: "Các extension của vscode giúp dự án Angular đỡ khổ 😍"
+seoTitle: "vscode angular extentions"
+seoDescription: "vscode angular extentions"
+datePublished: Wed Nov 11 2020 14:21:02 GMT+0000 (Coordinated Universal Time)
+cuid: ckhdhr5rt00aw0js1hzxjeo11
+slug: cac-extension-cua-vscode-giup-du-an-angular-do-kho
+cover: https://cdn.hashnode.com/res/hashnode/image/unsplash/qG-hPxoAnRE/upload/v1661393746615/9etwzklGK.jpeg
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1605104449023/7tuI46eZy.png
+tags: angularjs, vscode, vscode-extensions
+
+---
 
 Editor ở đây chúng ta hướng tới là [vscode](https://code.visualstudio.com/) hoặc `vscode-insiders` hoặc [vscodium](https://vscodium.com/).
 
@@ -35,7 +46,7 @@ Config hữu ích tại settings (ctrl + shift + P + `Open Settings JSON`):
 
 ### 🐭 [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - must be installed!
 
-Vì khi dùng `Angular CLI` để tự động tạo ra 1 base project thì đã có sẵn  `.editorconfig` rồi.
+Vì khi dùng `Angular CLI` để tự động tạo ra 1 base project thì đã có sẵn `.editorconfig` rồi.
 
 Tùy theo coding rules mà sửa `.editorconfig` thôi.
 
@@ -57,10 +68,14 @@ Tới `Angular 11`, Angular sẽ warning nên dùng [angular-eslint](https://git
 
 Với các tính năng:
 
-- Completions lists
-- AOT Diagnostic messages: giúp xác định lỗi từ editor thay vì đợi tới lúc compile.
-- Quick info
-- Go to definition
+* Completions lists
+    
+* AOT Diagnostic messages: giúp xác định lỗi từ editor thay vì đợi tới lúc compile.
+    
+* Quick info
+    
+* Go to definition
+    
 
 Thì nó là thằng quan trọng nhất.
 
@@ -90,19 +105,25 @@ Tạo ra cả 1 component full đồ khi chỉ cần gõ `ng-component` vào fil
 
 Extension cho những ai lười gõ command khởi tạo `component`, `service`... hoặc không nhớ command.
 
-- Thay thế cho Angular CLI (command line) bằng UI.
-- Không còn nhưng lỗi typo - gõ sai chính tả ngớ ngẩn.
-- Support nhiều option cho từng loại:
+* Thay thế cho Angular CLI (command line) bằng UI.
+    
+* Không còn nhưng lỗi typo - gõ sai chính tả ngớ ngẩn.
+    
+* Support nhiều option cho từng loại:
+    
 
-![Screenshot from 2021-06-03 12-56-15.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1622699798979/arKrb9OUp.png)
+![Screenshot from 2021-06-03 12-56-15.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1622699798979/arKrb9OUp.png align="left")
 
 ### 🧘 [Angular Zen Mode](https://marketplace.visualstudio.com/items?itemName=dolliecollective.angular-zen-mode&ref=producthunt)
 
 Tự động chia màn hình thành 3 phần của Component:
 
-- Code (.ts) chiếm 2/4 màn hình
-- Template (.html) chiếm 1/4 màn hình
-- Style (.css/.scss/.sass/.less) chiếm 1/4 màn hình
+* Code (.ts) chiếm 2/4 màn hình
+    
+* Template (.html) chiếm 1/4 màn hình
+    
+* Style (.css/.scss/.sass/.less) chiếm 1/4 màn hình
+    
 
 ### [auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
@@ -116,11 +137,14 @@ Khi mà bạn bị bắt không được code kiểu inline (kiểu chung `html`
 
 ### 📐 [arrr](https://marketplace.visualstudio.com/items?itemName=obenjiro.arrr)
 
-- Gom HTML được bôi dên thành 1 component mới.
-- Tự động nhận biết và tạo `@Input()` cho component đó.
-- Generates HTML, CSS, TS và spec files.
+* Gom HTML được bôi dên thành 1 component mới.
+    
+* Tự động nhận biết và tạo `@Input()` cho component đó.
+    
+* Generates HTML, CSS, TS và spec files.
+    
 
-![extract-to-dir.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570842659/FEpXDBsbC.gif)
+![extract-to-dir.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570842659/FEpXDBsbC.gif align="left")
 
 ### [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 
@@ -130,7 +154,7 @@ Chuyển file `JSON` sang `Typescript` và các ngôn ngữ khác.
 
 Tạo `console.log` siêu nhanh bằng cách bôi đen biến cần log và ấn `ctrl + alt + L`.
 
-![insert_log_message.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570933189/fvN0o9qqE.gif)
+![insert_log_message.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570933189/fvN0o9qqE.gif align="left")
 
 ## 🌅 Syntax highlighting
 
@@ -142,9 +166,9 @@ Và tôi cũng thích kiểu này. 😄
 
 ### [vscode-angular-html](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-html)
 
->Syntax highlighting for angular HTML template files.
+> Syntax highlighting for angular HTML template files.
 
-![angular-directives.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1622700058487/6k-Z9E3iE.gif)
+![angular-directives.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1622700058487/6k-Z9E3iE.gif align="left")
 
 ### 🌄 [markdown-preview-enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
@@ -165,7 +189,7 @@ Thêm cả thằng [markdown lint](https://marketplace.visualstudio.com/items?it
 
 Rất hữu dụng khi design + test + mock API theo chuẩn `openapi` hay `swagger`.
 
-![swagger-preview.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570966495/DFaMxINn1.gif)
+![swagger-preview.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570966495/DFaMxINn1.gif align="left")
 
 Nếu file `yaml` quá dài ảnh hưởng tới hiệu năng đọc file thì giới hạn:
 
@@ -179,8 +203,7 @@ Xem ảnh SVG từ mớ bùng nhùng `svg-tag`.
 
 ### [deepdark-material theme](https://marketplace.visualstudio.com/items?itemName=Nimda.deepdark-material)
 
-
-![59273175-41c9bd00-8c60-11e9-917e-15a296b7f0fa.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570791959/8WQyhU0Fb.png)
+![59273175-41c9bd00-8c60-11e9-917e-15a296b7f0fa.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570791959/8WQyhU0Fb.png align="left")
 
 Cùng với settings (ctrl + shift + P + `Open Settings JSON`):
 
@@ -196,7 +219,7 @@ Cùng với settings (ctrl + shift + P + `Open Settings JSON`):
 
 Giúp bạn dễ phân biệt các loại file trong Angular như Component, Service, ...
 
-![Screenshot from 2021-01-14 18-07-38.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610622609256/FAx5S85Dp.png)
+![Screenshot from 2021-01-14 18-07-38.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610622609256/FAx5S85Dp.png align="left")
 
 Thì đây là theme ưu thích của mình.
 
@@ -212,11 +235,14 @@ Tự động tạo ra `mock` `service` cho `TestBed` và `never have to worry ab
 
 ### [angular-karma-test-explorer](https://marketplace.visualstudio.com/items?itemName=raagh.angular-karma-test-explorer)
 
-![img-running-tests-readme.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570889528/9sbtl1Hm4.png)
+![img-running-tests-readme.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1623570889528/9sbtl1Hm4.png align="left")
 
-- Run và Reload tests bằng run, reload button ngay trên UI vscode.
-- Xem results ngay trên UI.
-- Debug tests, shows log của test thất bại ngay trên dòng source code mà nó failed.
+* Run và Reload tests bằng run, reload button ngay trên UI vscode.
+    
+* Xem results ngay trên UI.
+    
+* Debug tests, shows log của test thất bại ngay trên dòng source code mà nó failed.
+    
 
 ---
 
@@ -228,7 +254,7 @@ Nếu các bạn lười install hay quản lý đống extentions riêng cho An
 
 ### Settings
 
-Để mở `settings.json` thì ta ấn: `Ctrl` + `Shift` + `P` -> gõ `settings` -> tìm lựa chọn `settings bằng JSON`.
+Để mở `settings.json` thì ta ấn: `Ctrl` + `Shift` + `P` -&gt; gõ `settings` -&gt; tìm lựa chọn `settings bằng JSON`.
 
 Edit `settings.json` để default UI/UX xịn hơn:
 
@@ -245,9 +271,21 @@ Nếu máy bạn đang cài `Fira Code` font thì setting:
     "editor.fontWeight": "300",
 ```
 
-### Other extentions
+## For TypeScript
 
-- [Browserslist syntax highlight](https://marketplace.visualstudio.com/items?itemName=webben.browserslist)
-- [ErrorLens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens): hiển thị ngay error và warning với highlighting không cần hover bằng chuột.
-- [Mintlify Doc Writer for Python, JavaScript, TypeScript, C++, PHP, Java, C#, Ruby & more](https://marketplace.visualstudio.com/items?itemName=mintlify.document): tự gen ra jsdoc  dựa trên source-code.
-- [export-typescript](https://marketplace.visualstudio.com/items?itemName=mscolnick.export-typescript)
+* [Mintlify Doc Writer for Python, JavaScript, TypeScript, C++, PHP, Java, C#, Ruby & more](https://marketplace.visualstudio.com/items?itemName=mintlify.document): tự gen ra jsDoc / tsDoc dựa trên source-code.
+    
+* [export-typescript](https://marketplace.visualstudio.com/items?itemName=mscolnick.export-typescript)
+    
+* [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
+    
+    * review detail video - "TypeScript Just Got SO MUCH BETTER" by "Theo - t3․gg": [https://youtu.be/9RM2aErJs-s](https://youtu.be/9RM2aErJs-s)
+        
+
+### Other extensions
+
+* [Browserslist syntax highlight](https://marketplace.visualstudio.com/items?itemName=webben.browserslist)
+    
+* [ErrorLens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens): hiển thị ngay error và warning với highlighting không cần hover bằng chuột.
+    
+* [YAML ❤️ JSON - Easily convert YAML to JSON or vice versa](https://marketplace.visualstudio.com/items?itemName=hilleer.yaml-plus-json❣️❤️)
