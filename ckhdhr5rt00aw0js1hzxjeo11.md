@@ -271,7 +271,7 @@ Nếu máy bạn đang cài `Fira Code` font thì setting:
     "editor.fontWeight": "300",
 ```
 
-## For TypeScript
+### For TypeScript
 
 * [Mintlify Doc Writer for Python, JavaScript, TypeScript, C++, PHP, Java, C#, Ruby & more](https://marketplace.visualstudio.com/items?itemName=mintlify.document): tự gen ra jsDoc / tsDoc dựa trên source-code.
     
@@ -288,4 +288,4 @@ Nếu máy bạn đang cài `Fira Code` font thì setting:
     
 * [ErrorLens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens): hiển thị ngay error và warning với highlighting không cần hover bằng chuột.
     
-* [YAML ❤️ JSON - Easily convert YAML to JSON or vice versa](https://marketplace.visualstudio.com/items?itemName=hilleer.yaml-plus-json❣️❤️)
+* [YAML ❤️ JSON - Easily convert YAML to JSON or vice versa](https://marketplace.visualstudio.com/items?itemName=hilleer.yaml-plus-json%E2%9D%A3%EF%B8%8F%E2%9D%A4%EF%B8%8F)
