@@ -1,8 +1,8 @@
 ---
-title: "Frontend junior developers must know the list 🌱"
+title: "Frontend junior developers must know list 🌱"
 datePublished: Mon Apr 24 2023 06:13:46 GMT+0000 (Coordinated Universal Time)
 cuid: clgug02y0000009kz18rz0wtt
-slug: frontend-junior-developers-must-know-the-list
+slug: frontend-junior-developers-must-know-list
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/2uTjeMfeVEU/upload/acc1d5d196e4a0abe7f12623d64fcfbd.jpeg
 tags: frontend, roadmap
 
