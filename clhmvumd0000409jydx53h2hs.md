@@ -51,6 +51,46 @@ git config -l
 cat ~/.gitconfig
 ```
 
+## Configure and use the git alias
+
+If you are using `zsh`, update `~/.zshrc` with the content:
+
+```bash
+alias ga="git add ."
+alias gc="git commit -m"
+alias gs="git status"
+alias gd="git diff"
+alias gp="git push"
+
+alias conf="code ~/.zshrc"
+```
+
+If you are using `fish shell`, update `~/.config/fish/config.fish` with the content:
+
+```bash
+alias g 'git'
+alias ga 'git add .'
+alias gs 'git status'
+alias gc 'git commit -m'
+alias gd 'git diff'
+alias gp 'git push'
+
+alias conf 'code ~/.config/fish/config.fish'
+```
+
+If you are using [nushell](https://www.nushell.sh/book/aliases.html), update `code $nu.config-path` with the content:
+
+```bash
+alias g = git
+alias ga = git add .
+alias gc = git commit -m
+alias gs = git status
+alias gd = git diff
+alias gp = git push
+
+alias conf = code $nu.config-path
+```
+
 ## References and detailed explanation
 
 * [https://dev.to/nedsoft/useful-git-config-tips-274i](https://dev.to/nedsoft/useful-git-config-tips-274i)
@@ -60,3 +100,5 @@ cat ~/.gitconfig
 * [https://spin.atomicobject.com/2020/05/05/git-configurations-default/](https://spin.atomicobject.com/2020/05/05/git-configurations-default/)
     
 * [https://www.freecodecamp.org/news/git-config-how-to-configure-git-settings/](https://www.freecodecamp.org/news/git-config-how-to-configure-git-settings/)
+    
+* [https://linuxhint.com/configure-use-aliases-zsh/](https://linuxhint.com/configure-use-aliases-zsh/)
