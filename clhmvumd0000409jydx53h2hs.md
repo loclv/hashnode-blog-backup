@@ -39,6 +39,10 @@ git config --global pull.rebase true
 git config --global status.short true
 ```
 
+## Generate an SSH key
+
+You can read [generating a new SSH key step by step here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
 ## Confirm all settings
 
 ```bash
