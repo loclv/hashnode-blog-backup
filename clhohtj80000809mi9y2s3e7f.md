@@ -77,6 +77,11 @@ Source Han Sans:
 * Hỗ trợ nhiều định dạng như `SourceHanSansJP-VF.ttf.woff2`.
     
 
+[Noto Sans Japanese](https://fonts.google.com/noto/specimen/Noto+Sans+JP):
+
+* được host trên Google fonts API.
+    
+
 ## Cách debug tìm Rendered Fonts
 
 Mình muốn debug xem thực sự lúc nó render ra dùng font nào thì làm theo các bước sau:
