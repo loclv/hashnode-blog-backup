@@ -81,6 +81,19 @@ Source Han Sans:
 
 * được host trên Google fonts API.
     
+* Không mang đặc tính chữ viết tay, không có nét thanh nết đậm.
+    
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1684990293386/dedb7147-cd4b-49d8-b148-8427f27f371f.png align="center")
+
+[Noto Serif Japanese](https://fonts.google.com/noto/specimen/Noto+Serif+JP)
+
+* được host trên Google fonts API.
+    
+* Mang đặc tính chữ viết tay, có nét thanh nết đậm
+    
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1684990203176/c88660c6-8bf5-41bf-a7ca-a508e1eb1e97.png align="center")
 
 ## Cách debug tìm Rendered Fonts
 
