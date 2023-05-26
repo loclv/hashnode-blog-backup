@@ -102,3 +102,9 @@ npm i
 npm audit fix
 # expected output: found 0 vulnerabilities
 ```
+
+## Tổng kết
+
+* Các lỗ hổng bảo mật có thể chưa được phát hiện, nó có thể được phát hiện vào tương lai, vậy nên để an toàn chúng ta cần thiết nên audit định kỳ, điều mà các github bot vẫn làm thay chúng ta.
+    
+* Việc đặc tả version chính xác cũng quan trọng không kém, đó là lý do tại sao `package-lock.json` (đối với npm) ra đời.
