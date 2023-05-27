@@ -69,6 +69,10 @@ Font Roboto nó ko hỗ trợ tốt, hay nói cách khác là không có vector 
     
 * Opensource tại [https://github.com/googlefonts/zen-kakugothic](https://github.com/googlefonts/zen-kakugothic).
     
+* dáng vẻ có hơi hướng chữ viết tay:
+    
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685184553426/fccd0fd3-67a0-47a0-aeca-bf3003595c7a.png align="center")
 
 Source Han Sans:
 
