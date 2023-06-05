@@ -61,6 +61,7 @@ alias gc="git commit -m"
 alias gs="git status"
 alias gd="git diff"
 alias gp="git push"
+alias p="git cherry-pick"
 
 alias conf="code ~/.zshrc"
 ```
@@ -74,6 +75,7 @@ alias gs 'git status'
 alias gc 'git commit -m'
 alias gd 'git diff'
 alias gp 'git push'
+alias p 'git cherry-pick'
 
 alias conf 'code ~/.config/fish/config.fish'
 ```
@@ -87,6 +89,7 @@ alias gc = git commit -m
 alias gs = git status
 alias gd = git diff
 alias gp = git push
+alias p = git cherry-pick
 
 alias conf = code $nu.config-path
 ```
