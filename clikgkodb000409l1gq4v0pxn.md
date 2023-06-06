@@ -40,7 +40,11 @@ Khi navigation tới trang `about`, URL của image lại bị hiểu thành:
 
 > http://localhost:5173/about/images/logo.png
 
-Dẫn tới lỗi `404 Not Found`, không tải được image!
+Trong khi URL đúng phải là:
+
+> [http://localhost:5173/images/logo.png](http://localhost:5173/images/logo.png)
+
+URL bị thừa \`about\` path, dẫn tới lỗi `404 Not Found`, không tải được image!
 
 ## 🥥 🍆 Giải quyết
 
