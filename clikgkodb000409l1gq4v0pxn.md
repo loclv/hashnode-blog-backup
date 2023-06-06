@@ -3,6 +3,7 @@ title: "Qwik - Chú ý khi import image với routes"
 datePublished: Tue Jun 06 2023 15:51:30 GMT+0000 (Coordinated Universal Time)
 cuid: clikgkodb000409l1gq4v0pxn
 slug: qwik-chu-y-khi-import-image-voi-routes
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/_RBcxo9AU-U/upload/e50ce5300873c88af8f788590e8881a0.jpeg
 tags: qwik-image-vietnamese
 
 ---
