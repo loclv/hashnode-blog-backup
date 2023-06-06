@@ -3,6 +3,7 @@ title: "Qwik - Sử dụng kết hợp styles CSS modules và global CSS"
 datePublished: Tue Jun 06 2023 15:05:10 GMT+0000 (Coordinated Universal Time)
 cuid: clikex3ak000109jmcyli1akr
 slug: qwik-su-dung-ket-hop-styles-css-modules-va-global-css
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/IicyiaPYGGI/upload/b1d4f64a53aa1018b8c62f6c301715c1.jpeg
 tags: qwik-vietnamese, css-modules-vietnames
 
 ---
