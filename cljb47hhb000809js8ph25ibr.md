@@ -52,7 +52,7 @@ Như vậy chưa chắc chắn là data cá nhân của mình không thể bị 
 
 Giải pháp có thể tùy vào quyết định của mỗi người:
 
-* Nếu bạn lưu nội dung Chat ra 1 app khác thì không cần lo lắng, cứ Off tính năng "Chat history & training".
+* Nếu bạn lưu nội dung Chat ra 1 app khác hoặc không cần lưu lại lịch sử Chat thì không cần lo lắng, cứ Off tính năng "Chat history & training".
     
 * Nếu bạn không hỏi những câu hỏi chưa thông tin cá nhân, thông tin mật thì không cần lo lắng gì cả. Cứ để On tính năng này cũng được.
     
