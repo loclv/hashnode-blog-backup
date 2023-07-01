@@ -21,7 +21,7 @@ ruby -v
 gem install rubocop
 ```
 
-If you are using `ruby` from `brew`, make sure that you added the lines below to `~/.zshrc`:
+If you are using "zsh" shell and `ruby` from `brew`, make sure that you added the lines below to `~/.zshrc`:
 
 ```bash
 # ruby
