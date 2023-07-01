@@ -12,7 +12,21 @@ Don't want to run Rubocop command on the terminal? Try it on VS Code!
 
 ## Prepare to install
 
-If you are using macOS, please follow [this blog post to install Ruby **in a macOS for local development**](https://snyk.io/blog/how-to-install-ruby-in-mac-os/)**.**
+If you are using macOS, please follow [this blog post to install Ruby **in a macOS for local development**](https://snyk.io/blog/how-to-install-ruby-in-mac-os/)**.** When you installed [rbenv](https://github.com/rbenv/rbenv) completely, check the .ruby-version file in your project and install that version.
+
+```bash
+# install a Ruby version:
+rbenv install 3.1.2
+
+# set the default Ruby version for this machine
+rbenv global 3.1.2
+# or:
+# set the Ruby version for this directory
+rbenv local 3.1.2
+
+which ruby
+# output: /Users/{user-name}/.rbenv/shims/ruby
+```
 
 Make sure that you can run the `ruby` command on your shell:
 
