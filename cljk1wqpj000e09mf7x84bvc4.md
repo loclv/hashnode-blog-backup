@@ -4,7 +4,7 @@ datePublished: Sat Jul 01 2023 13:40:41 GMT+0000 (Coordinated Universal Time)
 cuid: cljk1wqpj000e09mf7x84bvc4
 slug: ruby-use-rubocop-on-vs-code
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/F04_1icrUtM/upload/431a8110c7289847588655ab7c55da6a.jpeg
-tags: ruby
+tags: ruby, rubocop
 
 ---
 
