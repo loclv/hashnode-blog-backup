@@ -8,6 +8,8 @@ tags: ruby, rubocop
 
 ---
 
+Don't want to run Rubocop command on the terminal? Try it on VS Code!
+
 ## Prepare to install
 
 If you are using macOS, please follow [this blog post to install Ruby **in a macOS for local development**](https://snyk.io/blog/how-to-install-ruby-in-mac-os/)**.**
@@ -19,6 +21,7 @@ ruby -v
 # output is ruby version
 
 gem install rubocop
+which rubocop
 ```
 
 If you are using "zsh" shell and `ruby` from `brew`, make sure that you added the lines below to `~/.zshrc`:
