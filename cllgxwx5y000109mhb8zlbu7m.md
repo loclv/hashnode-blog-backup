@@ -159,3 +159,7 @@ Như vậy thì các ưu nhược điểm của 2 cách là:
 Ghi chú: kết quả đo performance có ở [https://measurethat.net/Benchmarks/Show/1046/0/defineproperty-vs-direct-assignment](https://measurethat.net/Benchmarks/Show/1046/0/defineproperty-vs-direct-assignment).
 
 Tóm lại, quyết định dùng phương pháp nào tùy vào yêu cầu từng dự án.
+
+## Tham khảo
+
+* [https://stackoverflow.com/questions/31816983/object-defineproperty-vs-object-prototype-property-vs-object-property-when-to](https://stackoverflow.com/questions/31816983/object-defineproperty-vs-object-prototype-property-vs-object-property-when-to)
