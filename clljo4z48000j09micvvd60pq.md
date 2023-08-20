@@ -3,6 +3,7 @@ title: "TypeScript - Prisma - prisma-error-enum - An efficient and strict way of
 datePublished: Sun Aug 20 2023 16:34:35 GMT+0000 (Coordinated Universal Time)
 cuid: clljo4z48000j09micvvd60pq
 slug: typescript-prisma-prisma-error-enum-an-efficient-and-strict-way-of-using-prismas-error-code
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/dXYE1d08BiY/upload/ada73796ae69d1225aefc222c91a4e2b.jpeg
 tags: typescript, prisma, prisma-error-enum, prisma-error
 
 ---
