@@ -1,14 +1,32 @@
-## PHP - Một số thứ lặt vặt cho người mới
+---
+title: "PHP - Một số thứ lặt vặt cho người mới"
+datePublished: Mon Nov 30 2020 17:22:54 GMT+0000 (Coordinated Universal Time)
+cuid: cki4tm8ky077gans1hx7xeokg
+slug: php-mot-so-thu-lat-vat-cho-nguoi-moi
+tags: php
+
+---
 
 ## Test các lệnh hay logic cơ bản từ terminal
 
 ```sh
 php -a
+# Interactive shell
 ```
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694593926400/6f62a5de-51d9-4bad-8b34-b10feafa4193.png align="center")
 
 Sau đó `php shell` sẽ hiện ra cho bạn thoải mái test.
 
-Chạy 1 file để test:
+```php
+// line by line
+var_dump(1);
+// int(1)
+var_dump(is_numeric(1));
+// bool(true)
+```
+
+## Chạy 1 file để test
 
 ```sh
 php -f my_script.php
@@ -16,7 +34,7 @@ php -f my_script.php
 
 Xem thêm:
 
-<https://www.php.net/manual/en/features.commandline.usage.php>
+[https://www.php.net/manual/en/features.commandline.usage.php](https://www.php.net/manual/en/features.commandline.usage.php)
 
 ## Kiểm tra timezone
 
@@ -34,7 +52,7 @@ php -m
 
 Khi bạn muốn kiểm tra xem môi trường cài đặt framework `laravel` đã OK chưa chẳng hạn, trong framework laravel cần cài `extentions` như trong link dưới đây:
 
-<https://laravel.com/docs/8.x#server-requirements>
+[https://laravel.com/docs/8.x#server-requirements](https://laravel.com/docs/8.x#server-requirements)
 
 ## PHP xdebug
 
