@@ -3,6 +3,7 @@ title: "New cool ⭐ tools - packages for JS web development in 2023"
 datePublished: Wed Oct 25 2023 15:00:27 GMT+0000 (Coordinated Universal Time)
 cuid: clo5vu4ww00060aldgjixezol
 slug: new-cool-tools-packages-for-js-web-development-in-2023
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/_AR74EoWdy0/upload/adc1a242e031f1bdfb8189fef61fb726.jpeg
 tags: web-development
 
 ---
