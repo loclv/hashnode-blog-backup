@@ -29,6 +29,8 @@ tags: web-development
 
 [https://trpc.io/](https://trpc.io/) - **End-to-end typesafe APIs made easy.**
 
+[https://vitest.dev/](https://vitest.dev/) - **A Vite-native testing framework. It's fast!**
+
 ## 🌱 New version of the current frameworks/packages
 
 [https://astro.build/](https://astro.build/)
