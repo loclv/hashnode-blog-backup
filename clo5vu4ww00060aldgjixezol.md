@@ -32,6 +32,8 @@ tags: web-development
 
 [https://vitest.dev/](https://vitest.dev/) - **A Vite-native testing framework. It's fast!**
 
+[https://unocss.dev/](https://unocss.dev/) - **Instant On-demand Atomic CSS Engine.**
+
 ## 🌱 New version of the current frameworks/packages
 
 [https://astro.build/](https://astro.build/)
