@@ -12,10 +12,6 @@ tags: web-development
 
 [modular forms](https://modularforms.dev/) - an input form library with performance, type safety and bundle size in mind.
 
-[stylify](https://stylifycss.com/) - WRITE CSS FASTER - uses CSS-like selectors `color:blue`, `width:640px`, `margin:0_auto`, like CSS + [tailwind](https://tailwindcss.com/).
-
-[nestia](https://nestia.io/docs/) - Nestia is a set of helper libraries for [NestJS](https://docs.nestjs.com/) - [Boost up NestJS server much faster and easier (maximum 20,000x faster + tRPC similar)](https://dev.to/samchon/nestia-boost-up-your-nestjs-server-much-faster-and-easier-maximum-20000x-faster-59o5).
-
 [https://turbo.build/](https://turbo.build/) - Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
 
 [https://turbo.build/repo](https://turbo.build/repo) - Turborepo is an intelligent **build system optimized for JavaScript and TypeScript codebases**.
@@ -24,15 +20,38 @@ tags: web-development
 
 [https://bun.sh/](https://bun.sh/) - **fast JavaScript runtime and more.**
 
-[https://github.com/t3-oss/create-t3-turbo](https://github.com/t3-oss/create-t3-turbo) - Clean and simple starter repo using the T3 Stack along with Expo React Native.
-
-[https://create.t3.gg/](https://create.t3.gg/) - **The best way to start a full-stack, typesafe Next.js app.**
-
 [https://trpc.io/](https://trpc.io/) - **End-to-end typesafe APIs made easy.**
 
 [https://vitest.dev/](https://vitest.dev/) - **A Vite-native testing framework. It's fast!**
 
+### New Stack
+
+[https://create.t3.gg/](https://create.t3.gg/) - **The best way to start a full-stack, typesafe Next.js app.**
+
+[https://github.com/t3-oss/create-t3-turbo](https://github.com/t3-oss/create-t3-turbo) - Clean and simple starter repo using the T3 Stack along with Expo React Native.
+
+[nestia](https://nestia.io/docs/) - Nestia is a set of helper libraries for [NestJS](https://docs.nestjs.com/) - [Boost up NestJS server much faster and easier (maximum 20,000x faster + tRPC similar)](https://dev.to/samchon/nestia-boost-up-your-nestjs-server-much-faster-and-easier-maximum-20000x-faster-59o5).
+
+[https://hono.dev/concepts/stacks](https://hono.dev/concepts/stacks):
+
+* Hono - API Server
+    
+* [**Zod**](https://zod.dev/) - Validator
+    
+* [**Zod Validator Middleware**](https://github.com/honojs/middleware/tree/main/packages/zod-validator)
+    
+* `hc` - HTTP Client
+    
+
+[https://elysiajs.com/](https://elysiajs.com/) - Supercharged by Bun runtime, Static Code Analysis, and various micro optimization. (WARNING: not for NodeJS).
+
+[https://orm.drizzle.team/](https://orm.drizzle.team/) - TypeScript ORM that **developers love.**
+
+### Style
+
 [https://unocss.dev/](https://unocss.dev/) - **Instant On-demand Atomic CSS Engine.**
+
+[stylify](https://stylifycss.com/) - WRITE CSS FASTER - uses CSS-like selectors `color:blue`, `width:640px`, `margin:0_auto`, like CSS + [tailwind](https://tailwindcss.com/).
 
 ## 🌱 New version of the current frameworks/packages
 
