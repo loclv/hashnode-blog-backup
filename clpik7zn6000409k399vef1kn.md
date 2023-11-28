@@ -41,7 +41,6 @@ console.log("BUILD_TIME: ", import.meta.env.VITE_BUILD_TIME);
 
 ```diff
    "scripts": {
-     "preinstall": "npx only-allow yarn",
 -    "dev": "vite",
 -    "build": "vite build",
 +    "dev": "VITE_BUILD_TIME=\"$(date)\" vite",
