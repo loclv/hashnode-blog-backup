@@ -12,6 +12,9 @@ tags: web-development, nodejs, typescript, bun
 
 [modular forms](https://modularforms.dev/) - an input form library with performance, type safety and bundle size in mind.
 
+[github - valibot](https://github.com/fabian-hiller/valibot) - About
+The modular and type safe schema library for validating structural data 🤖.
+
 [https://turbo.build/](https://turbo.build/) - Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
 
 [https://turbo.build/repo](https://turbo.build/repo) - Turborepo is an intelligent **build system optimized for JavaScript and TypeScript codebases**.
@@ -23,6 +26,8 @@ tags: web-development, nodejs, typescript, bun
 [https://trpc.io/](https://trpc.io/) - **End-to-end typesafe APIs made easy.**
 
 [https://vitest.dev/](https://vitest.dev/) - **A Vite-native testing framework. It's fast!**
+
+[TanStack - router](https://github.com/TanStack/router) - 🤖 Fully typesafe Router for React (and friends) w/ built-in caching, 1st class search-param APIs, client-side cache integration and isomorphic rendering.
 
 ### New Stack
 
@@ -54,6 +59,8 @@ tags: web-development, nodejs, typescript, bun
 [https://unocss.dev/](https://unocss.dev/) - **Instant On-demand Atomic CSS Engine.**
 
 [stylify](https://stylifycss.com/) - WRITE CSS FASTER - uses CSS-like selectors `color:blue`, `width:640px`, `margin:0_auto`, like CSS + [tailwind](https://tailwindcss.com/).
+
+[twc](https://github.com/gregberge/twc) - Create reusable React + Tailwind components in one line.
 
 ## 🌱 New version of the current frameworks/packages
 
