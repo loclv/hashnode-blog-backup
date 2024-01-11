@@ -28,12 +28,12 @@ Add package manager configuration to `package.json`:
 
 ```json
 {
-"engines": {
-  "npm": "Please use Bun",
-  "yarn": "Please use Bun",
-  "pnpm": "Please use Bun",
-  "bun": ">=1.0.19"
- }
+  "engines": {
+   "npm": "Please use Bun",
+   "yarn": "Please use Bun",
+   "pnpm": "Please use Bun",
+   "bun": ">=1.0.19"
+  }
 }
 ```
 
