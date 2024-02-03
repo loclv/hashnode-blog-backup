@@ -117,11 +117,10 @@ const addOtherInfoToLog = (
  * replace `console.log` with `logger.info`.
  *
  * @example
- * ```ts
  * logger.info('Application started')
  * logger.warn('This could be risky')
  * logger.error('Something went wrong')
- * ```
+ *
  */
 export const logger = {
   info: (message: string, otherInfo?: OtherInfoNotString) =>
@@ -141,9 +140,9 @@ Last, use `logger` in `main` function:
 import { logger } from './utils/logger'
 
 /**
- * ```bash
+ * Command:
  * pnpm do-something
- * ```
+ *
  */
 const main = async () => {
   logger.info('🌱 Start script!', new Date().toISOString())
