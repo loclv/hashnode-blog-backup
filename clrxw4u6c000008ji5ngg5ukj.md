@@ -10,6 +10,8 @@ tags: drizzleorm
 
 ---
 
+Warning, this blog is written when using `drizzle-orm@^0.29.5` version.
+
 ## Installation
 
 ```bash
