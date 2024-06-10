@@ -1,10 +1,10 @@
 ---
-title: "Use Drizzle ORM 💦 and PostgresJS 🐘 step by step with Bun"
+title: "Use Drizzle ORM (ver 0.29) 💦 and PostgresJS 🐘 step by step with Bun"
 seoTitle: "Use Drizzle ORM and PostgresJS step by step with Bun"
 seoDescription: "Use Drizzle ORM and PostgresJS step by step with Bun"
 datePublished: Sun Jan 28 2024 19:25:26 GMT+0000 (Coordinated Universal Time)
 cuid: clrxw4u6c000008ji5ngg5ukj
-slug: use-drizzle-orm-and-postgresjs-step-by-step-with-bun
+slug: use-drizzle-orm-ver-029-and-postgresjs-step-by-step-with-bun
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/YN0HJB0qoys/upload/26260d1e0f24130c2fe748f69dd85a89.jpeg
 tags: drizzleorm
 
@@ -13,8 +13,8 @@ tags: drizzleorm
 ## Installation
 
 ```bash
-bun add drizzle-orm postgres
-bun add -D drizzle-kit
+bun add drizzle-orm@^0.29.5 postgres
+bun add -D drizzle-kit@^0.20.18
 ```
 
 ## Define the schema
