@@ -10,7 +10,7 @@ tags: nodejs, fnm
 
 ---
 
-[fnm](https://github.com/Schniz/fnm) is a 🚀 Fast and simple Node.js version manager, built in Rust
+[fnm](https://github.com/Schniz/fnm) is a 🚀 Fast and simple Node.js version manager, built in Rust.
 
 # Get latest 🌱 NodeJS version from [nodejs.org/dist](http://nodejs.org/dist)
 
