@@ -141,12 +141,6 @@ sudo snap install codium
 
 Mình dùng mỗi phiên bản đó của `vscode` để code mỗi 1 Framework. Ví dụ `vscode-insiders` để code Vue, `vscode` dùng để code Angular. Đỡ phải switch profile tương ứng từng extention dành cho từng framework.
 
-[Atom](https://atom.io/):
-
-```sh
-sudo snap install atom
-```
-
 ## 🌏 Terminal
 
 ### Command-line interface
@@ -169,7 +163,6 @@ plugins: [
 Plugin `hypercwd` mở tab mới giữ nguyên đường dẫn `path`, thay vì thư mục `HOME`. Plugin `hyper-active-tab` để đánh dấu tab đang active ở vị trí nào.
 
 * [tabby](https://tabby.sh/) - Tabby is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
-    
 
 Ảnh UI của tabby:
 
@@ -231,7 +224,6 @@ set --universal fish_greeting
 Ngoài ra còn có 1 tool khá màu mè dành cho shell, đó là:
 
 * [https://github.com/starship/starship](https://github.com/starship/starship)
-    
 
 > [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
