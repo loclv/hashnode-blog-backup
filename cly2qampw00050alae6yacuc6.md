@@ -1,10 +1,10 @@
 ---
-title: "AWS Lambda function code using Node.js and the 🐬 fetch API to make a POST request to the Slack webhook URL"
+title: "AWS Lambda function code using Node.js and the 🐬 fetch API to make a POST request to the Slack webhook URL (no need to use 3rd party npm packages)"
 seoTitle: "AWS Lambda function Node.js API to make a request to Slack webhook URL"
-seoDescription: "AWS Lambda function Node.js API to make a request to Slack webhook URL"
+seoDescription: "AWS Lambda function Node.js API to make a request to Slack webhook URL. No need to use 3rd party npm packages"
 datePublished: Mon Jul 01 2024 08:39:03 GMT+0000 (Coordinated Universal Time)
 cuid: cly2qampw00050alae6yacuc6
-slug: aws-lambda-function-code-using-nodejs-and-the-fetch-api-to-make-a-post-request-to-the-slack-webhook-url
+slug: aws-lambda-function-code-using-nodejs-and-the-fetch-api-to-make-a-post-request-to-the-slack-webhook-url-no-need-to-use-3rd-party-npm-packages
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/3rabTGLccwc/upload/b5b6e1579e1a121e8e08d01da9ce6dfa.jpeg
 tags: aws, nodejs
 
