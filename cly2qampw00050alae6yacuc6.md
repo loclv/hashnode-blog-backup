@@ -89,7 +89,29 @@ const sendAlertToSlack = async (message) => {
 };
 ```
 
-May be you can see a warning on Lambda Function Code editor at the `fetch` API. That warning you can ignore because you are using the new `fetch` API of new version Node.js.
+May be you can see a warning on Lambda Function Code editor at the `fetch` API.
+
+> `fetch` is not defined. Please fix or add global `fetch`.
+
+This warning you can ignore because you are using the new `fetch` API of new version Node.js.
+
+Here is a tip.
+
+* On development environment:
+    
+    * You can change `mjs` file extension to `ts` on local for better type checking.
+        
+    * Create a new package manager and install `eslint` to lint your code.
+        
+
+```sh
+pnpm init
+# or
+bun init
+```
+
+* View all source code on browser AWS lambda function editor to check if there are warnings in your code.
+    
 
 ## Set Environment Variables
 
