@@ -30,12 +30,14 @@ code ~/.config/starship.toml
 symbol = '🌱 '
 
 [aws]
-disabled = true
+# disabled = true
 format = '[$symbol($profile )(\($region\) )]($style)'
 symbol = 'AWS '
 style = 'blue'
 
 [gcloud]
-disabled = true
+# disabled = true
 symbol = 'GCP '
 ```
+
+Sometime you want to hidden cloud icon, please use `disabled = true`.
