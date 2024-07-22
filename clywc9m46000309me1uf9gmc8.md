@@ -15,7 +15,7 @@ Khoa học Máy tính (Computer Science) và Kỹ thuật Phần mềm (Software
 
 - **Kỹ thuật Phần mềm**: Tập trung vào thực hành, quy trình và phương pháp kỹ thuật để phát triển, quản lý, và duy trì phần mềm hiệu quả.
 
-Cơ hội nghề nghiệp của 2 lĩnh vực này là như nhau. Ví dụ, khi ra trường người học Khoa học Máy tính vẫn có thể làm về phần mềm còn người học Kỹ thuật Phần mềm vẫn có thể nghiên cứu vì đã được học các môn cơ bản của nhành CNTT rồi.
+Cơ hội nghề nghiệp của 2 lĩnh vực này là như nhau. Ví dụ, khi ra trường người học Khoa học Máy tính vẫn có thể làm về phần mềm còn người học Kỹ thuật Phần mềm vẫn có thể nghiên cứu vì đã được học các môn cơ bản của ngành CNTT rồi.
 
 Vậy thì:
 
