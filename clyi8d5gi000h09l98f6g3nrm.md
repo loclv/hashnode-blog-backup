@@ -26,6 +26,8 @@ code ~/.config/starship.toml
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+command_timeout = 2000
+
 [git_branch]
 symbol = '🌱 '
 
