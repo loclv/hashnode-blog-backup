@@ -23,7 +23,7 @@ Trong JavaScript, cả `.toString()` và `String()` đều dùng để chuyển 
 
 ---
 
-## **📌 Khi nào dùng** 
+## **📌 Khi nào dùng**
 
 ## **.toString()**
 
@@ -41,18 +41,25 @@ const arr = [1, 2, 3];
 arr.toString(); // "1,2,3"
 ```
 
-**⛔ Tránh dùng với null hoặc undefined:**
+**⛔ Đối với null hoặc undefined:**
+
+Sẽ throw ra lỗi:
 
 ```javascript
 const value = null;
 value.toString(); // ❗️TypeError: Cannot read properties of null
 ```
 
----
+Thực thế sử dụng với null or undefined:
 
-## **📌 Khi nào dùng** 
+```typescript
+null?.toString();
+// output: undefined
+String(null)
+// output: 'null' (a string not `null` value)
+```
 
-## **String()**
+## **📌 Khi nào dùng String()**
 
 **Dùng khi bạn không chắc giá trị có thể là gì (null, undefined, number, boolean, object…), hoặc muốn ép kiểu an toàn.**
 
@@ -112,11 +119,11 @@ Trong ví dụ TypeScript/JavaScript trên, cả u.toString() và String(u) đ�
 
 Khi bạn gọi String(value), JavaScript sẽ **không gọi trực tiếp .toString()** mà đi qua một cơ chế cụ thể hơn:
 
-### **🔍 Bước 1: Nếu value là** 
+### **🔍 Bước 1: Nếu value là**
 
 ### **null**
 
-###  **hoặc** 
+### **hoặc**
 
 ### **undefined**
 
