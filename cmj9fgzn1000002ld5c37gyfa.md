@@ -3,7 +3,7 @@ title: "So sánh các Vietnamese Input method - bộ gõ tiếng Việt cho MacO
 datePublished: Wed Dec 17 2025 03:04:17 GMT+0000 (Coordinated Universal Time)
 cuid: cmj9fgzn1000002ld5c37gyfa
 slug: so-sanh-cac-vietnamese-input-method-bo-go-tieng-viet-cho-macos
-tags: macos
+tags: macos, vietnamese
 
 ---
 
@@ -20,6 +20,7 @@ Các Input method được so sánh:
 - OpenKey: <https://github.com/tuyenvm/OpenKey>
 - PHTV: <https://github.com/PhamHungTien/PHTV>
 - XKey: <https://github.com/xmannv/xkey>
+- Gõ Nhanh <https://github.com/khaphanspace/gonhanh.org>
 
 Các phiên bản mới nhất tại ngày 17/12/2025.
 
@@ -31,6 +32,7 @@ Không bàn tới có bug hay không vì có thể sẽ được cả thiện tr
 - OpenKey: 12.4MB
 - PHTV: 62.2MB
 - XKey: 44.3MB
+- Gõ Nhanh: 37.1MB
 
 ## Mặc định gõ được trên VSCode/ Windsurf/ Cursor
 
@@ -42,6 +44,7 @@ Với cấu hình mặc định:
 - OpenKey: Không
 - PHTV: Không
 - XKey: Không
+- Gõ Nhanh: Không
 
 ## Về công nghệ
 
@@ -49,6 +52,7 @@ Với cấu hình mặc định:
 - OpenKey: Engine gõ là C++, UI là Cocoa
 - PHTV: Engine gõ là C++ (tham khảo từ OpenKey), UI là SwiftUI
 - XKey: Engine gõ là Swift, UI là SwiftUI
+- Gõ Nhanh: Engine gõ là Rust, UI là SwiftUI
 
 ### Đánh giá
 
