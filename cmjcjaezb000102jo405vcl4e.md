@@ -50,7 +50,7 @@ killall Dock Finder
 
 ---
 
-### 2. Tắt hiệu ứng "trong suốt" và "chuyển động" (Accessibility)
+### Tắt hiệu ứng "trong suốt" và "chuyển động" (Accessibility)
 
 Hai cài đặt này ảnh hưởng lớn nhất đến GPU và Pin, nhưng thường được chỉnh trong System Settings. Bạn hãy vào:
 
@@ -67,7 +67,7 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 defaults write com.apple.universalaccess reduceMotion -bool true
 ```
 
-### 4. Cách khôi phục về mặc định (Undo)
+### Cách khôi phục về mặc định (Undo)
 
 Nếu bạn cảm thấy giao diện quá cứng nhắc và muốn quay lại như cũ, hãy chạy đoạn lệnh sau:
 
